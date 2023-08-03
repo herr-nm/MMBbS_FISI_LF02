@@ -1,28 +1,15 @@
-# Weiteres Lernmaterial
+# Kapitel 6: Sensoren auslesen
 
-![Kapitelbild](bilder/kap_10_kapitelbild.jpg)
+![Kapitelbild](bilder/kap_06_kapitelbild.png)
 
-In diesem Kapitel finden Sie ...
+In this chapter ...
 
-- ... Begriffserklärungen zu Themen aus dem Lernfeld.
-
----
-
-## Modul 10.0: Lernmaterial
+- ... you will connect a temperature sensor to your Raspberry Pi.
+- ... you will get the values ot the temperature sensor in a script.
 
 ---
 
-### Informationsmaterial M|10.0: Glossar
-
----
-
-### Informationsmaterial M|10.1: YouTube-Kanal "Herr-NM"
-
----
-
-### Informationsmaterial M|10.2: Podcasts und Podcastfolgen
-
----
+## Situation
 
 {%
    include-markdown "inhalte/lizenzhinweis.md"
