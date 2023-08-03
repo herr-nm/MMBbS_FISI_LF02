@@ -1037,58 +1037,60 @@ Berechnen Sie die Kosten für beide Optionen für jeweils 365 Tage Dauerbetrieb,
 
 ---
 
-## Tipps & Tricks
+## Podcastempfehlungen
 
 ---
 
-!!! hint "ISA-Aufgaben"
+### IT-Berufe-Podcast #179 - RAID - Redundant Array of Independent Disks
 
-    Aus diesem Kapitel sind für die ISA-Stunden Aufgaben enthalten.
-
-### Videos zum Thema "Elektrotechnik"
-
-#### Studyflix-Video: Ohmsches Gesetz
-
-<div style="width: 600px">
-    <script src="https://studyflix.de/embed" data-id="1819"></script>
-</div>
+https://it-berufe-podcast.de/raid-redundant-array-of-independent-disks-it-berufe-podcast-179/
 
 ---
 
-#### Studyflix-Video: Elektrische Stromstärke
+### IT-Berufe-Podcast #178 - Datensicherung (Backup)
 
-<div style="width: 600px">
-    <script src="https://studyflix.de/embed" data-id="1843"></script>
-</div>
+https://it-berufe-podcast.de/datensicherung-backup-it-berufe-podcast-178/
 
 ---
 
-#### Studyflix-Video: Elektrische Energie
+### IT-Berufe-Podcast #157 - Datenschutz vs. Datensicherheit vs. Datensicherung
 
-<div style="width: 600px">
-    <script src="https://studyflix.de/embed" data-id="2142"></script>
-</div>
+https://it-berufe-podcast.de/datenschutz-vs-datensicherheit-vs-datensicherung-it-berufe-podcast-157/
 
 ---
 
-#### Studyflix-Video: Elektrische Arbeit
+## Zusatzmaterial
 
-<div style="width: 600px">
-    <script src="https://studyflix.de/embed" data-id="2579"></script>
-</div>
+| ISA Kompetenzen | Studiflix Lernvideos | YouTube Herr-NM |
+| :--- | :--- | :--- |
+| ![Arbeitsbereich](bilder/kap_03_zusatzmaterial_1.jpg) | ![Handy](bilder/kap_03_zusatzmaterial_2.jpg) | ![YouTube](bilder/kap_03_zusatzmaterial_3.jpg) |
+| Zu diesem Kapitel gibt es ISA-Kompetenzen, die zur Bearbeitung freigegeben sind. | Auf Studyflix finden Sie Lernvideos zum Thema "Elektrotechnik". | Auf dem YouTube-Kanal Herr-NM finden Sie alle Videos aus dem Informationsmaterial in diesem Kapitel. |
+| [zum ISA-Kurs](https://moodle.mm-bbs.de/moodle/course/view.php?id=2953) | [zur Zusammenstellung](https://studyflix.de) | [zum Kanal](http://youtube.herr-nm.de/) |
+
+## Lernstrategien & Werkzeuge
+
+### Lernen mit Spaced Repitition
+
+Spaced Repitition ist eine Lernstrategie, bei der mit Karteikarten gelernt wird. Diese werden nach einem bestimmten Schema wiederholt. Einfache Karten kommen dabei seltener vor, schwierige werden in kürzeren Abständen wiederholt. Hierfür gibt es tolle Tools / Apps, die das Lernen unterstützen. Hier ein kurzes Infovideo:
+
+[https://youtu.be/Ihqk33AvllU](https://youtu.be/Ihqk33AvllU)
 
 ---
 
-#### Studyflix-Video: Reihen- und Parallelschaltung
+### Software & App - Anki zum Lernen mit der Spaced Repitition Methode
 
-<div style="width: 600px">
-    <script src="https://studyflix.de/embed" data-id="260"></script>
-</div>
+[https://www.ankiapp.com/](https://www.ankiapp.com/)
 
 ---
+
+## GitHub
+
+### GitHub.io - LF2-Kurs als MkDocs-Variante
+
+[https://herr-nm.github.io/MMBbS_FISI_LF02/](https://herr-nm.github.io/MMBbS_FISI_LF02/)
 
 {%
    include-markdown "inhalte/lizenzhinweis.md"
    start="<!--Lizenzhinweis-->"
    end="<!--Lizenzhinweis-->"
-%}
+}
