@@ -14,25 +14,26 @@ In diesem Kapitel finden Sie ...
 
 ### Didaktischer Wizard
 
-- Sie finden die didaktische Planung der MMBbS im [Didaktischen Wizard](https://didakt.mm-bbs.de).
-- Die Lernsituationen sind auch direkt unter [GitHub - (Herr-NM)](https://herr-nm.github.io/MMBbS_KIT_Curriculum) abrufbar.
-- Dieser Moodle-Kurs ist als MkDocs-Seite unter [GitHub.io - (Herr-NM)](https://herr-nm.github.io/MMBbS_KIT_LF02) frei einsehbar.
+- Sie finden die didaktische Planung der Lernsituationen der MMBbS im [Didaktischen Wizard](https://didakt.mm-bbs.de).
+- Dieser Moodle-Kurs ist als MkDocs-Seite unter [GitHub.io](https://herr-nm.github.io/MMBbS_FISI_LF02 frei einsehbar.
 
 <br>
 
 ### Inhalt der Lernsituationen
 
-Die Lernsituationen der Lernfelder werden aus den Lernfeldbeschreibungen des jeweiligen Rahmenlehrplans abgeleitet. Dazu dient in diesem Kurs der [Rahmenlehrplan](https://www.kmk.org/fileadmin/Dateien/pdf/Bildung/BeruflicheBildung/rlp/Kaufleute_fuer_Digitalisierungsmanagement_19-12-13_EL.pdf) der Kaufleute für Digitalisierungsmanagement (KDM) sowie der Kaufleute für IT-System-Management (KSM).
+Die Lernsituationen der Lernfelder werden aus den Lernfeldbeschreibungen des jeweiligen Rahmenlehrplans abgeleitet. Dazu dient in diesem Kurs der [Rahmenlehrplan](https://www.kmk.org/fileadmin/Dateien/pdf/Bildung/BeruflicheBildung/rlp/Fachinformatiker_19-12-13_EL.pdf) der FISI.
 
 Im Lernfeld 2 sind die Inhalte nach Rahmenlehrplan für alle IT-Berufe identisch.
 
 | Nr. | Lernsituation | Unterrichtsstunden |
 | :--- | :--- | :--- |
-| LS 2.6 | IT-Systeme unterscheiden | 12 |
-| LS 2.7 | Netzwerkspeicher dimensionieren | 18 |
-| LS 2.8 | | |
+| LS 2.6 | IT-Systeme unterscheiden | ca. 9 UStd. |
+| LS 2.7 | Netzwerkspeicher dimensionieren | ca. 18 UStd. |
+| LS 2.8 | IT-Systeme in Betrieb nehmen | ca. 3 UStd. |
+| LS 2.9 | Aktoren ansteuern | ca. 3 UStd. |
+| LS 2.10 | Sensoren auslesen | ca. 3 UStd. (Didaktische Reserve am Ende des Schuljahres) |
 
----
+<br>
 
 ## Bewertungshinweise
 
@@ -44,26 +45,31 @@ Im Lernfeld 2 sind die Inhalte nach Rahmenlehrplan für alle IT-Berufe identisch
 
 ---
 
-### Informationsmaterial M|0.1: Zusammensetzung der Note im Lernfeld 2 (technischer Anteil)
+### Informationsmaterial M|0.1: Zusammensetzung der Note im Lernfeld 2
 
 #### Zusammensetzung
 
-Die Lernfeld 2-Note setzt sich aus den Stunden des wirtschaftlichen Anteils im LF2 sowie den technischen Stunden bei Herrn Neumann zusammen. Beide steuern 50% der Gesamtnote bei. Auf dem Zeugnis steht das LF2 nur mit dieser Gesamtnote.
+Die Lernfeld 2-Note setzt sich aus den Stunden aus dem kaufmännischen sowie dem technischen Anteil von LF2 zusammen. Beide steuern 50% der Gesamtnote bei. Auf dem Zeugnis steht das LF2 nur mit dieser Gesamtnote.
+Der 50%-Anteil der LF2 Note im technischen Bereich setzt sich wie folgt zusammen:
 
-Der 50%-Anteil der LF2 Note bei Herrn Neumann setzt sich wie folgt zusammen:
-
-- 50% Anteil an der LF2-NM-Note: lernstandsbezogene Leistungsfeststellungen
-- 30% Anteil an der LF2-NM-Note: lernprozessbegleitende Leistungsfeststellungen
-- 20% Anteil an der LF2-NM-Note: allgemeine Mitarbeit
+- 50% lernstandsbezogene Leistungsfeststellungen
+- 30% lernprozessbegleitende Leistungsfeststellungen (Tests)
+- 20% lernprozessbegleitende Leistungsfeststellungen (Mitarbeit)
 - ISA-Mitarbeit kann in die Mitarbeitsnote eingehen und ggf. zwischen zwei Noten zur Verbesserung führen
 
 #### Lernstandsbezogene Leistungsfeststellungen
 
-Die lernstandsbezogene Leistungsfeststellung in Form einer Klassenarbeit wird im 4. Block geschrieben (genauer Termin s. zu gegebener Zeit im WebUntis). Die Klassenarbeit hat einen Umfang von 70 Minuten und findet als Moodle-Klassenarbeit statt.
+Die lernstandsbezogene Leistungsfeststellung in Form einer Klassenarbeit wird im 4. Block geschrieben. Die Klassenarbeit hat einen Umfang von ca. 45-60 Minuten und findet als Papier-Klassenarbeit statt. Sie wird in WebUntis eingetragen.
 
 #### Lernprozessbegleitende Leistungsfeststellungen
 
-Die lernprozessbegleitenden Leistungsfeststellungen setzen sich aus verschiedenen Abgaben oder angekündigten Tests zusammen (s. hier ebenfalls WebUntis).
+Die lernprozessbegleitenden Leistungsfeststellungen können sich aus verschiedenen Formaten zusammensetzen. Im Lernfeld 2 werden Sie kurze Tests in Moodle schreiben. Diese sind angekündigt und werden ebenfalls in WebUntis eingetragen. Auch die Beschaffung des Raspberry Pi-Sets zum Stichtag (der im Unterricht genannt wird) wirkt sich als Teilleistung hierauf aus.
+
+---
+
+### M|0.2: Notenschlüssel der IHK
+
+![IHK Bewertungsschlüssel](bilder/kap_00_m0.3_ihk_bewerungsschluessel.png)
 
 ---
 
@@ -73,7 +79,7 @@ Dieser Moodle-Kurs kann als interaktives Lehrbuch verstanden werden. Dazu gibt e
 
 ---
 
-### Informationsmaterial M|0.2: Aufbau des Moodle-Kurses
+### Informationsmaterial M|0.3: Aufbau des Moodle-Kurses
 
 - Dieser Kurs ist in verschiedene Kapitel aufgeteilt. Die Kapitel haben fortlaufende Nummerierungen.
 - Innerhalb eines Kapitels finden Sie Arbeitsaufträge, Informationsmaterialien und vieles mehr. Diese Aktivitäten haben eine im Kapitel fortlaufende Nummer, sodass jede Aktivität direkt angesprochen werden kann.
@@ -94,9 +100,10 @@ Dieser Moodle-Kurs kann als interaktives Lehrbuch verstanden werden. Dazu gibt e
 In den Kapiteln werden unterrichtsbegleitend Übungen angeboten. Diese werden im Unterricht nicht besprochen, es sei denn es besteht Ihrerseits der konkrete Wunsch dazu. Ansonsten können Sie die Übungen zum Lernen, als Vorbereitung für Klassenarbeiten oder Tests sowie zur Vorbereitung auf die IHK-Prüfung nutzen. Die Ergebnisse aus den Moodle-Aktivitäten zählen (z.B. Selbsttest) zählen nicht zur schriftlichen Note. Eine kontinuierliche Arbeit mit den Übungen kann sich aber positiv auf die Mitarbeitsnote auswirken.
 
 ---
+
 ## Podcastempfehlungen
 
-An dieser Stelle werden Sie in den Kapiteln zum Thema passende Folgen aus Podcasts finden. In diesem Kapitel gibt es den generellen Hinweis zum [IT-Berufe-Podcast](https://it-berufe-podcast.de/episoden/). Dieser kann Ihre Ausbildung begleiten und eine wertvolle Quelle für Informationen sein.
+An dieser Stelle werden Sie in den Kapiteln zum Thema passende Folgen aus Podcasts finden. In diesem Kapitel gibt es den generellen Hinweis zum IT-Berufe-Podcast. Dieser kann Ihre Ausbildung begleiten und eine wertvolle Quelle für Informationen sein.
 
 ---
 
@@ -119,22 +126,6 @@ Das angebotene Zusatzmaterial soll Ihnen helfen auch Material über diesen Moodl
 ## Lernstrategien & Werkzeuge
 
 In dieser Rubrik werden in den Kapiteln Lernmethoden und Tools vorgestellt, die sich gut eignen, für den Unterricht, die Tests bzw. Klassenarbeiten aber auch langfristig für die IHK-Prüfung zu lernen. 
-
-### Obsidian Notes
-
-Obsidian Notes ist eine Software für die Erstellung von zusammenhängenden Notizen. Diese werden in Markdown angelegt und bilden Seiten, ähnlich zur Struktur in Wikipedia, die schließlich untereinander verlinkt werden können. Als Ergebnis bildet sich hieraus automatisch zusätzlich ein interaktives Begriffsnetzwerk:
-
-![Obsidian Graph](bilder/kap_00_obsidian_graph.png)
-
-*Bildquelle: [https://obsidian.md](https://obsidian.md)*
-
-### Obsidian Tutorial-Kurs
-
-Auf YouTube finden Sie einen [Obsidian Tutorial-Kurs](https://youtube.com/playlist?list=PLzp2ZLXTBP0uMYXsnxVjJMrtWJ9JIncPC), falls Sie das Tool einsetzen oder sich einen Überblick verschaffen möchten.
-
-![YouTube Obsidian](bilder/kap_00_obsidian_tutorial.png)
-
-*Bildquelle: [https://www.youtube.com/playlist?list=PLzp2ZLXTBP0uMYXsnxVjJMrtWJ9JIncPC](https://www.youtube.com/playlist?list=PLzp2ZLXTBP0uMYXsnxVjJMrtWJ9JIncPC)*
 
 ---
 
@@ -178,13 +169,11 @@ Hierzu gibt es einen guten Blogeintrag von Linus Neumann mit Video-Ausschnitt au
 
 Dieser Kurs wird bei Erstellung und Überarbeitung mittels Markdown-Dateien verwaltet, in MkDocs zusammengeführt und parallel mit Git verwaltet. Dabei erfolgt die Versionierung über ein öffentliches Git-Repository, welches auch mittels GitHub Pages veröffentlicht ist. Kurzum, über die beiden Links s.u. finden Sie diesen Moodle-Kurs und auch die Lernsituationen als öffentliche Webseite.
 
+---
+
 ### GitHub.io - LF2-Kurs als MkDocs-Variante
 
-[https://herr-nm.github.io/MMBbS_KIT_LF02/](https://herr-nm.github.io/MMBbS_KIT_LF02/)
-
-### GitHub.io - Curriculum der kaufmännischen IT-Berufe
-
-[https://herr-nm.github.io/MMBbS_KIT_Curriculum/](https://herr-nm.github.io/MMBbS_KIT_Curriculum/)
+[https://herr-nm.github.io/MMBbS_FISI_LF02/](https://herr-nm.github.io/MMBbS_FISI_LF02/)
 
 {%
    include-markdown "inhalte/lizenzhinweis.md"
