@@ -745,7 +745,7 @@ Ihnen liegen alle benötigten Informationen bezüglich der Kundenanforderungen, 
 
 ---
 
-### Arbeitsauftrag A|3.7: Auswahlentscheidung für einen Netzwerkspeicher (10 % der lernprozessbegleitenden Bewertung)
+### Arbeitsauftrag A|3.7: Auswahlentscheidung für einen Netzwerkspeicher
 
 #### Aufgabe 1
 
