@@ -15,7 +15,7 @@ In diesem Kapitel finden Sie ...
 ### Didaktischer Wizard
 
 - Sie finden die didaktische Planung der Lernsituationen der MMBbS im [Didaktischen Wizard](https://didakt.mm-bbs.de).
-- Dieser Moodle-Kurs ist als MkDocs-Seite unter [GitHub.io](https://herr-nm.github.io/MMBbS_FISI_LF02 frei einsehbar.
+- Dieser Moodle-Kurs ist als MkDocs-Seite unter [GitHub.io](https://herr-nm.github.io/MMBbS_FISI_LF02) frei einsehbar.
 
 <br>
 

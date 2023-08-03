@@ -569,11 +569,7 @@ Die Pomodoro-Technik ist eine Methode für das Zeitmanagement. Die Arbeit oder d
 
 ### GitHub.io - LF2-Kurs als MkDocs-Variante
 
-[https://herr-nm.github.io/MMBbS_KIT_LF02/](https://herr-nm.github.io/MMBbS_KIT_LF02/)
-
-### GitHub.io - Curriculum der kaufmännischen IT-Berufe
-
-[https://herr-nm.github.io/MMBbS_KIT_Curriculum/](https://herr-nm.github.io/MMBbS_KIT_Curriculum/)
+[https://herr-nm.github.io/MMBbS_FISI_LF02/](https://herr-nm.github.io/MMBbS_FISI_LF02/)
 
 {%
    include-markdown "inhalte/lizenzhinweis.md"
