@@ -203,3 +203,126 @@ Nicht alle Aspekte sind für jeden wichtig, aber damit haben Sie schon mal eine 
 *Quellen:*
 - *https://www.heise.de/tipps-tricks/Linux-Betriebssysteme-eine-Uebersicht-4119937.html*
 - *https://codezentrale.de/linux-stammbaum-linux-distributionen/*
+
+---
+
+### A|4.5: Linux-Systeme remote bedienen
+
+#### Aufgabe 1
+
+Was ist eine SSH-Verbindung?
+
+#### Aufgabe 2
+
+Welche Software wird für den Aufbau einer SSH-Verbindung auf der Client- sowie auf der Server-Seite benötigt?
+
+#### Aufgabe 3
+
+Was ist der Unterschied zwischen SSH und VNC?
+
+#### Aufgabe 4
+
+Welche Vor- und Nachteile hat eine Remote-Wartung gegenüber einer Vor-Ort-Wartung von IT-Systemen?
+
+---
+
+### M|4.5: Secure Shell (SSH) und Virtual Network Computing (VNC)
+
+#### Secure Shell (SSH)
+
+Secure Shell (SSH) ist ein Netzwerkprotokoll, das entwickelt wurde, um eine sichere Kommunikation über ein unsicheres Netzwerk zu ermöglichen. Typischerweise wird SSH verwendet, um eine verschlüsselte Verbindung zu einem entfernten Server herzustellen und so eine sichere Datenübertragung, Authentifizierung und Interaktion mit dem entfernten System zu gewährleisten.
+
+![SSH Protokoll Wikipedia](bilder/kap_04_ssh.png)
+
+*Bildquelle: https://de.wikipedia.org/wiki/Secure_Shell*
+
+- **Verschlüsselte Verbindungen:** SSH verschlüsselt die Kommunikation zwischen dem Client und dem Server, was bedeutet, dass sensible Daten wie Passwörter, Befehle und Dateiübertragungen vor unbefugtem Zugriff geschützt sind.
+- **Authentifizierung:** SSH ermöglicht die sichere Authentifizierung von Benutzern, um sicherzustellen, dass nur autorisierte Personen auf das System zugreifen können. Dies kann durch Passwörter, Schlüsselpaare oder andere Authentifizierungsmethoden erfolgen.
+- **Sichere Datenübertragung:** Dateien können sicher über SSH übertragen werden. Dies wird oft durch den Einsatz von SCP (Secure Copy) oder SFTP (Secure File Transfer Protocol) erreicht.
+- **Portabilität:** SSH ist plattformunabhängig und kann auf verschiedenen Betriebssystemen wie Linux, macOS und Windows verwendet werden.
+- **Remote-Shell-Zugriff:** Eines der Hauptanwendungsgebiete von SSH ist der Zugriff auf eine Remote-Shell auf einem entfernten Server. Dies ermöglicht es Benutzern, Befehle auf einem entfernten System auszuführen, als ob sie direkt vor dessen Bildschirm sitzen würden.
+
+**Aufbau einer SSH-Verbindung**
+
+Sie benötigen in der Regel keine zusätzliche Software. Ein Terminal-Fenster Ihres Betriebssystems reicht hierfür aus.
+
+Mit dem Befehl `ssh pi@172.20.20.20` verbinden Sie sich als Benutzer `pi` via SSH mit dem Remote-System, welches im Beispiel die IP `172.20.20.20` hat.
+
+#### Virtual Network Computing
+
+![VNC](bilder/kap_04_vnc.png)
+
+Virtual Network Computing (VNC) ist eine Technologie, die es ermöglicht, den Bildschirminhalt eines Computers über ein Netzwerk zu übertragen und die Tastatureingaben und Mausbewegungen von einem entfernten Standort aus zu steuern. Mit VNC kann ein Benutzer von einem Computer aus auf einen anderen Computer zugreifen, als ob er direkt vor diesem sitzen würde. Die Technologie ermöglicht Remote-Desktop-Zugriff und -kontrolle.
+
+- **Server:** Auf dem Computer, dessen Bildschirminhalt freigegeben werden soll, muss ein VNC-Server installiert und gestartet werden. Der VNC-Server erfasst den Bildschirminhalt und wartet auf eingehende Verbindungen.
+- **Client:** Der Computer, der auf den entfernten Bildschirminhalt zugreifen möchte, benötigt einen VNC-Client. Dieser Client stellt eine Verbindung zum VNC-Server her und empfängt die übertragenen Bildschirminhalte.
+- **Übertragungsprotokoll:** VNC verwendet ein spezifisches Protokoll (z. B. RFB - Remote Framebuffer Protocol), um den Bildschirminhalt zu übertragen und Benutzereingaben zu steuern. Dieses Protokoll ermöglicht die Übertragung von Grafiken, Mausbewegungen und Tastatureingaben über das Netzwerk.
+- **Verschlüsselung (optional):** In einigen VNC-Implementierungen kann eine Verschlüsselung aktiviert werden, um die übertragenen Daten zu schützen. Dies ist besonders wichtig, wenn VNC über unsichere Netzwerke wie das Internet verwendet wird, um die Privatsphäre und Sicherheit zu gewährleisten.
+
+
+## Kompetenz 4.2: Installation und Aktualisierung des Betriebssystems
+
+Der Raspberry Pi ist hardwareseitig einsatzbereit, aktuell fehlt allerdings noch die Software. Die Change IT GmbH nutzt nach Ihrem Vorschlag ein Raspberry Pi OS als Betriebssystem. Dieses wurde in der internen IT-Abteilung bereits so vorbereitet, dass die Endgeräte in das WLAN kommen. Das Betriebssystem steht in einem sogenannten Image bereit. Dieses Image ist eine Momentaufnahme des Betriebssystems, welches auf Micro SD-Karten dupliziert und von dort wieder gestartet werden kann. Nehmen Sie die Installation und erste Aktualisierung auf Ihrem Raspberry Pi vor.
+
+![PC](bilder/kap_04_installation.png)
+
+### A|4.12: Inbetriebnahme des Raspberry Pi
+
+Sie benötigen für die Schritte der Inbetriebnahme folgende Programme:
+
+- Raspberry Pi Imager ([Download](https://www.raspberrypi.org/downloads/))
+- MMBbS Raspberry Pi OS Image ([Download](https://mm-bbs.de) über die Landingpage)
+
+Die Anleitung zur Installation des Betriebssystems finden Sie im Kurs.
+
+Wenn Sie diese Aufgabe fertiggestellt haben bestätigen Sie dies über den oben aufgeführten Button:
+
+![Moodle Button](bilder/kap_04_moodle_button.png)
+
+### M|4.11: Inbetriebnahme des Raspberry Pi
+
+<iframe frameborder="0" width="1200" height="675" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/6019653b31720d0d312eb43c" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe>
+
+## Kompetenz 4.3: Funktionstüchtigkeit eines IT-Systems prüfen
+
+Nach der Installation und Aktualisierung des Betriebssystems ist der Inbetriebnahmeprozess abgeschlossen. Zunächst soll die Funktionstüchtigkeit des Raspberry Pi im Netzwerk überprüft werden. Erst im Anschluss kann das Prototyping mit dem Auslesen von Sensorik starten.
+
+![Laptop](bilder/kap_04_laptop.jpg)
+
+### A|4.13: Basisinformationen zum Raspberry Pi anzeigen
+
+#### Aufgabe 1
+
+Lassen Sie sich die Eckdaten zu Ihrem Raspberry Pi mit dem Befehl "pinout" in der Kommandozeile anzeigen. Welche Informationen können Sie hieraus ablesen?
+
+#### Aufgabe 2
+
+Nutzen Sie in der Kommandozeile den Befehl zur Ausgabe von Netzwerk-Informationen "ifconfig". Geben Sie in eigenen Worten wieder, was Ihnen die Anzeige an Daten ausgibt.
+
+#### Aufgabe 3
+
+Starten Sie mit dem Befehl "htop" den Taskmanager. Verschaffen Sie sich einen groben Überblick über das angezeigte Programm und beschreiben Sie den grundlegenden Aufbau der Ansicht.
+
+## Kompetenz 4.4: Linux-Kommandozeile bedienen
+
+Die interne IT-Abteilung der Change IT GmbH hat sich bei den eingesetzten IT-Systemen für die Wartung und Konfiguration via SSH entschieden. Hierbei fallen Standardaufgaben an, die eine Bedienung des Linux-Systems mit sich bringt. Sie wollen sich eine Befehlsreferenz anlegen, um zukünftig schnell und sicher per SSH agieren zu können. Dazu wurden Fallbeispiele zusammengestellt, die durch Befehle bearbeitet werden sollen.
+
+![Linux Shell](bilder/kap_04_linux.png)
+
+### A|4.6: Linux-Befehle für die Kommandozeile
+
+Verschaffen Sie sich mithilfe des Informationsmaterials im Kurs einen Überblick zu den wichtigsten Befehlen für die Linux-Kommandozeile.
+
+1. Notieren Sie sich die Befehle in übersichtlicher Form als Cheat-Sheet, welches Sie am Ende in dieser Aufgabe hochladen.
+2. Testen Sie die Befehle wie im Informationsmaterial vorgestellt und erproben Sie damit den Umgang in der Kommandozeile auf Ihrem Raspberry Pi.
+
+---
+
+### M|4.6: Linux-Befehle
+
+#### Start und Login
+
+#### 
+
+---
+
