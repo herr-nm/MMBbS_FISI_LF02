@@ -67,7 +67,7 @@ Auszug aus dem Produktkatalog der Change IT:
 | Gerätetyp | Standalone | Standalone | Standalone | 19"-Rackmount |
 | Anzahl Laufwerke | 2 x 2,5" oder 3,5" SATA | 4 x 2,5" oder 3,5" SATA | 4 x 2,5" oder 3,5" SATA | 8 x 2,5" oder 3,5" SATA |
 | Laufwerkstypen | HDD | SSD oder HDD | SSD oder HDD | SSD oder HDD | SSD oder HDD |
-| Max. Laufwerksgröße | 5.460 GiB | 7,28 TiB | 16 TB | 16,37 TiB |
+| Max. Laufwerksgröße | 5.587,94 GiB | 7,28 TiB | 16 TB | 16,37 TiB |
 | Energieverbrauch in Voll-Betrieb | 12 W | 50 W | 60 W | 90 W |
 | Energieverbrauch im Festplattenruhestand | 8 W | 8 W | 10 W | 10 W |
 | Energieverbrauch im Standby | 1 W | 1000 mW | 2 W | 5 W |
@@ -274,17 +274,15 @@ Bei der Auswahl eines geeigneten Speichermediums für einen Kunden fallen im Ver
 
 #### Aufgabe 1
 
-Bei der Recherche zum Thema *Speichermaßeinheiten* sind Sie auf einen Artikel gestoßen, der das Problem in der Ausgangsbeschreibung beschreibt. Fassen Sie die Kernaussagen des Artikels im Informationsmaterial kurz und knapp zusammen.
+Bei der Recherche zum Thema *Speichermaßeinheiten* sind Sie auf einen Artikel (M|3.3: Was unterscheidet Gigabyte und Gibibyte?) gestoßen, der das Problem in der Ausgangsbeschreibung beschreibt. Fassen Sie die Kernaussagen des Artikels im Informationsmaterial kurz und knapp zusammen.
 
 #### Aufgabe 2
 
-Nach dem Einbau einer 1 TB Festplatte in einem PC mit dem Betriebssystem *Microsoft Windows* wird eine Kapazität von 931 GB angezeigt. Informieren Sie sich mithilfe des Videos im Informationsmaterial, warum dies so ist und fassen Sie auch hier den Grund kurz und knapp zusammen.
+Nach dem Einbau einer 1 TB Festplatte in einem PC mit dem Betriebssystem *Microsoft Windows* wird eine Kapazität von 931 GB angezeigt. Informieren Sie sich mithilfe des Videos im Informationsmaterial (M|3.4: Umrechnungen von Speichermaßeinheiten), warum dies so ist und fassen Sie auch hier den Grund kurz und knapp zusammen.
 
 #### Aufgabe 3
 
-Rechnen Sie die Angaben in der Vorauswahl der NAS Systeme oben im Kurs auf eine einheitliche Max. Laufwerksgröße um, damit ein Vergleich möglich ist.
-
----
+Rechnen Sie die Angaben in der Vorauswahl der NAS Systeme (M|3.1: Vorauswahl der Change IT-NAS-Systeme) oben im Kurs auf eine einheitliche Max. Laufwerksgröße in aufgerundeten ganzen TB um, damit ein Vergleich möglich ist.
 
 ### Informationsmaterial M|3.3: Was unterscheidet Gigabyte und Gibibyte?
 
@@ -333,8 +331,6 @@ Sie kaufen sich eine Festplatte mit einer Speicherkapazität von 240 GB. Wie gro
 #### Aufgabe 6
 
 Rechnen Sie den Wert von 375 MiB in den für ein Umrechnungsprogramm benötigten Wert als Angabe in KB um. Geben Sie Ihren Rechenweg an.
-
----
 
 ### Informationsmaterial M|3.4: Umrechnungen von Speichermaßeinheiten
 
