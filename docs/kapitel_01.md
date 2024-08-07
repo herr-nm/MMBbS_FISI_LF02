@@ -1,6 +1,6 @@
 # Kapitel 1: Vorstellung des Modellunternehmens
 
-![Kapitelbild](bilder/kap_01_kapitelbild.jpg)
+![Kapitelbild](bilder/01_kapitelbild.png)
 
 In diesem Kapitel ...
 

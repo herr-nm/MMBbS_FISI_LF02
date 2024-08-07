@@ -1,6 +1,6 @@
 # Kapitel 3: Netzwerkspeicher dimensionieren
 
-![Kapitelbild](bilder/kap_03_kapitelbild.jpg)
+![Kapitelbild](bilder/03_kapitelbild.png)
 
 In diesem Kapitel werden Sie ...
 

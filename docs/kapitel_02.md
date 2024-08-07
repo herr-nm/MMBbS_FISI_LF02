@@ -1,6 +1,6 @@
 # Kapitel 2: IT-Systeme auswählen
 
-![Kapitelbild](bilder/kap_02_kapitelbild.jpg)
+![Kapitelbild](bilder/02_kapitelbild.png)
 
 In diesem Kapitel werden Sie ...
 

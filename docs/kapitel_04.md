@@ -1,6 +1,6 @@
 # Kapitel 4: IT-Systeme in Betrieb nehmen
 
-![Kapitelbild](bilder/kap_04_kapitelbild.png)
+![Kapitelbild](bilder/04_kapitelbild.png)
 
 In diesem Kapitel werden Sie ...
 

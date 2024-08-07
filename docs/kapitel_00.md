@@ -1,6 +1,6 @@
 # Kapitel 0: Organisatorisches
 
-![Kapitelbild](bilder/kap_00_kapitelbild.png)
+![Kapitelbild](bilder/00_kapitelbild.png)
 
 In diesem Kapitel finden Sie ...
 
