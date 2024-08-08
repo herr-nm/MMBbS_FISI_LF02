@@ -1,0 +1,3026 @@
+
+<!doctype html>
+<html lang="de" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://herr-nm.github.io/MMBbS_FISI_LF02/kapitel_04.html">
+      
+      
+        <link rel="prev" href="kapitel_03.html">
+      
+      
+        <link rel="next" href="kapitel_05.html">
+      
+      
+      <link rel="icon" href="bilder/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.31">
+    
+    
+      
+        <title>Kapitel 04 - IT-Systeme in Betrieb nehmen - FISI Lernfeld 2 (technisch)</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.3cba04c6.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="extra.css">
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#kapitel-4-it-systeme-in-betrieb-nehmen" class="md-skip">
+          Zum Inhalt
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Kopfzeile">
+    <a href="index.html" title="FISI Lernfeld 2 (technisch)" class="md-header__button md-logo" aria-label="FISI Lernfeld 2 (technisch)" data-md-component="logo">
+      
+  <img src="bilder/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            FISI Lernfeld 2 (technisch)
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Kapitel 04 - IT-Systeme in Betrieb nehmen
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Suche" placeholder="Suche" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Suche">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Zurücksetzen" aria-label="Zurücksetzen" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Suche wird initialisiert
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/herr-nm/MMBbS_FISI_LF02" title="Zum Repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="FISI Lernfeld 2 (technisch)" class="md-nav__button md-logo" aria-label="FISI Lernfeld 2 (technisch)" data-md-component="logo">
+      
+  <img src="bilder/logo.png" alt="logo">
+
+    </a>
+    FISI Lernfeld 2 (technisch)
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/herr-nm/MMBbS_FISI_LF02" title="Zum Repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Einleitung zum LF2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="kapitel_00.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kapitel 00 - Organisatorisches
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="kapitel_01.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kapitel 01 - Vorstellung des Modellunternehmens
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="kapitel_02.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kapitel 02 - IT-Systeme auswählen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="kapitel_03.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kapitel 03 - Netzwerkspeicher dimensionieren
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Kapitel 04 - IT-Systeme in Betrieb nehmen
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="kapitel_04.html" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Kapitel 04 - IT-Systeme in Betrieb nehmen
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#handlungssituation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Handlungssituation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kompetenz-40-vorbereitungen-der-inbetriebnahme-eines-it-systems-treffen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kompetenz 4.0: Vorbereitungen der Inbetriebnahme eines IT-Systems treffen
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Kompetenz 4.0: Vorbereitungen der Inbetriebnahme eines IT-Systems treffen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arbeitsauftrag-a40-kontrolle-der-vollstandigkeit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arbeitsauftrag A|4.0: Kontrolle der Vollständigkeit
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Arbeitsauftrag A|4.0: Kontrolle der Vollständigkeit">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 1
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arbeitsauftrag-a41-komponenten-des-raspberry-pi-erkunden" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arbeitsauftrag A|4.1: Komponenten des Raspberry Pi erkunden
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Arbeitsauftrag A|4.1: Komponenten des Raspberry Pi erkunden">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 1
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#informationsmaterial-m40-bilder-des-raspberry-pi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Informationsmaterial M|4.0: Bilder des Raspberry Pi
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Informationsmaterial M|4.0: Bilder des Raspberry Pi">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#raspberry-pi-400" class="md-nav__link">
+    <span class="md-ellipsis">
+      Raspberry Pi 400
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#raspberry-pi-4b" class="md-nav__link">
+    <span class="md-ellipsis">
+      Raspberry Pi 4B
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#raspberry-pi-3b" class="md-nav__link">
+    <span class="md-ellipsis">
+      Raspberry Pi 3B+
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#raspberry-pi-3b_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Raspberry Pi 3B
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m41a-produktdatenblatt-zum-raspberry-pi-400" class="md-nav__link">
+    <span class="md-ellipsis">
+      M|4.1a: Produktdatenblatt zum Raspberry Pi 400
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m41b-produktdatenblatt-zum-raspberry-pi-4b" class="md-nav__link">
+    <span class="md-ellipsis">
+      M|4.1b: Produktdatenblatt zum Raspberry Pi 4B
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m41c-produktdatenblatt-zum-raspberry-pi-3b" class="md-nav__link">
+    <span class="md-ellipsis">
+      M|4.1c: Produktdatenblatt zum Raspberry Pi 3B+
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m41d-produktdatenblatt-zum-raspberry-pi-3b" class="md-nav__link">
+    <span class="md-ellipsis">
+      M|4.1d: Produktdatenblatt zum Raspberry Pi 3B
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arbeitsauftrag-a42-fragen-zum-raspberry-pi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arbeitsauftrag A|4.2: Fragen zum Raspberry Pi
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Arbeitsauftrag A|4.2: Fragen zum Raspberry Pi">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-1_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 3
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 4
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 5
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 6
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 7
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m42-raspberry-pi-grundlagen-der-energieversorgung-stromversorgung" class="md-nav__link">
+    <span class="md-ellipsis">
+      M|4.2: Raspberry Pi - Grundlagen der Energieversorgung / Stromversorgung
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="M|4.2: Raspberry Pi - Grundlagen der Energieversorgung / Stromversorgung">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#grundlagen-der-energieversorgung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grundlagen der Energieversorgung
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maximale-stromstarke-der-gpio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Maximale Stromstärke der GPIO
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kompetenz-41-betriebssystem-auswahlen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kompetenz 4.1: Betriebssystem auswählen
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Kompetenz 4.1: Betriebssystem auswählen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a44-linux-distributionen-unterscheiden" class="md-nav__link">
+    <span class="md-ellipsis">
+      A|4.4: Linux-Distributionen unterscheiden
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="A|4.4: Linux-Distributionen unterscheiden">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-1_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 1
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m44-linux-distributionen-im-uberblick" class="md-nav__link">
+    <span class="md-ellipsis">
+      M|4.4: Linux-Distributionen im Überblick
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a45-linux-systeme-remote-bedienen" class="md-nav__link">
+    <span class="md-ellipsis">
+      A|4.5: Linux-Systeme remote bedienen
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="A|4.5: Linux-Systeme remote bedienen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-1_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 3
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-4_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 4
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-5_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 5
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m45-secure-shell-ssh-und-virtual-network-computing-vnc" class="md-nav__link">
+    <span class="md-ellipsis">
+      M|4.5: Secure Shell (SSH) und Virtual Network Computing (VNC)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="M|4.5: Secure Shell (SSH) und Virtual Network Computing (VNC)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#secure-shell-ssh" class="md-nav__link">
+    <span class="md-ellipsis">
+      Secure Shell (SSH)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#virtual-network-computing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Virtual Network Computing
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#telnet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Telnet
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kompetenz-42-installation-und-aktualisierung-des-betriebssystems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kompetenz 4.2: Installation und Aktualisierung des Betriebssystems
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Kompetenz 4.2: Installation und Aktualisierung des Betriebssystems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a46-inbetriebnahme-des-raspberry-pi" class="md-nav__link">
+    <span class="md-ellipsis">
+      A|4.6: Inbetriebnahme des Raspberry Pi
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m46-inbetriebnahme-des-raspberry-pi" class="md-nav__link">
+    <span class="md-ellipsis">
+      M|4.6: Inbetriebnahme des Raspberry Pi
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kompetenz-43-linux-kommandozeile-bedienen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kompetenz 4.3: Linux-Kommandozeile bedienen
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Kompetenz 4.3: Linux-Kommandozeile bedienen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a47-linux-befehle-fur-die-kommandozeile-nutzen" class="md-nav__link">
+    <span class="md-ellipsis">
+      A|4.7: Linux-Befehle für die Kommandozeile nutzen
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="A|4.7: Linux-Befehle für die Kommandozeile nutzen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-1_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 1
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m47-linux-kommandozeilenbefehle" class="md-nav__link">
+    <span class="md-ellipsis">
+      M|4.7: Linux-Kommandozeilenbefehle
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="M|4.7: Linux-Kommandozeilenbefehle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#befehlssyntax" class="md-nav__link">
+    <span class="md-ellipsis">
+      Befehlssyntax
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#argumente" class="md-nav__link">
+    <span class="md-ellipsis">
+      Argumente
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optionen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Optionen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aktuelles-arbeitsverzeichnis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aktuelles Arbeitsverzeichnis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verzeichnisse-wechseln" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verzeichnisse wechseln
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pfade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pfade
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pfade">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#absolute-pfade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Absolute Pfade
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#relative-pfade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Relative Pfade
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dateien-auflisten" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dateien auflisten
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#der-befehl-sudo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Der Befehl sudo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#berechtigungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Berechtigungen
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Berechtigungen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dateitypfeld" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dateitypfeld
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#berechtigungsfeld" class="md-nav__link">
+    <span class="md-ellipsis">
+      Berechtigungsfeld
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eigentumer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Eigentümer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gruppe" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gruppe
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#andere" class="md-nav__link">
+    <span class="md-ellipsis">
+      Andere
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#berechtigungstypen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Berechtigungstypen
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dateiberechtigungen-andern" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dateiberechtigungen ändern
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eigentumer-einer-datei-andern" class="md-nav__link">
+    <span class="md-ellipsis">
+      Eigentümer einer Datei ändern
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anzeigen-von-dateien" class="md-nav__link">
+    <span class="md-ellipsis">
+      Anzeigen von Dateien
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dateien-kopieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dateien kopieren
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dateien-verschieben" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dateien verschieben
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dateien-entfernen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dateien entfernen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#herunterfahren" class="md-nav__link">
+    <span class="md-ellipsis">
+      Herunterfahren
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a48-grundlagen-in-der-arbeit-mit-dem-terminal-verzeichnisse" class="md-nav__link">
+    <span class="md-ellipsis">
+      A|4.8: Grundlagen in der Arbeit mit dem Terminal - Verzeichnisse
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a49-grundlagen-in-der-arbeit-mit-dem-terminal-berechtigungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      A|4.9: Grundlagen in der Arbeit mit dem Terminal - Berechtigungen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a410-grundlagen-in-der-arbeit-mit-dem-terminal-text-editor-nano" class="md-nav__link">
+    <span class="md-ellipsis">
+      A|4.10: Grundlagen in der Arbeit mit dem Terminal - Text-Editor nano
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a411-grundlagen-in-der-arbeit-mit-dem-terminal-scripte" class="md-nav__link">
+    <span class="md-ellipsis">
+      A|4.11: Grundlagen in der Arbeit mit dem Terminal - Scripte
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a412-grundlagen-in-der-arbeit-mit-dem-terminal-eigentumer-von-dateien" class="md-nav__link">
+    <span class="md-ellipsis">
+      A|4.12: Grundlagen in der Arbeit mit dem Terminal - Eigentümer von Dateien
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a413-grundlagen-in-der-arbeit-mit-dem-terminal-dateien-und-ordner" class="md-nav__link">
+    <span class="md-ellipsis">
+      A|4.13: Grundlagen in der Arbeit mit dem Terminal - Dateien und Ordner
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kompetenz-43-funktionstuchtigkeit-eines-it-systems-prufen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kompetenz 4.3: Funktionstüchtigkeit eines IT-Systems prüfen
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Kompetenz 4.3: Funktionstüchtigkeit eines IT-Systems prüfen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a414-basisinformationen-zum-raspberry-pi-anzeigen" class="md-nav__link">
+    <span class="md-ellipsis">
+      A|4.14: Basisinformationen zum Raspberry Pi anzeigen
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="A|4.14: Basisinformationen zum Raspberry Pi anzeigen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-1_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-2_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-3_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 3
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#handlungsergebnis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Handlungsergebnis
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Handlungsergebnis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a415-inbetriebnahme-installation-und-funktionstest-auswerten" class="md-nav__link">
+    <span class="md-ellipsis">
+      A|4.15: Inbetriebnahme, Installation und Funktionstest auswerten
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="A|4.15: Inbetriebnahme, Installation und Funktionstest auswerten">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-1_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 1
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#github" class="md-nav__link">
+    <span class="md-ellipsis">
+      GitHub
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GitHub">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#githubio-lf2-kurs-als-mkdocs-variante" class="md-nav__link">
+    <span class="md-ellipsis">
+      GitHub.io - LF2-Kurs als MkDocs-Variante
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="kapitel_05.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kapitel 05 - Sensoren und Aktoren am RPi nutzen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="kapitel_06.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kapitel 06 - Exkurse und weitere Themen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#handlungssituation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Handlungssituation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kompetenz-40-vorbereitungen-der-inbetriebnahme-eines-it-systems-treffen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kompetenz 4.0: Vorbereitungen der Inbetriebnahme eines IT-Systems treffen
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Kompetenz 4.0: Vorbereitungen der Inbetriebnahme eines IT-Systems treffen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arbeitsauftrag-a40-kontrolle-der-vollstandigkeit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arbeitsauftrag A|4.0: Kontrolle der Vollständigkeit
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Arbeitsauftrag A|4.0: Kontrolle der Vollständigkeit">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 1
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arbeitsauftrag-a41-komponenten-des-raspberry-pi-erkunden" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arbeitsauftrag A|4.1: Komponenten des Raspberry Pi erkunden
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Arbeitsauftrag A|4.1: Komponenten des Raspberry Pi erkunden">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 1
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#informationsmaterial-m40-bilder-des-raspberry-pi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Informationsmaterial M|4.0: Bilder des Raspberry Pi
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Informationsmaterial M|4.0: Bilder des Raspberry Pi">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#raspberry-pi-400" class="md-nav__link">
+    <span class="md-ellipsis">
+      Raspberry Pi 400
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#raspberry-pi-4b" class="md-nav__link">
+    <span class="md-ellipsis">
+      Raspberry Pi 4B
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#raspberry-pi-3b" class="md-nav__link">
+    <span class="md-ellipsis">
+      Raspberry Pi 3B+
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#raspberry-pi-3b_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Raspberry Pi 3B
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m41a-produktdatenblatt-zum-raspberry-pi-400" class="md-nav__link">
+    <span class="md-ellipsis">
+      M|4.1a: Produktdatenblatt zum Raspberry Pi 400
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m41b-produktdatenblatt-zum-raspberry-pi-4b" class="md-nav__link">
+    <span class="md-ellipsis">
+      M|4.1b: Produktdatenblatt zum Raspberry Pi 4B
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m41c-produktdatenblatt-zum-raspberry-pi-3b" class="md-nav__link">
+    <span class="md-ellipsis">
+      M|4.1c: Produktdatenblatt zum Raspberry Pi 3B+
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m41d-produktdatenblatt-zum-raspberry-pi-3b" class="md-nav__link">
+    <span class="md-ellipsis">
+      M|4.1d: Produktdatenblatt zum Raspberry Pi 3B
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arbeitsauftrag-a42-fragen-zum-raspberry-pi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arbeitsauftrag A|4.2: Fragen zum Raspberry Pi
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Arbeitsauftrag A|4.2: Fragen zum Raspberry Pi">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-1_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 3
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 4
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 5
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 6
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 7
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m42-raspberry-pi-grundlagen-der-energieversorgung-stromversorgung" class="md-nav__link">
+    <span class="md-ellipsis">
+      M|4.2: Raspberry Pi - Grundlagen der Energieversorgung / Stromversorgung
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="M|4.2: Raspberry Pi - Grundlagen der Energieversorgung / Stromversorgung">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#grundlagen-der-energieversorgung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grundlagen der Energieversorgung
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maximale-stromstarke-der-gpio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Maximale Stromstärke der GPIO
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kompetenz-41-betriebssystem-auswahlen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kompetenz 4.1: Betriebssystem auswählen
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Kompetenz 4.1: Betriebssystem auswählen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a44-linux-distributionen-unterscheiden" class="md-nav__link">
+    <span class="md-ellipsis">
+      A|4.4: Linux-Distributionen unterscheiden
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="A|4.4: Linux-Distributionen unterscheiden">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-1_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 1
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m44-linux-distributionen-im-uberblick" class="md-nav__link">
+    <span class="md-ellipsis">
+      M|4.4: Linux-Distributionen im Überblick
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a45-linux-systeme-remote-bedienen" class="md-nav__link">
+    <span class="md-ellipsis">
+      A|4.5: Linux-Systeme remote bedienen
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="A|4.5: Linux-Systeme remote bedienen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-1_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 3
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-4_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 4
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-5_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 5
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m45-secure-shell-ssh-und-virtual-network-computing-vnc" class="md-nav__link">
+    <span class="md-ellipsis">
+      M|4.5: Secure Shell (SSH) und Virtual Network Computing (VNC)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="M|4.5: Secure Shell (SSH) und Virtual Network Computing (VNC)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#secure-shell-ssh" class="md-nav__link">
+    <span class="md-ellipsis">
+      Secure Shell (SSH)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#virtual-network-computing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Virtual Network Computing
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#telnet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Telnet
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kompetenz-42-installation-und-aktualisierung-des-betriebssystems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kompetenz 4.2: Installation und Aktualisierung des Betriebssystems
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Kompetenz 4.2: Installation und Aktualisierung des Betriebssystems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a46-inbetriebnahme-des-raspberry-pi" class="md-nav__link">
+    <span class="md-ellipsis">
+      A|4.6: Inbetriebnahme des Raspberry Pi
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m46-inbetriebnahme-des-raspberry-pi" class="md-nav__link">
+    <span class="md-ellipsis">
+      M|4.6: Inbetriebnahme des Raspberry Pi
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kompetenz-43-linux-kommandozeile-bedienen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kompetenz 4.3: Linux-Kommandozeile bedienen
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Kompetenz 4.3: Linux-Kommandozeile bedienen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a47-linux-befehle-fur-die-kommandozeile-nutzen" class="md-nav__link">
+    <span class="md-ellipsis">
+      A|4.7: Linux-Befehle für die Kommandozeile nutzen
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="A|4.7: Linux-Befehle für die Kommandozeile nutzen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-1_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 1
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m47-linux-kommandozeilenbefehle" class="md-nav__link">
+    <span class="md-ellipsis">
+      M|4.7: Linux-Kommandozeilenbefehle
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="M|4.7: Linux-Kommandozeilenbefehle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#befehlssyntax" class="md-nav__link">
+    <span class="md-ellipsis">
+      Befehlssyntax
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#argumente" class="md-nav__link">
+    <span class="md-ellipsis">
+      Argumente
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optionen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Optionen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aktuelles-arbeitsverzeichnis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aktuelles Arbeitsverzeichnis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verzeichnisse-wechseln" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verzeichnisse wechseln
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pfade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pfade
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pfade">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#absolute-pfade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Absolute Pfade
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#relative-pfade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Relative Pfade
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dateien-auflisten" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dateien auflisten
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#der-befehl-sudo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Der Befehl sudo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#berechtigungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Berechtigungen
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Berechtigungen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dateitypfeld" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dateitypfeld
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#berechtigungsfeld" class="md-nav__link">
+    <span class="md-ellipsis">
+      Berechtigungsfeld
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eigentumer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Eigentümer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gruppe" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gruppe
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#andere" class="md-nav__link">
+    <span class="md-ellipsis">
+      Andere
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#berechtigungstypen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Berechtigungstypen
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dateiberechtigungen-andern" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dateiberechtigungen ändern
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eigentumer-einer-datei-andern" class="md-nav__link">
+    <span class="md-ellipsis">
+      Eigentümer einer Datei ändern
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anzeigen-von-dateien" class="md-nav__link">
+    <span class="md-ellipsis">
+      Anzeigen von Dateien
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dateien-kopieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dateien kopieren
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dateien-verschieben" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dateien verschieben
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dateien-entfernen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dateien entfernen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#herunterfahren" class="md-nav__link">
+    <span class="md-ellipsis">
+      Herunterfahren
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a48-grundlagen-in-der-arbeit-mit-dem-terminal-verzeichnisse" class="md-nav__link">
+    <span class="md-ellipsis">
+      A|4.8: Grundlagen in der Arbeit mit dem Terminal - Verzeichnisse
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a49-grundlagen-in-der-arbeit-mit-dem-terminal-berechtigungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      A|4.9: Grundlagen in der Arbeit mit dem Terminal - Berechtigungen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a410-grundlagen-in-der-arbeit-mit-dem-terminal-text-editor-nano" class="md-nav__link">
+    <span class="md-ellipsis">
+      A|4.10: Grundlagen in der Arbeit mit dem Terminal - Text-Editor nano
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a411-grundlagen-in-der-arbeit-mit-dem-terminal-scripte" class="md-nav__link">
+    <span class="md-ellipsis">
+      A|4.11: Grundlagen in der Arbeit mit dem Terminal - Scripte
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a412-grundlagen-in-der-arbeit-mit-dem-terminal-eigentumer-von-dateien" class="md-nav__link">
+    <span class="md-ellipsis">
+      A|4.12: Grundlagen in der Arbeit mit dem Terminal - Eigentümer von Dateien
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a413-grundlagen-in-der-arbeit-mit-dem-terminal-dateien-und-ordner" class="md-nav__link">
+    <span class="md-ellipsis">
+      A|4.13: Grundlagen in der Arbeit mit dem Terminal - Dateien und Ordner
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kompetenz-43-funktionstuchtigkeit-eines-it-systems-prufen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kompetenz 4.3: Funktionstüchtigkeit eines IT-Systems prüfen
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Kompetenz 4.3: Funktionstüchtigkeit eines IT-Systems prüfen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a414-basisinformationen-zum-raspberry-pi-anzeigen" class="md-nav__link">
+    <span class="md-ellipsis">
+      A|4.14: Basisinformationen zum Raspberry Pi anzeigen
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="A|4.14: Basisinformationen zum Raspberry Pi anzeigen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-1_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-2_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-3_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 3
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#handlungsergebnis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Handlungsergebnis
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Handlungsergebnis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a415-inbetriebnahme-installation-und-funktionstest-auswerten" class="md-nav__link">
+    <span class="md-ellipsis">
+      A|4.15: Inbetriebnahme, Installation und Funktionstest auswerten
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="A|4.15: Inbetriebnahme, Installation und Funktionstest auswerten">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-1_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 1
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#github" class="md-nav__link">
+    <span class="md-ellipsis">
+      GitHub
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GitHub">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#githubio-lf2-kurs-als-mkdocs-variante" class="md-nav__link">
+    <span class="md-ellipsis">
+      GitHub.io - LF2-Kurs als MkDocs-Variante
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="kapitel-4-it-systeme-in-betrieb-nehmen">Kapitel 4: IT-Systeme in Betrieb nehmen</h1>
+<p><img alt="Kapitelbild" src="bilder/04_kapitelbild.png" /></p>
+<p>In diesem Kapitel werden Sie ...</p>
+<ul>
+<li>Vorbereitungen für die Inbetriebnahme eines IT-Systems treffen.</li>
+<li>ein passendes Betriebssystem auswählen.</li>
+<li>die Linux-Kommandozeile nutzen, um ein IT-System zu bedienen</li>
+<li>ein Betriebssystem installieren und aktualisieren.</li>
+<li>die Funktionstüchtigkeit eines IT-Systems prüfen.</li>
+<li>den Inbetriebnahmeprozess dokumentieren und auswerten.</li>
+</ul>
+<hr />
+<h2 id="handlungssituation">Handlungssituation</h2>
+<p>Für den unternehmensinternen Auftrag der Change IT GmbH, eine Temperaturmesseinrichtung für die Arbeitsplätze einzurichten, wurde vor einigen Wochen eine Bestellung für die benötigte Hardware getätigt. Der Wareneingang hat diese angenommen und äußerlich auf Schäden kontrolliert. Ihre Aufgabe sind die Vorbereitungen für den Einsatz sowie wie Inbetriebnahme des IT-Systems durchzuführen. Hieran anschließend soll die Funktionstüchtigkeit des IT-Systems getestet werden.</p>
+<p><img alt="Raspberry Pi Nahaufnahme" src="bilder/kap_04_rpi.jpg" /></p>
+<hr />
+<h2 id="kompetenz-40-vorbereitungen-der-inbetriebnahme-eines-it-systems-treffen">Kompetenz 4.0: Vorbereitungen der Inbetriebnahme eines IT-Systems treffen</h2>
+<p>Die Hardware ist durch die Warenannahme der Change IT angenommen und innerbetrieblich weitergeleitet worden. Bei Anlieferung wurde lediglich die Überprüfung des korrekten Warenempfängers vorgenommen sowie die Unversehrtheit der Verpackung geprüft.</p>
+<p>Der Raspberry Pi und das Zubehör sollen nun in Betrieb genommen werden. Dafür sind die Komponenten richtig zusammenzubauen. Im ersten Schritt sollen die Komponenten des Raspberry Pi und die weiteren Inhalte des Sets genauer betrachtet werden.</p>
+<p><img alt="Paket" src="bilder/kap_04_paket.jpg" /></p>
+<hr />
+<h3 id="arbeitsauftrag-a40-kontrolle-der-vollstandigkeit">Arbeitsauftrag A|4.0: Kontrolle der Vollständigkeit</h3>
+<h4 id="aufgabe-1">Aufgabe 1</h4>
+<p>Breiten Sie das Raspberry Pi-Material vor Ihnen auf dem Tisch aus und fertigen Sie ein Foto an, welches alle Bauteile auf einen Blick enthält.</p>
+<h3 id="arbeitsauftrag-a41-komponenten-des-raspberry-pi-erkunden">Arbeitsauftrag A|4.1: Komponenten des Raspberry Pi erkunden</h3>
+<h4 id="aufgabe-1_1">Aufgabe 1</h4>
+<p>Laden Sie sich aus dem Kursmaterial (M|4.0: Bilder des Raspberry Pi) das zu Ihrem Raspberry Pi passende Bild herunter. Beschriften Sie anschließend die Anschlüsse des Raspberry Pi auf dem Bild.</p>
+<h3 id="informationsmaterial-m40-bilder-des-raspberry-pi">Informationsmaterial M|4.0: Bilder des Raspberry Pi</h3>
+<h4 id="raspberry-pi-400">Raspberry Pi 400</h4>
+<p><img alt="RPi 400" src="bilder/kap_04_rpi400.png" /></p>
+<p><em>Quelle des Bildes: https://www.zdnet.com/article/raspberry-pi-400-its-designer-reveals-more-about-the-faster-pi-4-in-the-70-pcs-keyboard/</em></p>
+<h4 id="raspberry-pi-4b">Raspberry Pi 4B</h4>
+<p><img alt="RPi 4B" src="bilder/kap_04_rpi4B.jpg" /></p>
+<p><em>Quelle des Bildes: https://cdn.idealo.com/folder/Product/6628/1/6628198/s1_produktbild_max/raspberry-pi-4-model-b.jpg</em></p>
+<h4 id="raspberry-pi-3b">Raspberry Pi 3B+</h4>
+<p><img alt="RPi 3B+" src="bilder/kap_04_rpi3Bplus.jpg" /></p>
+<p><em>Quelle des Bildes: https://m.media-amazon.com/images/I/81hyqDgm8vL.AC_SL1500.jpg</em></p>
+<h4 id="raspberry-pi-3b_1">Raspberry Pi 3B</h4>
+<p><img alt="RPi 3B" src="bilder/kap_04_rpi3B.jpg" /></p>
+<p><em>Quelle des Bildes: https://de.farnell.com/productimages/large/de_DE/2525225-40.jpg</em></p>
+<h3 id="m41a-produktdatenblatt-zum-raspberry-pi-400">M|4.1a: Produktdatenblatt zum Raspberry Pi 400</h3>
+<p><a href="material/kap_04_Datenblatt_RPi_400.pdf">Download Produktdatenblatt RPi 400</a></p>
+<h3 id="m41b-produktdatenblatt-zum-raspberry-pi-4b">M|4.1b: Produktdatenblatt zum Raspberry Pi 4B</h3>
+<p><a href="material/kap_04_Datenblatt_RPi_4B.pdf">Download Produktdatenblatt RPi 4B</a></p>
+<h3 id="m41c-produktdatenblatt-zum-raspberry-pi-3b">M|4.1c: Produktdatenblatt zum Raspberry Pi 3B+</h3>
+<p><a href="material/kap_04_Datenblatt_RPi_3Bplus.pdf">Download Produktdatenblatt RPi 3B+</a></p>
+<h3 id="m41d-produktdatenblatt-zum-raspberry-pi-3b">M|4.1d: Produktdatenblatt zum Raspberry Pi 3B</h3>
+<p><a href="material/kap_04_Datenblatt_RPi_3B.pdf">Download Produktdatenblatt RPi 3B</a></p>
+<h3 id="arbeitsauftrag-a42-fragen-zum-raspberry-pi">Arbeitsauftrag A|4.2: Fragen zum Raspberry Pi</h3>
+<p>Ein Praktikant der ChangeIT GmbH soll Sie bei dem Raspberry Pi-Projekt unterstützen. Dabei sind im Gespräch folgende Fragen aufgekommen. Beantworten Sie diese jeweils mithilfe des Materials im Kurs (M|4.2: Raspberry Pi - Grundlagen der Energieversorgung / Stromversorgung) begründet in einem kurzen Satz:</p>
+<h4 id="aufgabe-1_2">Aufgabe 1</h4>
+<p>Mit welcher Ausgangsspannung arbeitet das Netzteil für den Raspberry Pi?</p>
+<h4 id="aufgabe-2">Aufgabe 2</h4>
+<p>Welche Spannung(en) kann der Raspberry Pi über die GPIO-Pins an Bauteile ausgeben?</p>
+<h4 id="aufgabe-3">Aufgabe 3</h4>
+<p>Welche Stromstärke sollte ein Netzteil für den Raspberry Pi 4 (bzw. 3) mindestens liefern?</p>
+<h4 id="aufgabe-4">Aufgabe 4</h4>
+<p>Darf der Raspberry Pi mit einem Netzteil betrieben werden, welches 4 A liefert?</p>
+<h4 id="aufgabe-5">Aufgabe 5</h4>
+<p>Darf der Raspberry Pi mit einem Netzteil betrieben werden, welches 12 V liefert?</p>
+<h4 id="aufgabe-6">Aufgabe 6</h4>
+<p>Wie hoch ist die sichere Stromstärke für den Gesamtstrom aller GPIO?</p>
+<h4 id="aufgabe-7">Aufgabe 7</h4>
+<p>Wie hoch ist die sichere Stromstärke für einen einzelnen GPIO im Optimum?</p>
+<h3 id="m42-raspberry-pi-grundlagen-der-energieversorgung-stromversorgung">M|4.2: Raspberry Pi - Grundlagen der Energieversorgung / Stromversorgung</h3>
+<h4 id="grundlagen-der-energieversorgung">Grundlagen der Energieversorgung</h4>
+<p>Mini-Computer, wie der Raspberry Pi, bedürfen einer stabilen Spannungs- UND Stromversorgung. Bei einem schlechten Netzteil und ungünstigen Betriebsbedingungen treten merkwürdige Effekte in Kombination mit einem instabilen Systemverhalten auf. Oftmals sind dies abbrechende LAN- und WLAN-Verbindungen und anderweitiges Fehlverhalten von Geräten, die per USB angeschlossen sind.</p>
+<p>Raspberry Pi sind auf eine stabilisierte Betriebsspannung von in der Regel ca. 5 Volt angewiesen. Wenn der Raspberry Pi mit einem beliebigen Steckernetzteil betrieben wird, dann kann und wird das in der Regel funktionieren. Wenn jetzt aber der Raspberry Pi und angeschlossene USB-Geräte für eine impulsive Stromentnahme sorgen, dann kann es vorkommen, dass das Steckernetzteil überfordert ist, aussetzt und die Spannung daraufhin einbricht. Also deutlich unter 5 Volt fällt.</p>
+<p>Was passiert dann? Ein Gerät, das für 5 Volt konzipiert ist, kommt dann in einen instabilen Betriebszustand. Hinzu kommt, dass USB-Geräte 5 Volt am USB-Port erwarten. Laut USB-Spezifikation sollte ein USB-Gerät zwischen 4,45 und 5,5 Volt funktionieren.</p>
+<p>Bei Unterspannung nimmt der Raspberry Pi seine USB-Ports außer Betrieb, um die Stabilität der Stromversorgung durch Reduzierung der Stromentnahme wieder herzustellen. Dabei gehen zumindest kurzzeitig alle USB-Geräte außer Betrieb. Und das führt dann eben zu besagten Fehlfunktionen einzelner USB-Geräte oder des gesamten Systems und erklärt die Aussetzer bei den USB-Geräten. Das betrifft Maus, Tastatur, WLAN- und LAN-Verbindungen, sowie USB-Speichergeräte.</p>
+<p>Grundsätzlich wird der Raspberry Pi mit einer Spannung von 5 Volt am Micro-USB-Eingang mit Energie versorgt. Genau genommen sind es 5,1 V, was die meisten USB-Steckernetzteile auch liefern. Es sind deshalb 5,1 V, weil durch Steckverbindungen und Leitungen Verluste entstehen.</p>
+<p>Der zweite wichtige Wert bei der Energieversorgung ist der Stromverbrauch, der in Ampere angegeben wird. Wie viel Strom der Raspberry Pi genau braucht hängt davon ab, was daran angeschlossen ist. In der Regel reicht ein Netzteil mit 2,5-3 A (je nach Raspberry Pi) aus. Aber nur dann, wenn man keine stromhungrigen USB-Geräte anschließt. Dann braucht man einen extern gespeisten USB-Hub oder sollte ein Netzteil mit mindestens 2,5 A verwenden. Wichtig ist zu wissen, mehr als 2,5 A kann ein Raspberry Pi nicht ziehen. Wenn das Gesamtsystem mehr Strom braucht, dann wird das durch eine Sicherung begrenzt und zu Instabilitäten führen kann.</p>
+<p>Netzteile werden für den Betrieb in der Regel ca. 20 bis 30 % überdimensioniert. Unter Dauerlast bei voller Auslastung kann es zu Problemen für das Netzteil kommen.</p>
+<p>Stromversorgung: Raspberry Pi 3B
+Speziell beim Raspberry Pi 3 sollte man wissen, dass dieser über einen Konstruktionsfehler verfügt. Wegen eines neuen Leiterplattendesigns und Einsparungen beim Einsatz minderwertiger Bauteile fallen auf dem Weg zwischen Micro-USB-Buchse und dem Chip bis zu 0,6 Volt ab. Das führt dazu, dass der Raspberry Pi 3 mit einem herkömmlichen USB-Netzteil mit 5,1 V an der Grenze der Unterspannung betrieben wird. Das Problem wird dadurch behoben, dass das offizielle Netzteil für den Raspberry Pi 3 eine Spannung von 5,2 Volt hat.</p>
+<p>Stromversorgung: Raspberry Pi 4B
+Im Gegensatz zu den Modellen davor braucht der Raspberry Pi 4B ein USB-Netzteil mit 5 Volt und 3 Ampere mit USB-Typ-C (Steckverbindung). Hierbei muss beachtet werden, dass beim Raspberry Pi 4B der USB-C-Port fehlerhaft implementiert ist und aktive USB-C-Kabel (mit E-Mark-Chip) den Raspberry Pi 4B als Audio-Adapter erkennen und deshalb keinen Strom ausgeben.</p>
+<p>Abhilfe schafft ein einfaches USB-C-Kabel ohne den E-Mark-Chip. Solche Kabel liegen meist als Ladekabel für Smartphones bei. Die üblichen Kabel für Notebooks, Thunderbold usw. sind für den Betrieb des Raspberry Pi 4B nicht geeignet. Die Raspberry Pi Foundation hat eine Revision angekündigt, weshalb es neuere Raspberry Pi 4B gibt, bei der dieses Problem nicht besteht.</p>
+<p><em>Quelle: https://www.elektronik-kompendium.de/sites/raspberry-pi/1912111.htm</em></p>
+<h4 id="maximale-stromstarke-der-gpio">Maximale Stromstärke der GPIO</h4>
+<p>Eines vorneweg, der Gesamtstrom aller GPIOs sollte 50 mA nicht übersteigen. Denn das ist die größte Stromstärke (mit Reserve natürlich) die ein Bond (das dünne Drähtchen vom "Beinchen" des Schaltkreises zur eigentlichen internen Schaltung) aushalten kann.</p>
+<p>Die gesamte Elektronik eines (einzelnen) Anschlusses ist für maximal 16 mA ausgelegt. Das heißt, es treten bis 16 mA keine Schäden auf. Alles darüber ist unsicher. Auch wenn der eine oder andere Bastler deutlich mehr aus einem GPIO bekommt.
+Der Bereich, in dem die Ausgangsendstufen eines GPIO sicher arbeiten reicht von 2 bis 16 mA. Als Optimum liegt zwischen 3 und 8 mA. Mit mehr als 8 mA sollte man nicht rechnen. Aber auch nicht weniger als 2 mA.</p>
+<p><em>Quelle: https://www.elektronik-kompendium.de/sites/raspberry-pi/2006031.htm</em></p>
+<h2 id="kompetenz-41-betriebssystem-auswahlen">Kompetenz 4.1: Betriebssystem auswählen</h2>
+<p>Für die Temperatur-Messeinheit der Change IT GmbH soll ein Raspberry Pi eingesetzt werden. Nicht jedes Linux-Betriebssystem kann auf dem Raspberry Pi installiert werden. Für diesen stehen allerdings verschiedene spezialisierte Betriebssysteme zur Verfügung. Sie wollen sich einen Überblick zu den Linux-Varianten verschaffen, um ein passendes System auszuwählen. Nach der Einrichtung der Temperatur-Messeinheiten werden die Raspberry Pi ferner nicht mehr per Bildschirm, Maus und Tastatur bedient. Vielmehr ist eine Remote-Bedienung vorgesehen. Auch hierzu fehlen noch Informationen, bevor das IT-System in Betrieb genommen werden kann.</p>
+<p><img alt="Linux Pinguin" src="bilder/kap_04_penguin.png" /></p>
+<h3 id="a44-linux-distributionen-unterscheiden">A|4.4: Linux-Distributionen unterscheiden</h3>
+<h4 id="aufgabe-1_3">Aufgabe 1</h4>
+<p>Was sind Linux-Distributionen (s. M|4.4: Linux-Distributionen im Überblick)? Beschreiben Sie in eigenen Worten.</p>
+<h3 id="m44-linux-distributionen-im-uberblick">M|4.4: Linux-Distributionen im Überblick</h3>
+<p>Bei Windows ist die Sache einfach: Hersteller Microsoft bringt eine neue Version raus und zeitweise gibt es noch den Vorgänger - das war es auch schon an Auswahl. Bei Linux sieht die Sache etwas anders aus. Es gibt nämlich nicht "das Linux". Genau genommen müsste man das Ganze sowieso GNU/Linux nennen: Was man gemeinhin Linux nennt, besteht aus einem Kernel, eben Linux, und einer Reihe von Standard-Werkzeugen, den GNU Tools. Aber lassen wir das mal beiseite und sprechen wie üblich einfach von Linux. Diese Kernelemente finden Sie in allen Linuxen, genauer gesagt Linux-Distributionen, kurz Distris genannt. Da die Linux-Basis Open Source Software ist, kann sich jeder ein eigenes System basteln und distribuieren - daher der Name Distri.</p>
+<p>Und genau dort liegen die großen Unterschiede: Wer entwickelt das System? Was kommt in das System? Wie wird veröffentlicht? Welche zusätzlichen Tools gehören dazu? Und wie genau sieht der Desktop aus? Manche Distris werden hauptsächlich von dahinter stehenden Firmen herausgegeben, etwa Ubuntu von Canonical oder Red Hat Enterprise Linux von Red Hat. Andere Distributionen sind komplett Community-betreut, allen voran Debian. Die meisten großen Distris spendieren Ihren Linuxen auch eigene Tools rund um das System - insbesondere das, was man unter Windows als "Systemsteuerung" kennt, löst jede Distri auf eigene Art. Die "großen" Anwendungsprogramme wie Office (LibreOffice) oder Bildbearbeitung (Gimp) finden sich natürlich überall. Wichtig ist dabei auch, wie ernst die Projekte den Freiheitsgedanken nehmen: Wo Debian standardmäßig nur auf freie, quelloffene Software setzt, baut Ubuntu auch unfreie Software ein, beispielsweise Grafikkartentreiber oder Multimedia-Codecs. Auch die Update-Politiken unterscheiden sich: Teils wird zu fixen Terminen veröffentlicht, teils landen aktualisierte Pakete kontinuierlich in den so genannten Repositories. Apropos: Jede Distri hat ein solches dazugehörige "Repo", aus dem sich über das Paketmanagement ganz einfach Programme installieren lassen - Debian kommt auf über 50.000 Pakete.</p>
+<p>Für die meisten Heimanwender stellt sich vor allem eine Frage: Wie sieht der Desktop aus? Bei Windows sind OS und Desktop untrennbar verbunden, bei Linux ist die gesamte Desktop-Umgebung im Grunde nur ein Anwendungsprogramm, das nach Belieben installiert und ausgetauscht werden kann. Alle Systeme haben einen Standard-Desktop, aber man kann ihn auswechseln. Bestes Beispiel: Ubuntu gibt es auch als Lubuntu, Kubuntu und Xubuntu, was für die Standard-Desktops LXDE, KDE und XFCE steht. Zwar verändern die Projektteams hier und da auch noch andere Details, aber im Grunde könnten Sie einfach Ubuntu aufsetzen und dann LXDE, KDE (heute Plasma) und XFCE installieren - und beim Start wählen Sie dann das gewünschte System.</p>
+<p>Nicht alle Aspekte sind für jeden wichtig, aber damit haben Sie schon mal eine Grundlage für die Auswahl. Lässt man die Technik mal außen vor, unterscheiden sich die Distris aus Nutzersicht in Fragen wie: Wie schlank ist das System? Wie komfortabel? Wie frei? Wie gut dokumentiert?</p>
+<p><img alt="Linux Stammbaum" src="bilder/kap_04_LinuxStammbaum.png" /></p>
+<p><em>Quellen:</em>
+- <em>https://www.heise.de/tipps-tricks/Linux-Betriebssysteme-eine-Uebersicht-4119937.html</em>
+- <em>https://codezentrale.de/linux-stammbaum-linux-distributionen/</em></p>
+<hr />
+<h3 id="a45-linux-systeme-remote-bedienen">A|4.5: Linux-Systeme remote bedienen</h3>
+<p>Informieren Sie sich mithilfe des Materials im Kurs (M|4.5: SSH, VNC und Telnet) und beantworten Sie die folgenden Fragen:</p>
+<h4 id="aufgabe-1_4">Aufgabe 1</h4>
+<p>Was ist eine SSH-Verbindung?</p>
+<h4 id="aufgabe-2_1">Aufgabe 2</h4>
+<p>Welche Software wird für den Aufbau einer SSH-Verbindung auf der Client- sowie auf der Server-Seite benötigt?</p>
+<h4 id="aufgabe-3_1">Aufgabe 3</h4>
+<p>Was ist der Unterschied zwischen SSH und VNC?</p>
+<h4 id="aufgabe-4_1">Aufgabe 4</h4>
+<p>Was ist der Unterschied zwischen SSH und Telnet?</p>
+<h4 id="aufgabe-5_1">Aufgabe 5</h4>
+<p>Welche Vor- und Nachteile hat eine Remote-Wartung gegenüber einer Vor-Ort-Wartung von IT-Systemen?</p>
+<h3 id="m45-secure-shell-ssh-und-virtual-network-computing-vnc">M|4.5: Secure Shell (SSH) und Virtual Network Computing (VNC)</h3>
+<h4 id="secure-shell-ssh">Secure Shell (SSH)</h4>
+<p>Secure Shell (SSH) ist ein Netzwerkprotokoll, das entwickelt wurde, um eine sichere Kommunikation über ein unsicheres Netzwerk zu ermöglichen. Typischerweise wird SSH verwendet, um eine verschlüsselte Verbindung zu einem entfernten Server herzustellen und so eine sichere Datenübertragung, Authentifizierung und Interaktion mit dem entfernten System zu gewährleisten.</p>
+<p><img alt="SSH Protokoll Wikipedia" src="bilder/kap_04_ssh.png" /></p>
+<p><em>Bildquelle: https://de.wikipedia.org/wiki/Secure_Shell</em></p>
+<ul>
+<li><strong>Verschlüsselte Verbindungen:</strong> SSH verschlüsselt die Kommunikation zwischen dem Client und dem Server, was bedeutet, dass sensible Daten wie Passwörter, Befehle und Dateiübertragungen vor unbefugtem Zugriff geschützt sind.</li>
+<li><strong>Authentifizierung:</strong> SSH ermöglicht die sichere Authentifizierung von Benutzern, um sicherzustellen, dass nur autorisierte Personen auf das System zugreifen können. Dies kann durch Passwörter, Schlüsselpaare oder andere Authentifizierungsmethoden erfolgen.</li>
+<li><strong>Sichere Datenübertragung:</strong> Dateien können sicher über SSH übertragen werden. Dies wird oft durch den Einsatz von SCP (Secure Copy) oder SFTP (Secure File Transfer Protocol) erreicht.</li>
+<li><strong>Portabilität:</strong> SSH ist plattformunabhängig und kann auf verschiedenen Betriebssystemen wie Linux, macOS und Windows verwendet werden.</li>
+<li><strong>Remote-Shell-Zugriff:</strong> Eines der Hauptanwendungsgebiete von SSH ist der Zugriff auf eine Remote-Shell auf einem entfernten Server. Dies ermöglicht es Benutzern, Befehle auf einem entfernten System auszuführen, als ob sie direkt vor dessen Bildschirm sitzen würden.</li>
+</ul>
+<p><strong>Aufbau einer SSH-Verbindung</strong></p>
+<p>Sie benötigen in der Regel keine zusätzliche Software. Ein Terminal-Fenster Ihres Betriebssystems reicht hierfür aus.</p>
+<p>Mit dem Befehl <code>ssh pi@172.20.20.20</code> verbinden Sie sich als Benutzer <code>pi</code> via SSH mit dem Remote-System, welches im Beispiel die IP <code>172.20.20.20</code> hat.</p>
+<h4 id="virtual-network-computing">Virtual Network Computing</h4>
+<p><img alt="VNC" src="bilder/kap_04_vnc.png" /></p>
+<p>Virtual Network Computing (VNC) ist eine Technologie, die es ermöglicht, den Bildschirminhalt eines Computers über ein Netzwerk zu übertragen und die Tastatureingaben und Mausbewegungen von einem entfernten Standort aus zu steuern. Mit VNC kann ein Benutzer von einem Computer aus auf einen anderen Computer zugreifen, als ob er direkt vor diesem sitzen würde. Die Technologie ermöglicht Remote-Desktop-Zugriff und -kontrolle.</p>
+<ul>
+<li><strong>Server:</strong> Auf dem Computer, dessen Bildschirminhalt freigegeben werden soll, muss ein VNC-Server installiert und gestartet werden. Der VNC-Server erfasst den Bildschirminhalt und wartet auf eingehende Verbindungen.</li>
+<li><strong>Client:</strong> Der Computer, der auf den entfernten Bildschirminhalt zugreifen möchte, benötigt einen VNC-Client. Dieser Client stellt eine Verbindung zum VNC-Server her und empfängt die übertragenen Bildschirminhalte.</li>
+<li><strong>Übertragungsprotokoll:</strong> VNC verwendet ein spezifisches Protokoll (z. B. RFB - Remote Framebuffer Protocol), um den Bildschirminhalt zu übertragen und Benutzereingaben zu steuern. Dieses Protokoll ermöglicht die Übertragung von Grafiken, Mausbewegungen und Tastatureingaben über das Netzwerk.</li>
+<li><strong>Verschlüsselung (optional):</strong> In einigen VNC-Implementierungen kann eine Verschlüsselung aktiviert werden, um die übertragenen Daten zu schützen. Dies ist besonders wichtig, wenn VNC über unsichere Netzwerke wie das Internet verwendet wird, um die Privatsphäre und Sicherheit zu gewährleisten.</li>
+</ul>
+<h3 id="telnet">Telnet</h3>
+<p>Telnet steht für "Telecommunication Network" und ist ein Netzwerkprotokoll, das für die remote textbasierte Kommunikation zwischen Computern über ein TCP/IP-Netzwerk verwendet wird. Es wurde ursprünglich für den Zugriff auf entfernte Systeme und die Fernadministration entwickelt. Telnet ermöglicht es einem Benutzer, von einem Computer aus eine Verbindung zu einem anderen Computer herzustellen und eine Eingabeaufforderung oder ein Terminalfenster auf dem entfernten System zu öffnen.</p>
+<p>Es ist wichtig zu beachten, dass Telnet in seiner grundlegenden Form keine Verschlüsselung für die übertragenen Daten bietet. Alle Informationen, einschließlich Benutzernamen und Passwörtern, werden im Klartext über das Netzwerk übertragen. Aus diesem Grund ist die Verwendung von Telnet über unsichere Netzwerke, wie das Internet, nicht ratsam, da es ein erhebliches Sicherheitsrisiko darstellt. Unautorisierte Personen könnten den Netzwerkverkehr mithören und sensible Informationen abfangen.</p>
+<p>Aufgrund der Sicherheitsbedenken wird Telnet heute oft durch sicherere Alternativen wie SSH (Secure Shell) ersetzt, das eine verschlüsselte Verbindung für die Remote-Administration bietet und somit die Integrität und Vertraulichkeit der übertragenen Daten gewährleistet.</p>
+<h2 id="kompetenz-42-installation-und-aktualisierung-des-betriebssystems">Kompetenz 4.2: Installation und Aktualisierung des Betriebssystems</h2>
+<p>Der Raspberry Pi ist hardwareseitig einsatzbereit, aktuell fehlt allerdings noch die Software. Die Change IT GmbH nutzt nach Ihrem Vorschlag ein Raspberry Pi OS als Betriebssystem. Dieses wurde in der internen IT-Abteilung bereits so vorbereitet, dass die Endgeräte in das WLAN kommen. Das Betriebssystem steht in einem sogenannten Image bereit. Dieses Image ist eine Momentaufnahme des Betriebssystems, welches auf Micro SD-Karten dupliziert und von dort wieder gestartet werden kann. Nehmen Sie die Installation und erste Aktualisierung auf Ihrem Raspberry Pi vor.</p>
+<p><img alt="PC" src="bilder/kap_04_installation.png" /></p>
+<h3 id="a46-inbetriebnahme-des-raspberry-pi">A|4.6: Inbetriebnahme des Raspberry Pi</h3>
+<p>Sie benötigen für die Schritte der Inbetriebnahme folgende Programme:</p>
+<ul>
+<li>Raspberry Pi Imager (<a href="https://www.raspberrypi.org/downloads/">Download</a>)</li>
+<li>MMBbS Raspberry Pi OS Image (<a href="https://mm-bbs.de">Download</a> über die Landingpage)</li>
+</ul>
+<p>Die Anleitung zur Installation des Betriebssystems finden Sie im Kurs.</p>
+<p>Wenn Sie diese Aufgabe fertiggestellt haben bestätigen Sie dies über den oben aufgeführten Button:</p>
+<p><img alt="Moodle Button" src="bilder/kap_04_moodle_button.png" /></p>
+<h3 id="m46-inbetriebnahme-des-raspberry-pi">M|4.6: Inbetriebnahme des Raspberry Pi</h3>
+<iframe frameborder="0" width="1200" height="675" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/6019653b31720d0d312eb43c" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe>
+
+<h2 id="kompetenz-43-linux-kommandozeile-bedienen">Kompetenz 4.3: Linux-Kommandozeile bedienen</h2>
+<p>Die interne IT-Abteilung der ChangeIT GmbH hat sich bei den eingesetzten IT-Systemen für die Wartung und Konfiguration via SSH entschieden. Hierbei fallen Standardaufgaben an, die eine Bedienung des Linux-Systems mit sich bringt. Sie wollen sich eine Befehlsreferenz anlegen, um zukünftig schnell und sicher per SSH agieren zu können. Dazu wurden Fallbeispiele zusammengestellt, die durch Befehle bearbeitet werden sollen.</p>
+<p><img alt="Linux Shell" src="bilder/kap_04_linux.png" /></p>
+<h3 id="a47-linux-befehle-fur-die-kommandozeile-nutzen">A|4.7: Linux-Befehle für die Kommandozeile nutzen</h3>
+<h4 id="aufgabe-1_5">Aufgabe 1</h4>
+<p>Verschaffen Sie sich mithilfe des Informationsmaterials im Kurs einen Überblick zu den wichtigsten Befehlen für die Linux-Kommandozeile. Notieren Sie sich die Befehle in übersichtlicher Form als Cheat-Sheet, welches Sie am Ende in dieser Aufgabe hochladen.</p>
+<h3 id="m47-linux-kommandozeilenbefehle">M|4.7: Linux-Kommandozeilenbefehle</h3>
+<h4 id="befehlssyntax">Befehlssyntax</h4>
+<p>Die Befehlszeile stellt ein leistungsfähiges Werkzeug dar und ist häufig die vorrangige Methode zur Verwaltung einer Vielzahl von Systemen, angefangen bei kleinen, stromsparenden Geräten bis hin zu hochleistungsfähigen Cloud-Computing-Servern und allem dazwischen. Ein grundlegendes Verständnis der Befehlszeile ist unverzichtbar für die Diagnose und Reparatur der meisten Linux-basierten Systeme. Angesichts der weitreichenden Verbreitung von Linux können selbst diejenigen, die nicht hauptsächlich mit Linux-Systemen arbeiten, von einem grundlegenden Verständnis der Befehlszeile profitieren.</p>
+<p>Was genau ist ein Befehl? Ein Befehl stellt ein Softwareprogramm dar, das, wenn es auf der Befehlszeilenschnittstelle (CLI) ausgeführt wird, eine bestimmte Aktion auf dem Computer ausführt. Durch die Eingabe eines Befehls wird ein Prozess vom Betriebssystem gestartet, der Eingaben verarbeitet, Daten manipuliert und Ausgaben generiert. Um einen Befehl auszuführen, geben Sie zunächst den Namen des Befehls ein. </p>
+<p>Geben Sie bspw. <code>ls</code> (Kleinbuchstaben <strong>L</strong> und <strong>S</strong>) ein und drücken Sie die <strong>Eingabetaste</strong>, erhalten Sie folgende Ausgabe:</p>
+<pre><code>pi@herr-nm:~$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  Templates  Videos
+</code></pre>
+<p>Häufig leitet sich der Name eines Befehls davon ab, was er bewirkt oder wie der Entwickler die Funktion des Befehls am besten beschreiben möchte. Ein Beispiel hierfür ist der Befehl <code>ls</code>, der eine Liste von Informationen zu Dateien anzeigt. Indem Sie den Namen eines Befehls mit seiner Funktion verknüpfen, können Sie dabei unterstützt werden, sich die Befehle leichter zu merken.</p>
+<div class="admonition note">
+<p class="admonition-title">Hinweis</p>
+<p>Jeder Teil des Befehls wird normalerweise Groß- und Kleinschreibung beachtet, daher ist <code>LS</code> falsch und schlägt fehl, aber <code>ls</code> ist korrekt und wird ausgeführt.</p>
+<div class="highlight"><pre><span></span><code>pi@herr-nm:~$ LS
+-bash: /usr/games/LS: Permission denied
+</code></pre></div>
+</div>
+<p>Die meisten Befehle folgen einem einfachen Syntaxmuster:</p>
+<pre><code>Befehl [Optionen…] [Argumente…]
+</code></pre>
+<p>Befehle werden eingegeben, gefolgt von Optionen und/oder Argumenten, bevor man die Eingabetaste drückt. In der Regel beeinflussen Optionen das Verhalten des Befehls, während Argumente die Elemente oder Werte darstellen, auf die der Befehl angewendet werden soll. Obwohl es in Linux einige Befehle gibt, die nicht vollständig dieser Syntax entsprechen, verwenden die meisten Befehle diese Struktur.</p>
+<p>Im vorherigen Beispiel wurde der Befehl <code>ls</code> ohne Optionen oder Argumente ausgeführt. In diesem Fall resultiert das Standardverhalten darin, eine Liste der Dateien im aktuellen Verzeichnis zurückzugeben.</p>
+<p><em>Quelle: Cisco Netacad - Linux Unhatched - Stand 10.10.2023</em></p>
+<h4 id="argumente">Argumente</h4>
+<p>Ein Argument dient dazu, dem Befehl Informationen zu übermitteln, auf den er angewendet werden soll. Beispielsweise kann der Befehl <code>ls</code> mit einem Verzeichnisnamen als Argument aufgerufen werden, um den Inhalt dieses Verzeichnisses anzuzeigen. Im folgenden Beispiel wird das Verzeichnis "Documents" als Argument verwendet:</p>
+<pre><code>pi@herr-nm:~$ ls Documents
+MMBbS            ahorn.txt      esche.txt     linuxbefehle.txt
+Privat           birke.txt      script.sh     zeder.txt
+</code></pre>
+<p>Die resultierende Ausgabe ist eine Liste der Dateien, die im Verzeichnis <code>Documents</code> enthalten sind.</p>
+<p><em>Quelle: Cisco Netacad - Linux Unhatched - Stand 10.10.2023</em></p>
+<h4 id="optionen">Optionen</h4>
+<p>Optionen werden eingesetzt, um das Verhalten eines Befehls zu modifizieren. In der vorherigen Erklärung wurde der Befehl <code>ls</code> genutzt, um den Inhalt eines Verzeichnisses aufzulisten. Im folgenden Beispiel wird dem Befehl <code>ls</code> die Option <code>-l</code> hinzugefügt, was zu einer „long display“-Ausgabe führt. Das bedeutet, dass die Ausgabe mehr Informationen zu jeder aufgelisteten Datei bereitstellt.</p>
+<pre><code>pi@herr-nm:~$ ls -l
+total 12
+drwx------ 2 pi    pi   4096 Dec 20  2017 Desktop                        
+drwx------ 4 pi    pi   4096 Dec 20  2017 Documents                      
+drwx------ 2 pi    pi   4096 Dec 20  2017 Downloads                      
+drwx------ 2 pi    pi   4096 Dec 20  2017 Music                          
+drwx------ 2 pi    pi   4096 Dec 20  2017 Pictures                       
+drwx------ 2 pi    pi   4096 Dec 20  2017 Public                         
+drwx------ 2 pi    pi   4096 Dec 20  2017 Templates                      
+drwx------ 2 pi    pi   4096 Dec 20  2017 Videos
+</code></pre>
+<div class="admonition note">
+<p>Im Beispiel wurde <code>-l</code>, also ein kleines L verwendet.</p>
+</div>
+<p>Mehrere Optionen können gleichzeitig verwendet werden, entweder als separate Optionen wie in <code>-l</code> <code>-r</code> oder kombiniert wie <code>-lr</code> . Das <code>-r</code> steht im Bezug zu <code>ls</code> für <em>reverse</em> und gibt die umgedrehte alphabetische Reihenfolge aus. Die Ausgabe all dieser Beispiele wäre gleich:</p>
+<pre><code>ls -l -r
+ls -rl
+ls -lr
+</code></pre>
+<p><em>Quelle: Cisco Netacad - Linux Unhatched - Stand 10.10.2023</em></p>
+<h4 id="aktuelles-arbeitsverzeichnis">Aktuelles Arbeitsverzeichnis</h4>
+<p>Um herauszufinden, wo Sie sich gerade im Dateisystem befinden, kann der Befehl <code>pwd</code> verwendet werden. Der Befehl <code>pwd</code> gibt das Arbeitsverzeichnis aus, Ihren aktuellen Aufenthaltsort im Dateisystem:</p>
+<pre><code>pi@herr-nm:~$ pwd
+/home/pi
+</code></pre>
+<p>Das erste Verzeichnis, auch Wurzelverzeichnis wird root genannt und als <code>/</code> dargestellt. der im Beispiel angezeigte Ordner liegt also wie in der nachfolgenden Abbildung aufgeführt vor:</p>
+<p><img alt="Ordnerpfad" src="bilder/kap_04_Linux_Ordner.png" /></p>
+<div class="admonition note">
+<p>Im Ausgabe-Beispiel steht im Prompt eine Tilde <code>~</code>:</p>
+<div class="highlight"><pre><span></span><code>pi@herr-nm:~$ pwd
+/home/pi
+</code></pre></div>
+<p>Diese steht für das Home-Verzeichnis des aktuellen Users <code>pi</code> also <code>/home/pi</code>.</p>
+</div>
+<p><em>Quelle: Cisco Netacad - Linux Unhatched - Stand 10.10.2023</em></p>
+<h4 id="verzeichnisse-wechseln">Verzeichnisse wechseln</h4>
+<p>Die folgende Abbildung wurde auch schon im vorherigen Abschnitt herangezogen:</p>
+<p><img alt="Ordnerpfad" src="bilder/kap_04_Linux_Ordner.png" /></p>
+<p>Der Abbildung können Sie entnehmen, dass Sie sich im Verzeichnis <code>/home/pi</code> befinden. Darunter liegt das Verzeichnis <code>Downloads</code>. Um in das Verzeichnis <code>Downloads</code> zu wechseln, verwenden Sie es als Argument für den Befehl <code>cd</code>:</p>
+<div class="highlight"><pre><span></span><code>pi@herr-nm:~$ cd Downloads
+pi@herr-nm:~/Downloads$
+</code></pre></div>
+<div class="admonition note">
+<p>Wir sehen, dass der Prompt vor dem <code>$</code>-Zeichen nun den Pfad <code>~/Downloads</code> anzeigt. Dies ist das aktuelle Verzeichnis, in dem wir uns befinden. Es kann auch wie folgt beschrieben werden: <code>/home/pi/Downloads</code>.</p>
+</div>
+<p>Um in das Wurzelverzeichnis, also das oberste Verzeichnis im Linux-Dateisystem zu wechseln, benutzen Sie den Befehl <code>cd /</code>. Egal wo Sie sich im Dateisystem befinden, führen die Befehle <code>cd</code> (ohne Argument oder Option) oder auch <code>cd ~</code> in Ihr eigenes User-Home-Verzeichnis.</p>
+<p><em>Quelle: Cisco Netacad - Linux Unhatched - Stand 10.10.2023</em></p>
+<h4 id="pfade">Pfade</h4>
+<h5 id="absolute-pfade">Absolute Pfade</h5>
+<p>Durch die Verwendung eines absoluten Pfades können Sie den exakten Speicherort eines Verzeichnisses angeben. Ein absoluter Pfad beginnt immer im Stammverzeichnis und wird daher stets mit dem Schrägstrich <code>/</code> eingeleitet. Ein Beispiel für einen absoluten Pfad ist der Pfad zum Home-Verzeichnis <code>/home/pi</code>. Dieser Pfad beginnt im Stammverzeichnis <code>/</code>, setzt sich fort ins <code>home</code>-Verzeichnis und schließlich ins Verzeichnis <code>pi</code>.</p>
+<p>Ein absoluter Pfad wird immer in der Struktur des Dateisystems von oben nach unten adressiert. Dabei ist es irrelevant, in welchem Verzeichnis Sie sich aktuell befinden. Unter Windows wäre dies vergleichbar, wenn Sie den Speicherort <code>C:\Users\Bob\Desktop</code> benennen würden.</p>
+<h5 id="relative-pfade">Relative Pfade</h5>
+<p>Ein relativer Pfad gibt den Weg zu einer Datei relativ zu Ihrem aktuellen Standort im Dateisystem an. Im Gegensatz zu absoluten Pfaden beginnen relative Pfade nicht mit dem Zeichen <code>/</code>. Stattdessen starten sie mit dem Namen eines Verzeichnisses. Werfen Sie erneut einen Blick auf das erste Beispiel des <code>cd</code>-Befehls. Das Argument stellt ein Beispiel für den einfachsten relativen Pfad dar: den Namen eines Verzeichnisses in Ihrem aktuellen Arbeitsverzeichnis.</p>
+<p><img alt="Ordnerpfad" src="bilder/kap_04_Linux_Ordner.png" /></p>
+<p>Angenommen Sie befinden sich in einem Ordner <code>Linux</code>, der auf dem Desktop liegt. Das der absolute Pfad wäre dann <code>/home/pi/Desktop/Linux</code>. Nun angenommen, im Ordner <code>Downloads</code> liegt ein weiterer Ordner mit dem Namen <code>Games</code>. Wenn wir von dem Linux in den Games Ordner wechseln wollen, wird dies als relative Pfad-Angabe wie folgt aussehen:</p>
+<div class="highlight"><pre><span></span><code>pi@herr-nm:~$ cd ../../Downloads/Games
+pi@herr-nm:~/Downloads/Games$
+</code></pre></div>
+<div class="admonition note">
+<p>Der zweifache Punkt <code>..</code> steht für "ein Ordner höher" und in diesem Fall für das Verzeichnis <code>/home/pi</code>. Schrittweise gelesen würde der Befehl wie folgt abgearbeitet:</p>
+<ol>
+<li>Wir befinden uns in <code>/home/pi/Desktop/Linux</code>.</li>
+<li>Wir gehen einen Ordner nach oben in <code>/home/pi/Desktop/</code>. (erstes <code>..</code>)</li>
+<li>Wir gehen einen Ordner nach oben in <code>/home/pi/</code>. (zweites <code>..</code>)</li>
+<li>Wir gehen in den Ordner <code>Downloads</code>, der im Verzeichnis <code>/home/pi/</code> liegt.</li>
+<li>Wir gehen in den Ordner <code>Games</code>, der in dem Verzeichnis <code>Downloads</code> liegt.</li>
+</ol>
+</div>
+<p><em>Quelle: Cisco Netacad - Linux Unhatched - Stand 10.10.2023</em></p>
+<h4 id="dateien-auflisten">Dateien auflisten</h4>
+<p>Mit <code>ls</code> werden die Dateien und Ordner eines Verzeichnisses ausgegeben. Um Details zu einer Datei zu erfahren, wie zum Beispiel den Dateityp, die Berechtigungen, Eigentümer oder den Zeitstempel, führen Sie eine lange Auflistung durch, indem Sie die Option <code>-l</code> für den Befehl <code>ls</code> verwenden. Im Folgenden wird eine Auflistung des Verzeichnisses <code>/var/log</code> als Beispiel verwendet, da es eine Vielzahl von Ausgaben bereitstellt:</p>
+<pre><code>pi@herr-nm:~$ ls -l /var/log/
+total 844                                                                       
+-rw-r--r-- 1 root   root  18047 Dec 20  2017 alternatives.log                   
+drwxr-x--- 2 root   adm    4096 Dec 20  2017 apache2                            
+drwxr-xr-x 1 root   root   4096 Dec 20  2017 apt                                
+-rw-r----- 1 syslog adm    1346 Oct  2 22:17 auth.log                           
+-rw-r--r-- 1 root   root  47816 Dec  7  2017 bootstrap.log                      
+-rw-rw---- 1 root   utmp      0 Dec  7  2017 btmp                               
+-rw-r----- 1 syslog adm     547 Oct  2 22:17 cron.log                           
+-rw-r----- 1 root   adm   85083 Dec 20  2017 dmesg                              
+-rw-r--r-- 1 root   root 325238 Dec 20  2017 dpkg.log                           
+-rw-r--r-- 1 root   root  32064 Dec 20  2017 faillog                            
+drwxr-xr-x 2 root   root   4096 Dec  7  2017 fsck                               
+-rw-r----- 1 syslog adm     106 Oct  2 19:57 kern.log                           
+-rw-rw-r-- 1 root   utmp 292584 Oct  2 19:57 lastlog                            
+-rw-r----- 1 syslog adm   19573 Oct  2 22:57 syslog                             
+drwxr-xr-x 2 root   root   4096 Apr 11  2014 upstart                            
+-rw-rw-r-- 1 root   utmp    384 Oct  2 19:57 wtmp
+</code></pre>
+<p>Jede Zeile entspricht einer Datei, die im Verzeichnis enthalten ist. Die Informationen können in Felder unterteilt werden, die durch Leerzeichen getrennt sind. Die Felder sind wie folgt:</p>
+<p><strong>Dateityp</strong></p>
+<pre><code>-rw-r--r-- 1 root   root  18047 Dec 20  2017 alternatives.log
+
+drwxr-x--- 2 root   adm    4096 Dec 20  2017 apache2
+</code></pre>
+<p>Das erste Feld enthält tatsächlich zehn Zeichen, wobei das erste Zeichen den Dateityp angibt und die nächsten neun Berechtigungen angeben. Die Dateitypen sind:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Symbol</th>
+<th style="text-align: left;">Dateityp</th>
+<th style="text-align: left;">Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><code>d</code></td>
+<td style="text-align: left;">Verzeichnis</td>
+<td style="text-align: left;">Eine Datei die benutzt wird um darin andere Dateien zu speichern.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>-</code></td>
+<td style="text-align: left;">Reguläre Datei</td>
+<td style="text-align: left;">Beinhaltet lesbare Dateien, Bilder, Binärdateien und komprimierte Dateien.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>l</code></td>
+<td style="text-align: left;">Symbolischer Link (Softlink)</td>
+<td style="text-align: left;">Zeiger auf eine andere Datei.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>s</code></td>
+<td style="text-align: left;">Socket</td>
+<td style="text-align: left;">Ermöglicht die Kommunikation zwischen Prozessen.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>p</code></td>
+<td style="text-align: left;">Pipe</td>
+<td style="text-align: left;">Ermöglicht die Kommunikation zwischen Prozessen.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>b</code></td>
+<td style="text-align: left;">Blockbasiertes Gerät</td>
+<td style="text-align: left;">Ermöglicht die Kommunikation mit Hardware.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>c</code></td>
+<td style="text-align: left;">Zeichenbasiertes Gerät</td>
+<td style="text-align: left;">Ermöglicht die Kommunikation mit Hardware.</td>
+</tr>
+</tbody>
+</table>
+<p>Die erste Datei <code>alternatives.log</code> ist eine reguläre Datei <code>-</code> , während die zweite Datei <code>apache2</code> ein Verzeichnis <code>d</code> ist.</p>
+<p><strong>Berechtigungen</strong></p>
+<pre><code>drwxr-xr-x 2 root   root   4096 Apr 11  2014 upstart
+</code></pre>
+<p>Berechtigungen geben an, wie bestimmte Benutzer auf eine Datei zugreifen können. Lesen Sie weiter, um mehr über Berechtigungen zu erfahren.</p>
+<p><strong>Anzahl harter Verknüpfungen (Hardlinks)</strong></p>
+<pre><code>-rw-r----- 1 syslog adm    1346 Oct  2 22:17 auth.log
+</code></pre>
+<p>Diese Zahl gibt an, wie viele Hardlinks auf diese Datei verweisen. Hardlinks sind nicht Thema dieses Moduls, werden aber im NDG Linux Essentials Kurs behandelt.</p>
+<p><strong>Benutzereigentümer</strong></p>
+<pre><code>-rw-r----- 1 syslog adm     106 Oct  2 19:57 kern.log
+</code></pre>
+<p>Benutzer <code>syslog</code> besitzt diese Datei. Jedes Mal, wenn eine Datei erstellt wird, wird der Besitz automatisch dem Benutzer zugewiesen, der sie erstellt hat.</p>
+<p><strong>Gruppeneigentümer</strong></p>
+<pre><code>-rw-rw-r-- 1 root   utmp 292584 Oct  2 19:57 lastlog
+</code></pre>
+<p>Gibt an, welche Gruppe diese Datei besitzt</p>
+<p><strong>Dateigröße</strong></p>
+<pre><code>-rw-r----- 1 syslog adm   19573 Oct  2 22:57 syslog
+</code></pre>
+<p>Verzeichnisse und größere Dateien können in Kilobyte angezeigt werden, da die Anzeige ihrer Größe in Bytes eine sehr große Zahl darstellen würde. Daher kann es sich bei einem Verzeichnis um ein Vielfaches der Blockgröße handeln, die für das Dateisystem verwendet wird. Blockgröße ist die Größe einer Reihe von Daten, die im Dateisystem gespeichert sind.</p>
+<p><strong>Zeitstempel</strong></p>
+<pre><code>drwxr-xr-x 2 root   root   4096 Dec  7  2017 fsck
+</code></pre>
+<p>Dies gibt den Zeitpunkt an, zu dem der Inhalt der Datei zuletzt geändert wurde.</p>
+<p><strong>Dateiname</strong></p>
+<pre><code>-rw-r--r-- 1 root   root  47816 Dec  7  2017 bootstrap.log
+</code></pre>
+<p>Das letzte Feld enthält den Namen der Datei oder des Verzeichnisses.</p>
+<p><em>Quelle: Cisco Netacad - Linux Unhatched - Stand 10.10.2023</em></p>
+<h4 id="der-befehl-sudo">Der Befehl <code>sudo</code></h4>
+<p>Der Befehl <code>sudo</code> ermöglicht es einem Benutzer, einen Befehl als ein anderer Benutzer auszuführen, ohne eine neue Shell zu erstellen. Wenn Sie stattdessen einen Befehl mit Administratorrechten ausführen möchten, verwenden Sie ihn als Argument für den Befehl <code>sudo</code>. Wie der Befehl <code>su</code> geht der Befehl <code>sudo</code> standardmäßig davon aus, dass das Benutzerkonto <code>root</code> zum Ausführen von Befehlen verwendet werden soll.</p>
+<p>Der Befehl <code>sudo</code> bietet nur administrativen Zugriff für eine einzelne Ausführung des angegebenen Befehls. Dies ist ein Vorteil, da es das Risiko reduziert, dass ein Benutzer versehentlich einen Befehl als <code>root</code> ausführt. Die Absicht, einen Befehl auszuführen, ist klar; der Befehl wird als <code>root</code> ausgeführt, wenn der Befehl <code>sudo</code> vorangestellt ist. Andernfalls wird der Befehl als normaler Benutzer ausgeführt.</p>
+<p><em>Quelle: Cisco Netacad - Linux Unhatched - Stand 10.10.2023</em></p>
+<h4 id="berechtigungen">Berechtigungen</h4>
+<p>Berechtigungen bestimmen, wie verschiedene Benutzer mit einer Datei oder einem Verzeichnis interagieren können. Wenn Sie eine Datei mit dem Befehl <code>ls -l</code> auflisten, enthält die Ausgabe Berechtigungsinformationen. Für das Beispiel werden wir ein Skript namens <code>hello.sh</code> im Verzeichnis <code>Documents</code> verwenden:</p>
+<pre><code>pi@herr-nm:~/Documents$ ls -l hello.sh                                  
+-rw-r--r-- 1 root root 647 Dec 20  2017 hello.sh
+</code></pre>
+<h5 id="dateitypfeld">Dateitypfeld</h5>
+<pre><code>-rw-r--r-- 1 root root 647 Dec 20  2017 hello.sh
+</code></pre>
+<p>Das erste Zeichen dieser Ausgabe gibt den Dateityp an. Erinnern Sie sich, wenn das erste Zeichen ein <code>-</code> ist, dann handelt es sich um eine normale Datei. Wenn das Zeichen ein <code>d</code> wäre, dann wäre es ein Verzeichnis.</p>
+<h5 id="berechtigungsfeld">Berechtigungsfeld</h5>
+<pre><code>-rw-r--r-- 1 root root 647 Dec 20  2017 hello.sh
+</code></pre>
+<p>Nach dem Dateitypzeichen werden die Berechtigungen angezeigt. Die Berechtigungen sind in drei Bereiche von je drei Zeichen unterteilt:</p>
+<h5 id="eigentumer">Eigentümer</h5>
+<pre><code>-rw-r--r-- 1 root root 647 Dec 20  2017 hello.sh
+</code></pre>
+<p>Der erste Bereich ist für den Benutzer, der die Datei besitzt. Wenn Ihr aktuelles Konto der Besitzer der Datei ist, wird der erste Bereich der drei Berechtigungen angewendet, und die anderen Berechtigungen haben keine Auswirkungen.</p>
+<p>Der Benutzer, dem die Datei gehört und für den diese Berechtigungen gelten, kann durch das Feld "Eigentümer” bestimmt werden:</p>
+<pre><code>-rw-r--r-- 1 root root 647 Dec 20  2017 hello.sh
+</code></pre>
+<h5 id="gruppe">Gruppe</h5>
+<pre><code>-rw-r--r-- 1 root root 647 Dec 20  2017 hello.sh
+</code></pre>
+<p>Der zweite Bereich ist für die Gruppe, die die Datei besitzt. Wenn Ihr aktuelles Konto nicht der Besitzer der Datei ist und Sie Mitglied der Gruppe sind, die die Datei besitzt, werden die Gruppenberechtigungen angewendet, und die anderen Berechtigungen haben keine Auswirkungen.</p>
+<p>Die Gruppe für diese Datei kann durch das Feld "Eigentümer-Gruppe" bestimmt werden:</p>
+<pre><code>-rw-r--r-- 1 root root 647 Dec 20  2017 hello.sh
+</code></pre>
+<h5 id="andere">Andere</h5>
+<pre><code>-rw-r--r-- 1 root root 647 Dec 20  2017 hello.sh
+</code></pre>
+<p>Der letzte Bereich ist für alle anderen Personen, für die diese ersten beiden Berechtigungsbereiche nicht gelten. Wenn Sie nicht der Benutzer sind, der die Datei besitzt, oder ein Mitglied der Gruppe, der die Datei besitzt, gilt der dritte Bereich von Berechtigungen für Sie.</p>
+<h5 id="berechtigungstypen">Berechtigungstypen</h5>
+<p>Es gibt drei verschiedene Berechtigungen, die für eine Datei oder ein Verzeichnis platziert werden können: Lesen, Schreiben und Ausführen. Die Art und Weise, in der diese Berechtigungen gelten, unterscheidet sich für Dateien und Verzeichnisse, wie in der folgenden Tabelle dargestellt:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Berechtigung</th>
+<th style="text-align: left;">Effekt auf eine Datei</th>
+<th style="text-align: left;">Effekt auf ein Verzeichnis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">lesen - read (<code>r</code>)</td>
+<td style="text-align: left;">Erlaubt das Lesen oder das Kopieren von Datei-Inhalten.</td>
+<td style="text-align: left;">In Zusammenhang mit dem Ausfühungsrecht wird ein detailliertes Listing bei ls -l angeboten. Ohne das Ausführungsrecht kann nur eine nicht detaillierte Auflistung erfolgen.</td>
+</tr>
+<tr>
+<td style="text-align: left;">schreiben - write (<code>w</code>)</td>
+<td style="text-align: left;">Erlaubt das Modifizieren oder Überschreiben von Dateien. Die Datei kann auch entfernt werden.</td>
+<td style="text-align: left;">Damit diese Berechtigung funktioniert, muss zusätzlich das Ausführungsrecht gesetzt sein.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ausführen (<code>x</code>)</td>
+<td style="text-align: left;">Ermöglicht die Ausführung einer Datei als Prozess. Hier ist zusätzlich auch eine Leseberechtigung erfordern.</td>
+<td style="text-align: left;">Ermöglicht einem Benutzer, in das Verzeichnis zu wechseln sofern das Elternverzeichis ebenfalls eine Ausführungsberechtigung hat.</td>
+</tr>
+</tbody>
+</table>
+<p><em>Quelle: Cisco Netacad - Linux Unhatched - Stand 10.10.2023</em></p>
+<h4 id="dateiberechtigungen-andern">Dateiberechtigungen ändern</h4>
+<p>Der Befehl <code>chmod</code> (change mode) wird verwendet, um die Berechtigungen einer Datei oder eines Verzeichnisses zu ändern. Nur der <code>root</code>-Benutzer oder der Eigentümer einer Datei können deren Berechtigungen ändern.</p>
+<p>Es gibt zwei Varianten, um Berechtigungen mit dem Befehl chmod zu ändern: symbolisch und oktal. Die symbolische Methode eignet sich gut, um jeweils einen Satz von Berechtigungen zu ändern. Die oktale oder numerische Methode erfordert Kenntnisse des oktalen Werts jeder der Berechtigungen und erfordert jedes Mal, dass alle drei Gruppen von Berechtigungen (Benutzer, Gruppe, andere) angegeben werden. Der Einfachheit halber wird nur die symbolische Methode erläutert.</p>
+<p>Um die symbolische Variante von <code>chmod</code> zu verwenden, geben Sie zuerst an, welcher Satz von Berechtigungen geändert wird:</p>
+<pre><code>chmod [&lt;SET&gt;&lt;ACTION&gt;&lt;PERMISSIONS&gt;]... FILE
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Symbol</th>
+<th style="text-align: left;">Bedeutung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><code>u</code></td>
+<td style="text-align: left;">User: Der Eigentümer der Datei.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>g</code></td>
+<td style="text-align: left;">Group: Die Gruppe der die Datei gehört.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>o</code></td>
+<td style="text-align: left;">Others: Alle Anderen die nicht Eigentümer der Datei oder Mitglieder der Eigentümer-Gruppe sind.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>a</code></td>
+<td style="text-align: left;">All: Bezieht sich auf den Eigentümer, die Gruppe und alle Anderen gemeinsam.</td>
+</tr>
+</tbody>
+</table>
+<p>Geben Sie als Nächstes ein Aktionssymbol an:</p>
+<pre><code>chmod [&lt;SET&gt;&lt;ACTION&gt;&lt;PERMISSIONS&gt;]... FILE
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Symbol</th>
+<th style="text-align: left;">Bedeutung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><code>+</code></td>
+<td style="text-align: left;">Setze die Berechtigung, sofern nicht vorhanden</td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>=</code></td>
+<td style="text-align: left;">Setzt genau die angegebene Berechtigung</td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>-</code></td>
+<td style="text-align: left;">Entfernt die Berechtigung, sofern vorhanden</td>
+</tr>
+</tbody>
+</table>
+<p>Geben Sie nach einem Aktionssymbol eine oder mehrere Berechtigungen an, die bearbeitet werden sollen.</p>
+<pre><code>chmod [&lt;SET&gt;&lt;ACTION&gt;&lt;PERMISSIONS&gt;]... FILE
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Symbol</th>
+<th style="text-align: left;">Bedeutung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><code>r</code></td>
+<td style="text-align: left;">read - Leserecht</td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>w</code></td>
+<td style="text-align: left;">write - Schreibrecht</td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>x</code></td>
+<td style="text-align: left;">execute - Ausführungsrecht</td>
+</tr>
+</tbody>
+</table>
+<p>Schließlich ein Leerzeichen und die Pfadnamen für die Dateien, um diese Berechtigungen zuzuweisen.</p>
+<pre><code>chmod [&lt;SET&gt;&lt;ACTION&gt;&lt;PERMISSIONS&gt;]... FILE
+</code></pre>
+<p>Die Datei <code>hello.sh</code>, die in den Beispielen auf der vorherigen Seite verwendet wird, ist ein Skript. Ein Skript ist eine Datei, die ausgeführt werden kann, ähnlich wie ein Befehl:</p>
+<pre><code>pi@herr-nm:~/Documents$ ls -l hello.sh                                  
+-rw-r--r-- 1 root root 647 Dec 20  2017 hello.sh
+</code></pre>
+<p>Derzeit ist die Ausführungsberechtigung jedoch für keine der Berechtigungsgruppen festgelegt. Es ist kein <code>x</code> gesetzt.</p>
+<p>Verwenden Sie den Befehl <code>chmod</code> mit dem Zeichen <code>u</code>, um die Berechtigungen des Eigentümers auszuwählen, das Zeichen <code>+</code>, um festzulegen, dass eine Berechtigung hinzugefügt wird, und das Zeichen <code>x</code>, um das Ausführungsrecht zu verwenden Damit sieht der Befehl wie folgt aus:</p>
+<pre><code>pi@herr-nm:~/Documents$ chmod u+x hello.sh
+</code></pre>
+<p>Keine Ausgabe zeigt an, dass der Befehl erfolgreich war. Kontrollieren Sie den Erfolg, indem Sie die Berechtigungen mit dem Befehl <code>ls -l</code> überprüfen:</p>
+<pre><code>pi@herr-nm:~/Documents$ ls -l hello.sh                                  
+-rwxr--r-- 1 root root 647 Dec 20  2017 hello.sh
+</code></pre>
+<p>Der Eigentümer <code>root</code> hat nun das Ausführungsrecht und kann das Script mit dem Befehl <code>./hello.sh</code> ausführen.</p>
+<p><em>Quelle: Cisco Netacad - Linux Unhatched - Stand 10.10.2023</em></p>
+<h4 id="eigentumer-einer-datei-andern">Eigentümer einer Datei ändern</h4>
+<p>Anfangs ist der Eigentümer einer Datei der Benutzer, der sie erstellt. Der Befehl <code>chown</code> wird verwendet, um den Eigentümer von Dateien und Verzeichnissen zu ändern. Das Ändern des Eigentümers erfordert Administratorzugriff. Ein normaler Benutzer kann diesen Befehl nicht verwenden, um den Eigentümer einer Datei zu ändern. Er kann nicht einmal sein eigenen Dateien einem anderen Benutzer zu übertragen. Der Befehl <code>chown</code> erlaubt jedoch auch das Ändern der Eigentümer-Gruppe durch den Root-Nutzer sowie durch den Eigentümer der Datei.</p>
+<pre><code>pi@herr-nm:~/Documents$ ls -l hello.sh                                  
+-rwxr--r-- 1 root root 647 Dec 20  2017 hello.sh
+</code></pre>
+<p>Damit <code>pi</code> zum Eigentümer des Skripts <code>hello.sh</code> wird, verwenden Sie <code>pi</code> als erstes Argument und <code>hello.sh</code> als zweites Argument. Vergessen Sie nicht, den Befehl <code>sudo</code> zu verwenden, um die notwendigen Administratorrechte zu erhalten.</p>
+<pre><code>pi@herr-nm:~/Documents$ sudo chown pi hello.sh                        
+[sudo] password for pi:
+</code></pre>
+<p>Überprüfen Sie, ob sich der Besitzer des Benutzers geändert hat, indem Sie den Befehl ls -l ausführen. Verwenden Sie den Dateinamen als Argument, um die Ausgabe zu begrenzen:</p>
+<pre><code>pi@herr-nm:~/Documents$ ls -l hello.sh                                  
+-rwxr--r-- 1 pi root 647 Dec 20  2017 hello.sh
+</code></pre>
+<p><em>Quelle: Cisco Netacad - Linux Unhatched - Stand 10.10.2023</em></p>
+<h4 id="anzeigen-von-dateien">Anzeigen von Dateien</h4>
+<p>Anzeigen von Dateien</p>
+<p>Es stehen einige Linux-Befehle zur Verfügung, um den Inhalt von Dateien anzuzeigen. Der Befehl <code>cat</code>, dessen Name von engl. "concatenate" = "verketten" kommt, wird oft verwendet, um den Inhalt kleiner Dateien schnell anzuzeigen.</p>
+<p>Der Befehl <code>cat</code> zeigt den gesamten Inhalt der Datei an, weshalb er hauptsächlich für kleinere Dateien empfohlen wird, bei denen die Ausgabe begrenzt ist und kein Scrollen erforderlich ist. Um den Inhalt einer Datei mit dem Befehl <code>cat</code> anzuzeigen, geben Sie einfach den Befehl ein und verwenden Sie den Namen der Datei, die Sie anzeigen möchten, als Argument:</p>
+<pre><code>cat [OPTIONEN] [DATEI]
+</code></pre>
+<p>Es gibt auch Pager für größere Dokumente (z.B. <code>more</code> und <code>less</code>) oder auch die Möglichkeit, nur die (standardmäßig) zehn ersten oder letzten Zeilen einer Datei anzeigen zu lassen (<code>head</code> und <code>tail</code>).</p>
+<p><em>Quelle: Cisco Netacad - Linux Unhatched - Stand 10.10.2023</em></p>
+<h4 id="dateien-kopieren">Dateien kopieren</h4>
+<p>Der Befehl <code>cp</code> wird verwendet, um Dateien zu kopieren. Ähnlich wie beim <code>mv</code>-Befehl (verschieben oder umbenennen) benötigt er mindestens zwei Argumente: eine Quelle und ein Ziel.</p>
+<pre><code>pi@herr-nm:~/Documents$ cp /home/pi/Desktop/test.txt .
+</code></pre>
+<div class="admonition note">
+<p>Der einfach Punkt <code>.</code> steht für das aktuelle Verzeichnis. Im Beispiel wird also die Datei <code>test.txt</code> aus dem Verzeichnis <code>/home/pi/Desktop</code> in das aktuelle Verzeichnis kopiert. Das aktuelle Verzeichnis ist im Prompt vorne zu sehen <code>~/Documents</code> also ausgeschrieben <code>/home/pi/Documents</code>. In diesen Ordner wird die Datei <code>test.txt</code> hinein kopiert.</p>
+</div>
+<p>Berechtigungen können Auswirkungen auf Dateiverwaltungsbefehle haben, z.B. den Befehl <code>cp</code>. Um eine Datei zu kopieren, müssen Sie über die Ausführungsberechtigung verfügen, um auf das Verzeichnis zuzugreifen, in dem sich die Datei befindet, und über die Leseberechtigung für die zu kopierende Datei.</p>
+<p>Es ist auch notwendig, Schreib- und Ausführungsberechtigungen für das Verzeichnis zu haben, in das die Datei kopiert wird. Normalerweise gibt es zwei Orte, an denen Sie immer Schreib- und Ausführungsberechtigungen für das Verzeichnis haben sollten: Ihr Home-Verzeichnis und das Verzeichnis <code>/tmp</code> .</p>
+<p><em>Quelle: Cisco Netacad - Linux Unhatched - Stand 10.10.2023</em></p>
+<h4 id="dateien-verschieben">Dateien verschieben</h4>
+<p>Der Befehl <code>mv</code> wird verwendet, um eine Datei von einem Speicherort im Dateisystem an einen anderen zu verschieben.</p>
+<pre><code>mv QUELLE ZIEL
+</code></pre>
+<p>Der Befehl <code>mv</code> erfordert wie <code>cp</code> mindestens zwei Argumente. Das erste Argument ist die Quelle, also der Pfad zur Datei, die verschoben werden soll. Das zweite Argument ist das Ziel, also der Pfad, zu dem die Datei verschoben wird. Die zu verschiebenden Dateien werden manchmal als Quelle bezeichnet, und der Ort, an dem die Dateien platziert werden sollen, wird als Ziel bezeichnet.</p>
+<pre><code>pi@herr-nm:~/Documents$ mv /home/pi/Desktop/test.txt .
+</code></pre>
+<p>Das Beispiel verschiebt die Datei <code>text.txt</code> in das aktuelle Verzeichnis <code>~/Documents</code>. Das Beispiel ist analog zu dem vorherigen Kopieren, nur dass nun die Datei nach dem Verschieben im ursrpünglichen Ordner nicht mehr zur Verfügung steht.</p>
+<div class="admonition note">
+<p>Der Befehl <code>mv</code> kann mehrere Dateien verschieben, solange das letzte Argument für den Befehl das Zielverzeichnis ist.</p>
+</div>
+<p>Mittels <code>mv</code> können Dateien auch umbenannt werden:</p>
+<pre><code>pi@herr-nm:~/Documents$ mv /home/pi/Desktop/test.txt /home/pi/Desktop/projekt.txt
+</code></pre>
+<p>Das Beispiel benennt die <code>text.txt</code> in <code>projekt.txt</code> um.</p>
+<p><em>Quelle: Cisco Netacad - Linux Unhatched - Stand 10.10.2023</em></p>
+<h4 id="dateien-entfernen">Dateien entfernen</h4>
+<p>Der Befehl <code>rm</code> (remove) wird verwendet, um Dateien und Verzeichnisse zu löschen. Es ist dabei wichtig zu beachten, dass gelöschte Dateien und Verzeichnisse nicht wie bei desktop-orientierten Betriebssystemen in einen Papierkorb gelangen. Wenn eine Datei mit dem Befehl <code>rm</code> gelöscht wird, ist sie fast immer dauerhaft verschwunden.</p>
+<pre><code>rm [OPTIONEN] DATEI
+</code></pre>
+<p>Ohne irgendwelche Optionen wird der Befehl <code>rm</code> normalerweise verwendet, um reguläre Dateien zu entfernen:</p>
+<pre><code>pi@herr-nm:~/Documents$ rm linux.txt
+</code></pre>
+<p>Der Befehl <code>rm</code> ignoriert Verzeichnisse, die entfernt werden sollen. Um ein Verzeichnis zu löschen, verwenden Sie eine rekursive Option, entweder die Optionen <code>-r</code> oder <code>-R</code>. Seien Sie vorsichtig, da diese Optionen „rekursiv“ sind. Der Befehl löscht rekursiv alle Dateien und alle Unterverzeichnisse:</p>
+<pre><code>pi@herr-nm:~/Documents$ rm -R Hausaufgaben
+</code></pre>
+<p>Das Beispiel führt dazu, dass der Ordner <code>Hausaufgaben</code> mit allen Unterordnern und Dateien gelöscht wird.</p>
+<div class="admonition danger">
+<p class="admonition-title">Wichtig</p>
+<p>Der Befehl <code>rm</code> entfernt Dateien dauerhaft, es gibt standardmäßig keinen Papierkorb, aus dem Dateien oder Ordner wiederhergestellt werden könnten.</p>
+</div>
+<p><em>Quelle: Cisco Netacad - Linux Unhatched - Stand 10.10.2023</em></p>
+<h4 id="herunterfahren">Herunterfahren</h4>
+<p>Mit dem Befehl <code>shutdown</code> wird ein Linux-System ordnungsgemäß heruntergefahren. Es wird ein Zeitpunkt benötigt, welcher das Herunterfahren spezifiziert und der Befehl muss mit administrativen Rechten ausgeführt werden:</p>
+<pre><code>pi@herr-nm:~# sudo shutdown now
+</code></pre>
+<p>Dieses Zeitargument kann das Wort <code>now</code> sein, eine Tageszeit im Format <code>hh:mm</code> oder die Anzahl der Minuten, um den Vorgang um <code>+minuten</code> zu verzögern.</p>
+<p>Der Befehl <code>shutdown</code> verfügt auch über ein optionales Nachrichtenargument, das eine Meldung angibt, die in den Terminals aller Benutzer angezeigt wird. Zum Beispiel:</p>
+<pre><code>pi@herr-nm:~# sudo shutdown +1 "Goodbye World!"
+</code></pre>
+<p><em>Quelle: Cisco Netacad - Linux Unhatched - Stand 10.10.2023</em></p>
+<h3 id="a48-grundlagen-in-der-arbeit-mit-dem-terminal-verzeichnisse">A|4.8: Grundlagen in der Arbeit mit dem Terminal - Verzeichnisse</h3>
+<p>Welche Befehle sind für die einzelnen Schritte einzugeben? Nutzen Sie die zuvor von Ihnen erstellte Befehlsreferenz.</p>
+<ol>
+<li>Lassen Sie sich den Inhalt des Home-Verzeichnis vom Benutzer <code>pi</code> anzeigen.</li>
+<li>Legen Sie im Home-Verzeichnis von <code>pi</code> einen Ordner mit dem Namen <code>Uebungen</code> an.</li>
+<li>Wechseln Sie in den neuen Übungsordner.</li>
+<li>Lassen Sie sich das aktuelle Verzeichnis anzeigen (nicht den Inhalt, sondern den Pfad).</li>
+<li>Legen Sie im Ordner <code>Uebungen</code> eine leere Datei mit dem Namen <code>uebung-01.txt</code> an.</li>
+<li>Lassen Sie sich den Inhalt des Ordners Übungen als Liste mit Details anzeigen.</li>
+<li>Mit welchen Kommandos können Sie zum Home-Verzeichnis von <code>pi</code> wechseln? Nutzen Sie eines.</li>
+<li>Lassen Sie sich den Inhalt des Home-Verzeichnis von <code>pi</code> anzeigen.</li>
+</ol>
+<h3 id="a49-grundlagen-in-der-arbeit-mit-dem-terminal-berechtigungen">A|4.9: Grundlagen in der Arbeit mit dem Terminal - Berechtigungen</h3>
+<p>Welche Befehle sind für die einzelnen Schritte einzugeben? Nutzen Sie die zuvor von Ihnen erstellte Befehlsreferenz.</p>
+<ol>
+<li>Erläutern Sie den Unterschied zwischen absolutem und relativem Pfad unter Linux und geben Sie ein Beispiel.</li>
+<li>Zeigen Sie anhand eines Beispiels auf, welche Dateiberechtigungen durch den Befehl <code>ls -l</code> angezeigt werden können.</li>
+<li>Wechseln Sie zum Benutzer <code>root</code> und legen Sie eine Datei mit dem Namen <code>uebung-03.txt</code> an.</li>
+<li>Wechseln Sie zurück zum Benutzer <code>pi</code>.</li>
+<li>Welche Informationen liegen nun hinsichtlich der Berechtigungen zu der Datei vor?</li>
+</ol>
+<h3 id="a410-grundlagen-in-der-arbeit-mit-dem-terminal-text-editor-nano">A|4.10: Grundlagen in der Arbeit mit dem Terminal - Text-Editor nano</h3>
+<p>Welche Befehle sind für die einzelnen Schritte einzugeben? Nutzen Sie die zuvor von Ihnen erstellte Befehlsreferenz.</p>
+<ol>
+<li>Legen Sie eine leere neue Datei mit dem Namen <code>uebung-02.txt</code> an.</li>
+<li>Öffnen Sie die leere Datei mit <code>nano</code> zur Bearbeitung.</li>
+<li>Schreiben Sie verschiedene kurze Texte und speichern Sie die Datei ab.</li>
+<li>Verlassen Sie den Editor unter Speicherung der Ergebnisse.</li>
+<li>Öffnen Sie die Datei <code>uebung-02.txt</code> in <code>nano</code> und speichern Sie diese über <code>nano</code> unter <code>uebung-04.txt</code> ab.</li>
+</ol>
+<h3 id="a411-grundlagen-in-der-arbeit-mit-dem-terminal-scripte">A|4.11: Grundlagen in der Arbeit mit dem Terminal - Scripte</h3>
+<p>Welche Befehle sind für die einzelnen Schritte einzugeben? Nutzen Sie die zuvor von Ihnen erstellte Befehlsreferenz.</p>
+<ol>
+<li>Legen Sie eine neue Datei mit dem Namen <code>uebung-05.py</code> an.</li>
+<li>Geben Sie in der neuen Datei in der ersten Zeile folgendes ein: <code>#!/usr/bin/env python</code></li>
+<li>Geben Sie in der neuen Datei in der zweiten Zeile folgendes ein: <code># -*- coding: utf-8 -*-</code></li>
+<li>Geben Sie in der neuen Datei in der dritten Zeile folgendes ein: <code>print("This line will be printed.")</code></li>
+<li>Speichern Sie das Script ab.</li>
+<li>Starten Sie das Script mit den folgenden Befehl: <code>./uebung-05.py</code> Was passiert?</li>
+<li>Schauen Sie sich die Datei noch einmal in der Listenansicht genau an. Welche Berechtigungen sind gesetzt?</li>
+<li>Setzen Sie die entsprechenden Berechtigungen, die zum Ausführen der <code>uebung-05.py</code> notwendig sind.</li>
+<li>Kontrollieren Sie mit der Listenansicht, welche Veränderung durch die Rechtevergabe ersichtlich ist.</li>
+<li>Führen Sie nun das Script erneut aus. Was passiert?</li>
+</ol>
+<h3 id="a412-grundlagen-in-der-arbeit-mit-dem-terminal-eigentumer-von-dateien">A|4.12: Grundlagen in der Arbeit mit dem Terminal - Eigentümer von Dateien</h3>
+<p>Welche Befehle sind für die einzelnen Schritte einzugeben? Nutzen Sie die zuvor von Ihnen erstellte Befehlsreferenz.</p>
+<ol>
+<li>Legen Sie die eine Datei <code>uebung-06.txt</code> an.</li>
+<li>Prüfen Sie über die Listenansicht, wem die Datei gehört.</li>
+<li>Legen Sie mit <code>sudo touch uebung-07.txt</code> eine weitere Datei an.</li>
+<li>Prüfen Sie über die Listenansicht, wem die neue Datei gehört.</li>
+<li>Verändern Sie den Eigentümer und die Gruppe der neuen Datei so, dass sie nun <code>pi</code> gehört.</li>
+</ol>
+<h3 id="a413-grundlagen-in-der-arbeit-mit-dem-terminal-dateien-und-ordner">A|4.13: Grundlagen in der Arbeit mit dem Terminal - Dateien und Ordner</h3>
+<p>Welche Befehle sind für die einzelnen Schritte einzugeben? Nutzen Sie die zuvor von Ihnen erstellte Befehlsreferenz.</p>
+<ol>
+<li>Legen Sie im Home-Verzeichnis von <code>pi</code> eine neue Datei mit dem Namen <code>uebung-09.txt</code> an und geben Sie einen Text ein.</li>
+<li>Kopieren Sie die Datei als <code>uebung-10.txt</code> in das Home-Verzeichnis von <code>pi</code></li>
+<li>Legen Sie einen neuen Ordner mit dem Namen <code>test</code> an. </li>
+<li>Verschieben Sie die <code>uebung-10.txt</code> in den neuen Ordner.</li>
+<li>Kopieren Sie die Datei <code>uebung-09.txt</code> aus dem Home-Verzeichnis als <code>uebung-11.txt</code> in den neuen Ordner.</li>
+<li>Entfernen Sie die <code>uebung-11.txt</code> aus dem neuen Verzeichnis.</li>
+</ol>
+<h2 id="kompetenz-43-funktionstuchtigkeit-eines-it-systems-prufen">Kompetenz 4.3: Funktionstüchtigkeit eines IT-Systems prüfen</h2>
+<p>Nach der Installation und Aktualisierung des Betriebssystems ist der Inbetriebnahmeprozess abgeschlossen. Zunächst soll die Funktionstüchtigkeit des Raspberry Pi im Netzwerk überprüft werden. Erst im Anschluss kann das Prototyping mit dem Auslesen von Sensorik starten.</p>
+<p><img alt="Laptop" src="bilder/kap_04_laptop.jpg" /></p>
+<h3 id="a414-basisinformationen-zum-raspberry-pi-anzeigen">A|4.14: Basisinformationen zum Raspberry Pi anzeigen</h3>
+<h4 id="aufgabe-1_6">Aufgabe 1</h4>
+<p>Lassen Sie sich die Eckdaten zu Ihrem Raspberry Pi mit dem Befehl "pinout" in der Kommandozeile anzeigen. Welche Informationen können Sie hieraus ablesen?</p>
+<h4 id="aufgabe-2_2">Aufgabe 2</h4>
+<p>Nutzen Sie in der Kommandozeile den Befehl zur Ausgabe von Netzwerk-Informationen "ifconfig". Geben Sie in eigenen Worten wieder, was Ihnen die Anzeige an Daten ausgibt.</p>
+<h4 id="aufgabe-3_2">Aufgabe 3</h4>
+<p>Starten Sie mit dem Befehl "htop" den Taskmanager. Verschaffen Sie sich einen groben Überblick über das angezeigte Programm und beschreiben Sie den grundlegenden Aufbau der Ansicht.</p>
+<h2 id="handlungsergebnis">Handlungsergebnis</h2>
+<p>Sie haben in den letzten Unterrichtsstunden die Inbetriebnahme des Raspberry Pi durchgeführt, sich mit der Bedienung von Linux via Kommandozeile auseinandergesetzt sowie erste technische Informationen aus dem System ausgelesen. An dieser Stelle sollen Sie den aktuellen Standpunkt im Sinne eines Lessons Learned auswerten.</p>
+<p><img alt="Protokollant" src="bilder/kap_04_protokollant.jpg" /></p>
+<h3 id="a415-inbetriebnahme-installation-und-funktionstest-auswerten">A|4.15: Inbetriebnahme, Installation und Funktionstest auswerten</h3>
+<h4 id="aufgabe-1_7">Aufgabe 1</h4>
+<p>Betrachten Sie den Ablauf der Inbetriebnahme und die ersten Schritte im Betriebssystem mit dem Raspberry Pi. Beantworten Sie die folgenden Fragen:</p>
+<ul>
+<li>Wie zufrieden bin ich mit dem Ergebnis der Inbetriebnahme-Prozesses des Raspberry Pi?</li>
+<li>Was würde ich beim nächsten Installationsprozess anders machen?</li>
+<li>Was hat gut funktioniert und worauf kann ich stolz sein?</li>
+</ul>
+<h2 id="github">GitHub</h2>
+<h3 id="githubio-lf2-kurs-als-mkdocs-variante">GitHub.io - LF2-Kurs als MkDocs-Variante</h3>
+<p><a href="https://herr-nm.github.io/MMBbS_FISI_LF02/">https://herr-nm.github.io/MMBbS_FISI_LF02/</a></p>
+<!-- BEGIN INCLUDE inhalte/lizenzhinweis.md '&lt;!--Lizenzhinweis--&gt;' '&lt;!--Lizenzhinweis--&gt;' -->
+
+<div class="admonition info">
+<p class="admonition-title">Lizenz</p>
+<p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Der FISI LF02 Kurs</span> von <a xmlns:cc="http://creativecommons.org/ns#" href="https://herr-nm.github.io/MMBbS_FISI_LF02/" property="cc:attributionName" rel="cc:attributionURL">André Neumann</a> ist lizenziert unter einer <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Namensnennung - Nicht-kommerziell - Weitergabe unter gleichen Bedingungen 4.0 International Lizenz</a>. Fragen, Hinweise etc. an neumann@mmbbs.de.</p>
+</div>
+<!-- END INCLUDE -->
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "In Zwischenablage kopiert", "clipboard.copy": "In Zwischenablage kopieren", "search.result.more.one": "1 weiteres Suchergebnis auf dieser Seite", "search.result.more.other": "# weitere Suchergebnisse auf dieser Seite", "search.result.none": "Keine Suchergebnisse", "search.result.one": "1 Suchergebnis", "search.result.other": "# Suchergebnisse", "search.result.placeholder": "Suchbegriff eingeben", "search.result.term.missing": "Es fehlt", "select.version": "Version ausw\u00e4hlen"}}</script>
+    
+    
+      <script src="assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+        <script src="javascripts/katex.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>
