@@ -1018,4 +1018,4 @@ Spaced Repitition ist eine Lernstrategie, bei der mit Karteikarten gelernt wird.
    include-markdown "inhalte/lizenzhinweis.md"
    start="<!--Lizenzhinweis-->"
    end="<!--Lizenzhinweis-->"
-}
+%}

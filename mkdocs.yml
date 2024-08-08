@@ -40,5 +40,5 @@ nav:
     - Kapitel 02 - IT-Systeme auswählen: 'kapitel_02.md'
     - Kapitel 03 - Netzwerkspeicher dimensionieren: 'kapitel_03.md'
     - Kapitel 04 - IT-Systeme in Betrieb nehmen: 'kapitel_04.md'
-    - Kapitel 05 - Aktoren ansteuern: 'kapitel_05.md'
-    - Kapitel 06 - Sensoren auslesen: 'kapitel_06.md'
+    - Kapitel 05 - Sensoren und Aktoren am RPi nutzen: 'kapitel_05.md'
+    - Kapitel 06 - Exkurse und weitere Themen: 'kapitel_06.md'

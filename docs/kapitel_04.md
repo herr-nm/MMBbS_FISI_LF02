@@ -874,4 +874,4 @@ Betrachten Sie den Ablauf der Inbetriebnahme und die ersten Schritte im Betriebs
    include-markdown "inhalte/lizenzhinweis.md"
    start="<!--Lizenzhinweis-->"
    end="<!--Lizenzhinweis-->"
-}
+%}

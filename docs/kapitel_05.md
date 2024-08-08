@@ -4,9 +4,9 @@
 
 In diesem Kapitel werden Sie ...
 
-    ... den Temperatursensor DS18B20 am Raspberry Pi in Betrieb nehmen.
-    ... die RGB-LED am Raspberry Pi in Betrieb nehmen.
-    ... die Single-Color-LEDs am Raspberry Pi in Betrieb nehmen.
+- ... den Temperatursensor DS18B20 am Raspberry Pi in Betrieb nehmen.
+- ... die RGB-LED am Raspberry Pi in Betrieb nehmen.
+- ... die Single-Color-LEDs am Raspberry Pi in Betrieb nehmen.
 
 ---
 
@@ -384,4 +384,4 @@ Definieren Sie entsprechend der Anzahl der Single-Color-LEDs Grenzwerte für seh
    include-markdown "inhalte/lizenzhinweis.md"
    start="<!--Lizenzhinweis-->"
    end="<!--Lizenzhinweis-->"
-}
+%}
