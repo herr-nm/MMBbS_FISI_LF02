@@ -263,7 +263,7 @@ Der Raspberry Pi ist hardwareseitig einsatzbereit, aktuell fehlt allerdings noch
 
 ![PC](bilder/kap_04_installation.png)
 
-### A|4.6: Inbetriebnahme des Raspberry Pi
+### A|4.9: Inbetriebnahme des Raspberry Pi
 
 Sie benötigen für die Schritte der Inbetriebnahme folgende Programme:
 
@@ -276,7 +276,7 @@ Wenn Sie diese Aufgabe fertiggestellt haben bestätigen Sie dies über den oben 
 
 ![Moodle Button](bilder/kap_04_moodle_button.png)
 
-### M|4.6: Inbetriebnahme des Raspberry Pi
+### M|4.7: Inbetriebnahme des Raspberry Pi
 
 <iframe frameborder="0" width="1200" height="675" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/6019653b31720d0d312eb43c" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe>
 
@@ -286,7 +286,7 @@ Nach der Installation und Aktualisierung des Betriebssystems ist der Inbetriebna
 
 ![Laptop](bilder/kap_04_laptop.jpg)
 
-### A|4.14: Basisinformationen zum Raspberry Pi anzeigen
+### A|4.10: Basisinformationen zum Raspberry Pi anzeigen
 
 #### Aufgabe 1
 
@@ -306,7 +306,7 @@ Sie haben in den letzten Unterrichtsstunden die Inbetriebnahme des Raspberry Pi 
 
 ![Protokollant](bilder/kap_04_protokollant.jpg)
 
-### A|4.15: Inbetriebnahme, Installation und Funktionstest auswerten
+### A|4.11: Inbetriebnahme, Installation und Funktionstest auswerten
 
 #### Aufgabe 1
 
@@ -315,6 +315,50 @@ Betrachten Sie den Ablauf der Inbetriebnahme und die ersten Schritte im Betriebs
 - Wie zufrieden bin ich mit dem Ergebnis der Inbetriebnahme-Prozesses des Raspberry Pi?
 - Was würde ich beim nächsten Installationsprozess anders machen?
 - Was hat gut funktioniert und worauf kann ich stolz sein?
+
+# Zusätzliches Material, weitere Übungen und Tipps
+
+## Übungen
+
+### Übung UE|4.3: Speichermaßeinheiten unter Linux anzeigen
+
+**Vorbereitungen für diese Aufgaben**
+
+Sie benötigen für die folgenden Aufgaben ein paar Dateien mit verschiedenen Größen. Dazu legen wir drei "Dummy-Dateien" an, die leer sind, aber eine gewisse Menge Speicher belegen. Legen Sie hierfür unter `/home/pi` einen Ordner mit dem Namen "Uebung_Speichermasseinheit" an.
+
+Führen Sie dann die folgenden drei Befehle aus:
+
+- `dd if=/dev/zero of=/home/pi/Uebung_Speichermasseinheit/dateiNrEins.dummy bs=1M count=5`
+- `dd if=/dev/zero of=/home/pi/Uebung_Speichermasseinheit/dateiNrZwei.dummy bs=1M count=25`
+- `dd if=/dev/zero of=/home/pi/Uebung_Speichermasseinheit/dateiNrDrei.dummy bs=1M count=84`
+
+Mit diesen Befehlen haben Sie drei Dummy-Dateien angelegt. Der dd-Befehl erzeugt eine Kopie aus dem ersten Pfad (hier ein Griff in die Trickkiste) /dev/zero, welcher eine virtuelle Gerätedatei bezeichnet und eine angeforderte Anzahl Null-Bytes zurückliefert. Das bs steht für die Blockgröße, also hier 1 Megabyte und count steht für die Anzahl der Blöcke, die erstellt werden sollen.
+
+Nach Bearbeitung der Aufgaben können Sie die drei Dateien wieder löschen.
+
+**Aufgabe 1**
+
+Lassen Sie sich in Ihrer Linux-Kommandozeile Ihre Daten mit den folgenden Befehlen anzeigen:
+
+- `df -h`
+- `df --si`
+
+Welchen Unterschied stellen Sie fest?
+
+**Aufgabe 2**
+
+Wechseln Sie in das zuvor vorbereitete Verzeichnis `/home/pi/Uebung_Speichermasseinheit`. Lassen Sie sich die Dateien mit den folgenden Befehlen anzeigen:
+
+- `ls -lh`
+- `ls -l --si`
+
+Welche Unterschiede können Sie nun hinsichtlich der Dateigröße erkennen? Rechnen Sie doch einmal nach.
+
+## Podcastempfehlungen
+
+## Zusatzmaterial
+
+## Lernstrategien & Werkzeuge
 
 ## GitHub
 
