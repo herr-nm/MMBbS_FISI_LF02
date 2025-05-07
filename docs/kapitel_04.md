@@ -255,7 +255,419 @@ Die IT-Abteilung der Change IT GmbH hat sich bei den eingesetzten IT-Systemen f�
 
 ![Linux-Terminal Symbolbild](bilder/kap_04_linux.png)
 
-@TODO
+### Arbeitsauftrag A|4.6: Linux-Befehlsreferenz anlegen
+
+**Aufgabe 1**
+
+Ihnen liegt ein vorbereitetes Cheat-Sheet zu Linux-Kommandozeilenbefehlen vor (Vorlage - Cheat Sheet Linux). Dieses ist noch nicht vollständig ausgefüllt, Sie wollen die Übersicht nun fertigstellen, um zukünftig eine Schnellreferenz vorliegen zu haben.Verschaffen Sie sich mithilfe des *Informationsmaterials M|4.6: Linux-Kommandozeilenbefehle* im Kurs einen Überblick zu den wichtigsten Befehlen für die Linux-Kommandozeile und vervollständigen Sie das Cheat-Sheet.
+
+!!! note "Hinweis"
+    
+    Das Blatt ist in den drei Niveaustufen in Anlehnung an den ISA-Unterricht aufgebaut:
+    
+    - Einsteiger: Befehle kennen und zuordnen
+    - Könner: Befehle situationsgerecht anwenden
+    - Profi: Befehlserweiterungen oder Fälle beschreiben können
+
+**Aufgabe 2**
+
+Wenn Sie die Befehlsreferenz fertiggestellt haben, geben Sie diese in dieser Aufgabe als .pdf-Datei (max. 5 MB) ab. Anschließend wird eine Beispiellösung *Lösungshinweis zu A|4.6: Linux-Befehlsreferenz anlegen* freigeschaltet. Gleichen Sie Ihre Lösung mit der Beispiellösung ab. Notieren Sie sich Auffälligkeiten oder Lösungsabweichungen für die spätere Besprechung in der Klasse.
+
+### Informationsmaterial M|4.6: Linux-Kommandozeilenbefehle
+
+#### 📁 Datei- und Verzeichnismanagement
+
+**cd**
+
+Der Befehl `cd` (change directory) dient zum Wechseln in ein anderes Verzeichnis. Er kann mit relativen oder absoluten Pfaden verwendet werden. Mit `cd ..` springt man eine Verzeichnisebene zurück. `cd` ohne Parameter bringt Sie ins Home-Verzeichnis.
+
+*Beispiel:* `cd /home/user/projekt01`
+
+---
+
+**ls**
+
+`ls` listet den Inhalt eines Verzeichnisses auf. Mit `-l` (kleines L) wird eine detaillierte Liste mit Größen, Rechten und Zeitstempeln angezeigt. Die Option -a zeigt auch versteckte Dateien. In Kombination (`ls -la`) ist der Befehl besonders nützlich zur vollständigen Übersicht.
+
+*Beispiel:* `ls -la`
+
+---
+
+**pwd**
+
+`pwd` (print working directory) gibt den vollständigen Pfad zum aktuellen Verzeichnis aus. Das ist besonders hilfreich, um die Orientierung im Dateisystem zu behalten. Der Pfad beginnt immer mit `/`, dem Wurzelverzeichnis. So wissen Sie genau, wo Sie sich befinden.
+
+*Beispiel:* `pwd` → Ausgabe: `/home/user/dokumentation`
+
+---
+
+**mkdir**
+
+Mit `mkdir` (make directory) wird ein neues Verzeichnis erstellt. Die Option `-p` ermöglicht es, auch verschachtelte Ordner in einem Schritt anzulegen. Der Name kann relativ oder absolut sein. Bereits bestehende Ordner führen zu einer Fehlermeldung.
+
+*Beispiel:* `mkdir -p projekt01/code`
+
+---
+
+**rmdir**
+
+`rmdir` löscht leere Verzeichnisse. Wenn sich noch Dateien oder Unterordner darin befinden, bricht der Befehl mit einer Fehlermeldung ab. Für nicht leere Verzeichnisse wäre `rm -r` erforderlich. `rmdir` ist sicher, da es keine Daten versehentlich löscht.
+
+*Beispiel:* `rmdir testordner`
+
+---
+
+**rm**
+
+`rm` entfernt Dateien oder mit der Option `-r` auch ganze Verzeichnisse samt Inhalt. Der Befehl löscht unwiderruflich – es gibt keinen Papierkorb. Bei sensiblen Dateien ist Vorsicht geboten. Mit `-i` kann eine Sicherheitsabfrage aktiviert werden.
+
+*Beispiel:* `rm -r alte_daten`
+
+---
+
+**touch**
+
+Mit `touch` erstellt man leere Dateien. Existiert die Datei bereits, wird lediglich der Zeitstempel aktualisiert. Der Befehl ist nützlich für das schnelle Anlegen von Textdateien oder Platzhaltern.
+
+*Beispiel:* `touch info.txt`
+
+---
+
+**cp**
+
+`cp` (copy) kopiert Dateien oder mit der Option `-r` auch Verzeichnisse. Ziel und Quelle müssen angegeben werden. Der Befehl kann auch verwendet werden, um Sicherungskopien anzulegen.
+
+*Beispiel:* `cp readme.txt backup.txt`
+
+---
+
+**mv**
+
+`mv` verschiebt Dateien oder Ordner – oder benennt sie um. Gibt man einen neuen Dateinamen als Ziel an, wird umbenannt. Gibt man einen Ordner an, wird die Datei dorthin verschoben.
+
+*Beispiel:* `mv alt.txt neu.txt`
+
+---
+
+**nano**
+
+Mit `nano` öffnet man einen einfachen Texteditor direkt im Terminal. Er eignet sich gut zum schnellen Erstellen oder Bearbeiten von Textdateien, z.B. Konfigurationsdateien oder Shell-Skripten. Während der Bearbeitung können die wichtigsten Aktionen über Tastenkombinationen ausgeführt werden: Mit `Strg + O` speichert man die Datei, mit `Strg + X` verlässt man den Editor. Alle Befehle lassen sich jederzeit über `Strg + G` anzeigen.
+
+*Beispiel:* `nano readme.txt`
+
+---
+
+#### 🔒 Rechte und Benutzer
+
+**chmod**
+
+`chmod` ändert die Zugriffsrechte von Dateien und Verzeichnissen. Mit Zahlen wie `755` oder symbolisch (`u+x`) kann genau gesteuert werden, wer was darf. Rechte werden in drei Gruppen vergeben: Eigentümer, Gruppe, andere.
+
+*Beispiel:* `chmod 644 dokumentation/readme.txt`
+
+---
+
+**chown**
+
+`chown` ändert den Eigentümer und optional die Gruppe einer Datei. Nur Administratoren (`root`) dürfen den Eigentümer ändern. Es kann auch rekursiv auf ganze Verzeichnisse angewendet werden.
+
+*Beispiel:* `sudo chown pi:users readme.txt`
+
+---
+
+**adduser**
+
+`adduser` legt einen neuen Benutzer an. Der Befehl fragt nach einem Passwort und zusätzlichen Informationen. Diese Aktion ist nur mit Adminrechten möglich.
+
+*Beispiel:* `sudo adduser max`
+
+---
+
+**deluser**
+
+`deluser` entfernt einen Benutzer vom System. Optional kann mit `--remove-home` auch das Benutzerverzeichnis gelöscht werden. Auch dieser Befehl benötigt Adminrechte.
+
+*Beispiel:* `sudo deluser max`
+
+---
+
+**passwd**
+
+`passwd` ändert das Passwort des aktuellen Benutzers oder (als `root`) eines anderen. Der Befehl fragt das neue Passwort zweimal ab. Auch Benutzer ohne Adminrechte können ihr eigenes Passwort ändern.
+
+*Beispiel:* `passwd`
+
+---
+
+**whoami**
+
+`whoami` zeigt den aktuell angemeldeten Benutzernamen an. Das ist nützlich, um sich zu vergewissern, unter welchem Benutzer man gerade arbeitet.
+
+*Beispiel:* `whoami`
+
+---
+
+#### 🖥️ Systemanalyse und -zustand
+
+**htop**
+
+`htop` zeigt eine Live-Ansicht der aktuell laufenden Prozesse. CPU- und RAM-Auslastung werden ebenfalls dargestellt. Die Übersicht wird laufend aktualisiert.
+
+*Beispiel:* `htop`
+
+**ps aux**
+
+`ps aux` listet alle Prozesse auf, die aktuell auf dem System laufen. Es zeigt Benutzer, PID, CPU-/RAM-Auslastung und die gestarteten Programme. In Kombination mit `grep` kann gezielt gesucht werden.
+
+*Beispiel:* `ps aux | grep nano`
+
+**df -h**
+
+`df -h` zeigt die Belegung der Festplatten an. Die Option `-h` steht für „human readable“ und zeigt Größen in MB/GB. Der Befehl hilft, Speicherengpässe zu erkennen.
+
+*Beispiel:* `df -h`
+
+---
+
+**free -h**
+
+`free -h` zeigt die Belegung des Arbeitsspeichers an. Auch hier bedeutet `-h`, dass die Größen in verständlichen Einheiten angezeigt werden.
+
+*Beispiel:* `free -h`
+
+---
+
+**uname -a**
+
+`uname -a` liefert Systeminformationen, z.B. Kernel-Version, Hostname und Architektur. Es ist besonders nützlich für die Fehlersuche oder bei Updates.
+
+*Beispiel:* `uname -a`
+
+---
+
+**uptime**
+
+`uptime` zeigt an, wie lange das System bereits läuft, wie viele Benutzer angemeldet sind und die durchschnittliche Systemlast.
+
+*Beispiel:* `uptime`
+
+---
+
+**history**
+
+`history` listet alle zuvor eingegebenen Befehle chronologisch auf. Praktisch zur Nachverfolgung und Fehleranalyse. Einzelne Befehle lassen sich per `!Nummer ` erneut ausführen.
+
+*Beispiel:* `history`
+
+---
+
+#### ⚙️ Skripte, Ausgabe, GPIO
+
+**./script.sh**
+
+Ein Shell-Skript wird im Terminal durch Voranstellen von `./` ausgeführt – vorausgesetzt, es ist als ausführbar markiert. Vor dem ersten Start muss bspw. mit `chmod +x` die Ausführungsberechtigung gesetzt werden. Das Skript kann beliebige Befehle enthalten, etwa zur Automatisierung von Aufgaben. Wird `./` nicht verwendet, sucht das System das Skript nicht im aktuellen Verzeichnis.
+
+*Beispiel:* `./script.sh` führt das Skript `script.sh` im aktuellen Ordner aus.
+
+---
+
+**cat**
+
+`cat` zeigt den Inhalt einer Datei im Terminal an. Damit kann man Textdateien schnell durchsehen. Auch nützlich für das Zusammenfügen mehrerer Dateien.
+
+*Beispiel:* `cat readme.txt`
+
+---
+
+**tail**
+
+`tail` zeigt standardmäßig die letzten 10 Zeilen einer Datei. Mit `-n` kann man die Anzahl der Zeilen anpassen. Mit `-f` kann man eine Log-Datei live mitverfolgen.
+
+*Beispiel:* `tail -n 5 readme.txt`
+
+---
+
+**grep**
+
+`grep` durchsucht Texte oder Dateien nach bestimmten Zeichenfolgen. Ideal zum Filtern von Log-Dateien oder Prozessen. Mit `-i` wird die Groß-/Kleinschreibung ignoriert.
+
+*Beispiel:* `grep "Fehler" log.txt`
+
+---
+
+**pinout**
+
+`pinout` zeigt eine grafische Übersicht der GPIO-Pins eines Raspberry Pi (funktioniert nur auf echtem Pi). Alternativ kann https://pinout.xyz genutzt werden.
+
+*Beispiel:* `pinout`
+
+---
+
+**shutdown**
+
+shutdown beendet das System sicher. Optionen wie `-h now` oder `-r +10` ermöglichen das sofortige oder geplante Herunterfahren oder Neustarten. Erfordert meist Adminrechte.
+
+*Beispiel:* `sudo shutdown -h now`
+
+---
+
+**reboot**
+
+`reboot` startet das System neu. Wird häufig für Wartungsarbeiten oder nach Updates verwendet.
+
+*Beispiel:* `sudo reboot`
+
+### Auswahl der Niveaustufe für die Aufgaben zur Arbeit in der Linux-Kommandozeile (A|4.7):
+
+- Standardmäßig ist die Stufe Profi gewählt.
+- Benötigen Sie mehr Hilfestellungen, kennzeichnen Sie diese Textbox als "Erledigt", um den *Arbeitsauftrag A|4.7* als Könner anzeigen zu lassen.	
+
+### SSH-Login zum Server
+
+Zur Bearbeitung der folgenden Aufgaben steht Ihnen ein Linux-Server zur Verfügung, der aus dem Schulnetz erreichbar ist:
+
+- IP: wird Ihnen im Unterricht mitgeteilt.
+- Port: 22
+- Username: wird Ihnen im Unterricht mitgeteilt
+- Passwort: wird Ihnen im Unterricht mitgeteilt
+
+### Arbeitsauftrag A|4.7: Linux-Terminal bedienen (Könner)
+
+**Aufgabe 1**
+
+Speichern Sie diese Aufgabenstellungen in einem eigenen Dokument (z.B. Word oder LibreOffice).
+
+**Aufgabe 2**
+
+Arbeiten Sie auf dem bereitgestellten Raspberry Pi OS im Terminal. Verwenden Sie Ihr persönliches Login. Ihre Aufgabe ist es, systematisch Befehle einzugeben, um typische Administrationsaufgaben durchzuführen.
+
+Notieren Sie die von Ihnen verwendeten Befehle unter die jeweiligen Aufgabenpunkte. Nutzen Sie Ihr Cheat Sheet zur Unterstützung.
+
+**1. Verzeichnisse und Dateien verwalten**
+
+- Wechseln Sie in Ihr persönliches Startverzeichnis. Überlegen Sie, mit welchem Befehl Sie sich den aktuellen Pfad anzeigen lassen können.
+- Legen Sie einen Projektordner `projekt01` an. Dieser soll später Ihre Übungsdateien enthalten.
+- Erstellen Sie darin die Unterordner `code`, `daten` und `dokumentation`. Tipp: Der Befehl kann mehrere Ordner auf einmal anlegen.
+- Erzeugen Sie im Ordner `dokumentation` eine leere Textdatei `readme.txt`.
+- Bearbeiten Sie die Datei im Terminal. Fügen Sie einen kurzen Text zum Projektthema ein.
+- Kopieren Sie die Datei anschließend in den Ordner `daten`. Denken Sie daran, Ziel und Quelle zu benennen.
+- Benennen Sie die Datei um oder verschieben Sie sie an eine andere Stelle.
+- Erstellen Sie ein weiteres Verzeichnis und entfernen Sie es wieder – einmal als leeres Verzeichnis, einmal mit Inhalt.
+
+**2. Dateiberechtigungen & Benutzerverwaltung**
+
+- Prüfen Sie, welche Berechtigungen die Datei `readme.txt` aktuell hat. Wie sind sie aufgebaut?
+- Passen Sie die Rechte so an, dass:
+    - Sie selbst lesen und schreiben dürfen,
+    - die Gruppe lesen darf
+    - andere nur keine Rechte haben.
+- Erstellen Sie einen neuen Benutzer mit dem Namen `testuser_[IhreNummer+100]`.
+- Übertragen Sie die Eigentümerschaft der Datei auf diesen Benutzer.
+- Löschen Sie den erstellten Testbenutzer nach dem Test wieder.
+
+**3. Systemzustand analysieren**
+
+- Verschaffen Sie sich einen Überblick über alle aktuell laufenden Prozesse im System.
+- Filtern Sie diese Liste nach dem Programm `systemd`.
+- Rufen Sie eine Live-Übersicht der Systemressourcen auf. Wie verlassen Sie diese Ansicht wieder?
+- Prüfen Sie, wie viel Festplattenspeicher noch verfügbar ist.
+- Sehen Sie sich an, wie viel Arbeitsspeicher genutzt wird.
+- Lassen Sie sich technische Informationen über das System anzeigen.
+- Finden Sie heraus, wie lange das System bereits läuft.
+
+**4. Skripte & Historie**
+
+- Erstellen Sie im Ordner code eine Datei `hello.sh`, in der eine kurze Begrüßung (`echo "Moin moin!"`) ausgegeben wird.
+- Erteilen Sie der Datei die nötigen Rechte, um sie auszuführen.
+- Führen Sie das Skript anschließend aus.
+- Sehen Sie sich Ihre zuletzt verwendeten Befehle an. Welchen Nutzen hat diese Liste?
+
+**5. Sonstiges & GPIO**
+
+- Lassen Sie sich anzeigen, unter welchem Benutzer Sie aktuell eingeloggt sind.
+- Versuchen Sie, die GPIO-Pinbelegung über den Befehl `pinout` aufzurufen (nur auf echtem Raspberry Pi möglich). Falls das nicht funktioniert, informieren Sie sich auf https://pinout.xyz.
+- Informieren Sie sich, mit welchen Befehlen man einen Rechner herunterfahren oder neu starten kann. ***Hinweis: Führen Sie diese nicht wirklich aus!***
+
+**Aufgabe 3**
+
+Speichern Sie Ihre Lösung als PDF-Datei (max. 5 MB) und laden Sie sie hier im Kurs hoch.
+
+**Aufgabe 4**
+
+Nach der Abgabe erhalten Sie ein KI-generiertes Feedback. Lesen Sie dieses sorgfältig und notieren Sie sich Rückfragen oder Auffälligkeiten zur Besprechung im Unterricht.
+
+### Arbeitsauftrag A|4.7: Linux-Terminal bedienen (Profi)
+
+**Aufgabe 1**
+
+Kopieren Sie die Aufgabenstellungen s.u. in ein Dokument.
+
+**Aufgabe 2**
+
+Lösen Sie die Aufgaben auf dem zur Verfügung gestellten Raspberry Pi OS unter Nutzung Ihrer individuellen Login-Details. Schreiben Sie die korrekten Befehle als Lösung direkt unter die einzelnen Aufgabenschritte.
+
+**1. Verzeichnisse und Dateien verwalten**
+
+- Navigieren Sie in Ihr Home-Verzeichnis.
+- Erstellen Sie den Projektordner `projekt01` mit den Unterordnern `code`, `daten`, `dokumentation`.
+- Legen Sie im Ordner `dokumentation` eine leere Datei `readme.txt` an.
+- Bearbeiten Sie die Datei mit einem Editor und fügen Sie eine Projektbeschreibung hinzu.
+- Kopieren Sie die Datei in den Ordner daten.
+- Verschieben oder benennen Sie die Datei anschließend um.
+- Löschen Sie testweise ein leeres Verzeichnis.
+- Erstellen Sie testweise ein Verzeichnis und löschen Sie es rekursiv.
+
+**2. Dateiberechtigungen & Benutzerverwaltung**
+
+- Prüfen Sie die Rechte der Datei `readme.txt`.
+- Setzen Sie die Datei-Berechtigungen so, dass:
+    - Der Eigentümer Lese- und Schreibrechte hat,
+    - die Gruppe nur Leserechte besitzt und
+    - andere gar keine Rechte haben.
+- Legen Sie einen neuen Benutzer `testuser_[IhreNummer+100]` an.
+- Ändern Sie den Eigentümer der Datei auf `testuser_[IhreNummer+100]`.
+- Löschen Sie `testuser_[IhreNummer+100]` nach dem Test wieder.
+
+**3. Systemzustand analysieren**
+
+- Zeigen Sie alle laufenden Prozesse an.
+- Filtern Sie die Liste nach dem Programm systemd.
+- Starten Sie die Live-Prozessübersicht.
+- Lassen Sie sich den verfügbaren Speicherplatz anzeigen.
+- Überprüfen Sie die RAM-Auslastung.
+- Zeigen Sie System- und Kernelinformationen an.
+- Ermitteln Sie die Systemlaufzeit.
+
+**4. Skripte & Historie**
+
+- Erstellen Sie im Ordner `code` ein Skript `hello.sh`, das eine Begrüßung (`echo "Moin moin!"`) ausgibt.
+- Machen Sie das Skript ausführbar.
+- Führen Sie das Skript aus.
+- Prüfen Sie den Verlauf Ihrer bisherigen Befehle.
+
+**5. Sonstiges & GPIO**
+
+- Zeigen Sie Ihren Benutzernamen an.
+- Versuchen Sie, pinout aufzurufen (nur auf echtem Raspberry Pi möglich), alternativ: https://pinout.xyz
+- Wie würden Sie einen Shutdown und Reboot durchführen? – ***Führen Sie ihn nicht wirklich aus.***
+
+**Aufgabe 3**
+
+Laden Sie Ihre Lösung als .pdf-Datei (max. 5 MB) in dieser Aufgabe hoch.
+
+**Aufgabe 4**
+
+Sie erhalten auf die Lösung ein KI-generiertes Feedback. Analysieren Sie dieses kritisch und notieren Sie sich Auffälligkeiten für die Besprechung in der Klasse.
+
+### Arbeitsauftrag A|4.8: Reflexion der Bedienung eines Remote-Systems via Kommandozeile
+
+**Aufgabe 1**
+
+Beantworten Sie folgende Reflexionsfragen im Textfeld dieser Aufgabe:
+
+- Was haben Sie heute über das Arbeiten mit dem Linux-Terminal gelernt?
+- An welcher Stelle waren Sie sich unsicher und wie sind Sie damit umgegangen?
+- Welche Befehle oder Funktionen haben Ihnen gefehlt oder welche würden Sie sich gerne genauer ansehen?
 
 ## Kompetenz 4.3: Installation und Aktualisierung des Betriebssystems
 
