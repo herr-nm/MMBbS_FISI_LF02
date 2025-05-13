@@ -269,6 +269,8 @@ Ihnen liegt ein vorbereitetes Cheat-Sheet zu Linux-Kommandozeilenbefehlen vor (V
     - Könner: Befehle situationsgerecht anwenden
     - Profi: Befehlserweiterungen oder Fälle beschreiben können
 
+    Die Einsteiger- und Könner-Spalten müssen bearbeitet werden. Die Profi-Spalte kann optional ausgewählt werden.
+
 **Aufgabe 2**
 
 Wenn Sie die Befehlsreferenz fertiggestellt haben, geben Sie diese in dieser Aufgabe als .pdf-Datei (max. 5 MB) ab. Anschließend wird eine Beispiellösung *Lösungshinweis zu A|4.6: Linux-Befehlsreferenz anlegen* freigeschaltet. Gleichen Sie Ihre Lösung mit der Beispiellösung ab. Notieren Sie sich Auffälligkeiten oder Lösungsabweichungen für die spätere Besprechung in der Klasse.
@@ -520,7 +522,7 @@ shutdown beendet das System sicher. Optionen wie `-h now` oder `-r +10` ermögli
 ### Auswahl der Niveaustufe für die Aufgaben zur Arbeit in der Linux-Kommandozeile (A|4.7):
 
 - Standardmäßig ist die Stufe Profi gewählt.
-- Benötigen Sie mehr Hilfestellungen, kennzeichnen Sie diese Textbox als "Erledigt", um den *Arbeitsauftrag A|4.7* als Könner anzeigen zu lassen.	
+- Benötigen Sie mehr Hilfestellungen, kennzeichnen Sie diese Textbox als "Erledigt", um sich den *Arbeitsauftrag A|4.7* als Könner anzeigen zu lassen.	
 
 ### SSH-Login zum Server
 
@@ -535,58 +537,96 @@ Zur Bearbeitung der folgenden Aufgaben steht Ihnen ein Linux-Server zur Verfügu
 
 **Aufgabe 1**
 
-Speichern Sie diese Aufgabenstellungen in einem eigenen Dokument (z.B. Word oder LibreOffice).
+Kopieren Sie diese Aufgabenstellungen in ein eigenes Dokument (z.B. Word oder LibreOffice).
 
 **Aufgabe 2**
 
-Arbeiten Sie auf dem bereitgestellten Raspberry Pi OS im Terminal. Verwenden Sie Ihr persönliches Login. Ihre Aufgabe ist es, systematisch Befehle einzugeben, um typische Administrationsaufgaben durchzuführen.
+Arbeiten Sie auf dem bereitgestellten Raspberry Pi OS im Terminal. Verwenden Sie Ihr persönliches Login. Ihre Aufgabe ist es typische Administrationsaufgaben hinsichtlich Dateien und Ordnern, Benutzern sowie der Systemanalyse durchzuführen.
 
 Notieren Sie die von Ihnen verwendeten Befehle unter die jeweiligen Aufgabenpunkte. Nutzen Sie Ihr Cheat Sheet zur Unterstützung.
 
-**1. Verzeichnisse und Dateien verwalten**
+!!! example "Beispiel"
+    
+    **Aufgabe:** A.0: Lassen Sie sich das aktuelle Verzeichnis anzeigen.
+    
+    **Lösung**: `pwd`
 
-- Wechseln Sie in Ihr persönliches Startverzeichnis. Überlegen Sie, mit welchem Befehl Sie sich den aktuellen Pfad anzeigen lassen können.
-- Legen Sie einen Projektordner `projekt01` an. Dieser soll später Ihre Übungsdateien enthalten.
-- Erstellen Sie darin die Unterordner `code`, `daten` und `dokumentation`. Tipp: Der Befehl kann mehrere Ordner auf einmal anlegen.
-- Erzeugen Sie im Ordner `dokumentation` eine leere Textdatei `readme.txt`.
-- Bearbeiten Sie die Datei im Terminal. Fügen Sie einen kurzen Text zum Projektthema ein.
-- Kopieren Sie die Datei anschließend in den Ordner `daten`. Denken Sie daran, Ziel und Quelle zu benennen.
-- Benennen Sie die Datei um oder verschieben Sie sie an eine andere Stelle.
-- Erstellen Sie ein weiteres Verzeichnis und entfernen Sie es wieder – einmal als leeres Verzeichnis, einmal mit Inhalt.
+**A. Verzeichnisse und Dateien verwalten**
 
-**2. Dateiberechtigungen & Benutzerverwaltung**
+!!! abstract "Kurzinformation Dateipfade"
 
-- Prüfen Sie, welche Berechtigungen die Datei `readme.txt` aktuell hat. Wie sind sie aufgebaut?
-- Passen Sie die Rechte so an, dass:
+    Der Dateipfad kann in der Kommandozeile absolut (ab dem Wurzelverzeichnis `/`) oder relativ (ab dem aktuellen Ordner) angegeben werden. Bei absoluter Adressierung ist der aktuelle Pfad bei Aufruf des Befehls irrelevant, er kann "von überall aus dem System" ausgeführt werden. Bei relativer Adressierung ist der aktuelle Pfad bei Aufruf der Startpunkt des Befehls.
+
+    Wenn `pwd` die Ausgabe `/home/max` ausgibt, kann der im Ordner `max` enthaltene Ordner `hausaufgaben` wie folgt angesprochen werden:
+
+    - Absolut adressiert: `ls /home/max/hausaufgaben` 
+    - Relativ adressiert: `ls hausaufgaben`
+
+    Beide Befehle geben die Liste der im Ordner `hausaufgaben` gespeicherten Ordner und Dateien aus.
+
+1. Legen Sie einen Projektordner `projekt01` an. Dieser soll später Ihre Übungsdateien enthalten.
+2. Erstellen Sie darin die Unterordner `code`, `daten` und `dokumentation`. Der Befehl zur Anlage von Ordnern kann mehrere Ordner auf einmal anlegen, wenn diese durch Leerzeichen getrennt aufgeführt werden.
+3. Erzeugen Sie im Ordner `dokumentation` eine leere Textdatei `readme.txt`. Prüfen Sie die Anlage mittels Auflisten des Ordnerinhalts `ls`.
+4. Bearbeiten Sie die Datei im Terminal mit dem Editor `nano`. Fügen Sie einen kurzen Text zum Projektthema ein "Austattung des Arbeitsplatzes 'Hotelemfpang'".
+5. Kopieren Sie die Datei anschließend in den Ordner `daten`. Denken Sie daran, erst die Quelle und anschließend das Ziel anzugeben. 
+6. Benennen Sie die Datei `readme.txt` im Ordner `daten` in `protokoll.txt` um. Geben Sie im Befehl erst den alten und dann den neuen Dateinamen an.
+7. Löschen Sie den Ordner `daten` mitsamt seines Inhalts. Nutzen Sie einen Befehl, der das rekursive Löschen (also Löschen des Ordners mit all seinen Unterordnern und in diesen enthaltenen Dateien) ermöglicht.
+
+**B. Dateiberechtigungen & Benutzerverwaltung**
+
+!!! abstract "Kurzinformation Berechtigungen"
+
+    Der Befehl `ls -l` erzeugt eine Ausgabe der im aktuellen Ordner enthaltenen Ordner und Dateien in Listenform und unter Angabe von Details zu den Elementen.
+
+    Beispielsweise erzeugt der Befehl `ls -l /home/max/hausaufgaben` die folgende Ausgabe:
+
+    ```
+    max@raspberry:~/hausaufgaben $ ls -l
+    insgesamt 0
+    -rw-r--r-- 1 max max 0     30. Januar  16:06  hausaufgabe_lf2.txt
+    -rw-r--r-x 1 max max 0     30. Januar  16:26  hausaufgabe_lf5_script.py
+    drwxr-xr-x 2 max max 4096  31. Januar  08:35  prüfungsvorbereitung
+    ```
+    Die Berechtigungen sind im ersten Teil einer Zeile angegeben:
+
+    - `d` oder `-` zeigen an der ersten Stelle einen Ordner (`d`) oder eine Datei (`-`) an
+    - die erste Gruppe aus `rwx` bezieht sich auf die Leserechte (`r`), Schreibrechte (`w`) und Ausführrechte (`x`) des Eigentümers (User = u) der Datei
+    - die zweite Gruppe aus `rwx` bezieht sich auf die Rechte der Eigentümer-Gruppe (Group = g)
+    - die dritte Gruppe aus `rwx` zeigt die Rechte der anderen Benutzer (Others = o) des Systems an
+    
+    Ist ein Recht nicht gegeben, steht an der Stelle des Buchstabens ein `-`. Das Ändern der Berechtigungen erfolgt über den `chmod`-Befehl und kann symbolisch oder mit Zahlen erfolgen. So kann z.B. dem Script `hausaufgabe_lf5_script.py` mit dem Befehl `chmod u+x hausaufgabe_lf5_script.py` das Ausführrecht durch den Eigentümer der Datei erteilt werden. Den anderen Benutzern wird das Recht mit dem Befehl `chmod o-x hausaufgabe_lf5_script.py` wieder entzogen.
+
+1. Prüfen Sie, welche Berechtigungen die Datei `readme.txt` im Ordner `dokumentation` aktuell hat.
+2. Passen Sie die Rechte so an, dass:
     - Sie selbst lesen und schreiben dürfen,
-    - die Gruppe lesen darf
-    - andere nur keine Rechte haben.
-- Erstellen Sie einen neuen Benutzer mit dem Namen `testuser_[IhreNummer+100]`.
-- Übertragen Sie die Eigentümerschaft der Datei auf diesen Benutzer.
-- Löschen Sie den erstellten Testbenutzer nach dem Test wieder.
+    - die Gruppe ebenfalls lesen und schreiben darf
+    - andere keine Rechte haben.
+3. Erstellen Sie einen neuen Benutzer mit dem Namen `testuser_[IhreNummer+100]`.
+4. Übertragen Sie die Eigentümerschaft der Datei `readme.txt` im Ordner `dokumentation` auf diesen Benutzer.
+5. Löschen Sie den von Ihnen erstellten Testbenutzer wieder.
 
-**3. Systemzustand analysieren**
+**C. Systemzustand analysieren**
 
-- Verschaffen Sie sich einen Überblick über alle aktuell laufenden Prozesse im System.
-- Filtern Sie diese Liste nach dem Programm `systemd`.
-- Rufen Sie eine Live-Übersicht der Systemressourcen auf. Wie verlassen Sie diese Ansicht wieder?
-- Prüfen Sie, wie viel Festplattenspeicher noch verfügbar ist.
-- Sehen Sie sich an, wie viel Arbeitsspeicher genutzt wird.
-- Lassen Sie sich technische Informationen über das System anzeigen.
-- Finden Sie heraus, wie lange das System bereits läuft.
+1. Verschaffen Sie sich einen Überblick über alle aktuell laufenden Prozesse im System. Nutzen Sie noch keinen Linux-Taskmanager.
+2. Filtern Sie diese Liste mithilfe von `grep` nach dem Programm `systemd`.
+3. Rufen Sie eine Live-Übersicht der Systemressourcen und der laufenden Prozesse im Linux-Taskmanager auf. Beschreiben Sie kurz den Aufbau des Programms.
+4. Prüfen Sie, wie viel Festplattenspeicher noch verfügbar ist.
+5. Sehen Sie sich an, wie viel Arbeitsspeicher genutzt wird.
+6. Lassen Sie sich technische Informationen über das System (Kernel-Information etc.) anzeigen.
+7. Finden Sie heraus, wie lange das System bereits läuft.
 
-**4. Skripte & Historie**
+**D. Skripte & Historie**
 
-- Erstellen Sie im Ordner code eine Datei `hello.sh`, in der eine kurze Begrüßung (`echo "Moin moin!"`) ausgegeben wird.
-- Erteilen Sie der Datei die nötigen Rechte, um sie auszuführen.
-- Führen Sie das Skript anschließend aus.
-- Sehen Sie sich Ihre zuletzt verwendeten Befehle an. Welchen Nutzen hat diese Liste?
+1. Erstellen Sie im Ordner `code` die Datei `hello.sh`mit dem Inhalt `echo "Moin moin!"`.
+2. Erteilen Sie der Datei mit `chmod` die nötigen Rechte, um sie auszuführen.
+3. Führen Sie das Skript anschließend aus.
+4. Sehen Sie sich Ihre zuletzt verwendeten Befehle an. Welchen Nutzen hat diese Liste?
 
-**5. Sonstiges & GPIO**
+**E. Weitere Befehle**
 
-- Lassen Sie sich anzeigen, unter welchem Benutzer Sie aktuell eingeloggt sind.
-- Versuchen Sie, die GPIO-Pinbelegung über den Befehl `pinout` aufzurufen (nur auf echtem Raspberry Pi möglich). Falls das nicht funktioniert, informieren Sie sich auf https://pinout.xyz.
-- Informieren Sie sich, mit welchen Befehlen man einen Rechner herunterfahren oder neu starten kann. ***Hinweis: Führen Sie diese nicht wirklich aus!***
+1. Lassen Sie sich anzeigen, unter welchem Benutzer Sie aktuell eingeloggt sind.
+2. Mit welchem Befehl kann man ein Linux-System herunterfahren. ***Hinweis: Führen Sie diese nicht wirklich aus!***
+3. Mit welchem Befehl kann man ein Linux-System neu starten. ***Hinweis: Führen Sie diese nicht wirklich aus!***
 
 **Aufgabe 3**
 
