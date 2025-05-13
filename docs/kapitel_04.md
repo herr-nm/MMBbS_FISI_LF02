@@ -535,6 +535,10 @@ Zur Bearbeitung der folgenden Aufgaben steht Ihnen ein Linux-Server zur Verfügu
 
 ### Arbeitsauftrag A|4.7: Linux-Terminal bedienen (Könner)
 
+!!! tip "KI-Feedback"
+
+    Dieser Arbeitsauftrag wird durch ein KI-Feedback versehen. Bearbeiten Sie die Aufgaben s.u. Die Lehrkraft führt in regelmäßigen Abständen ein Script aus, welches die Abgaben durch ein KI-Feedback ergänzt. Schreiben Sie daher **keine** personenbezogenen Daten in die Abgabe. Setzen Sie sich kritisch mit dem Feedback auseinander.
+
 **Aufgabe 1**
 
 Kopieren Sie diese Aufgabenstellungen in ein eigenes Dokument (z.B. Word oder LibreOffice).
@@ -567,7 +571,7 @@ Notieren Sie die von Ihnen verwendeten Befehle unter die jeweiligen Aufgabenpunk
 1. Legen Sie einen Projektordner `projekt01` an. Dieser soll später Ihre Übungsdateien enthalten.
 2. Erstellen Sie darin die Unterordner `code`, `daten` und `dokumentation`. Der Befehl zur Anlage von Ordnern kann mehrere Ordner auf einmal anlegen, wenn diese durch Leerzeichen getrennt aufgeführt werden.
 3. Erzeugen Sie im Ordner `dokumentation` eine leere Textdatei `readme.txt`. Prüfen Sie die Anlage mittels Auflisten des Ordnerinhalts `ls`.
-4. Bearbeiten Sie die Datei im Terminal mit dem Editor `nano`. Fügen Sie einen kurzen Text zum Projektthema ein "Austattung des Arbeitsplatzes 'Hotelemfpang'".
+4. Bearbeiten Sie die Datei im Terminal mit dem Editor `nano`. Fügen Sie einen kurzen Text zum Projektthema ein: "Austattung des Arbeitsplatzes 'Hotelemfpang'".
 5. Kopieren Sie die Datei anschließend in den Ordner `daten`. Denken Sie daran, erst die Quelle und anschließend das Ziel anzugeben. 
 6. Benennen Sie die Datei `readme.txt` im Ordner `daten` in `protokoll.txt` um. Geben Sie im Befehl erst den alten und dann den neuen Dateinamen an.
 7. Löschen Sie den Ordner `daten` mitsamt seines Inhalts. Nutzen Sie einen Befehl, der das rekursive Löschen (also Löschen des Ordners mit all seinen Unterordnern und in diesen enthaltenen Dateien) ermöglicht.
@@ -625,8 +629,8 @@ Notieren Sie die von Ihnen verwendeten Befehle unter die jeweiligen Aufgabenpunk
 **E. Weitere Befehle**
 
 1. Lassen Sie sich anzeigen, unter welchem Benutzer Sie aktuell eingeloggt sind.
-2. Mit welchem Befehl kann man ein Linux-System herunterfahren. ***Hinweis: Führen Sie diese nicht wirklich aus!***
-3. Mit welchem Befehl kann man ein Linux-System neu starten. ***Hinweis: Führen Sie diese nicht wirklich aus!***
+2. Mit welchem Befehl kann man ein Linux-System herunterfahren. ***Hinweis: Führen Sie den Befehl nicht wirklich aus!***
+3. Mit welchem Befehl kann man ein Linux-System neu starten. ***Hinweis: Führen Sie den Befehl nicht wirklich aus!***
 
 **Aufgabe 3**
 
@@ -634,70 +638,85 @@ Speichern Sie Ihre Lösung als PDF-Datei (max. 5 MB) und laden Sie sie hier im
 
 **Aufgabe 4**
 
-Nach der Abgabe erhalten Sie ein KI-generiertes Feedback. Lesen Sie dieses sorgfältig und notieren Sie sich Rückfragen oder Auffälligkeiten zur Besprechung im Unterricht.
+Nach der Abgabe erhalten Sie ein KI-generiertes Feedback (wird manuell durch die Lehrkraft angestoßen). Lesen Sie dieses kritisch und notieren Sie sich Rückfragen oder Auffälligkeiten zur Besprechung im Unterricht. 
 
 ### Arbeitsauftrag A|4.7: Linux-Terminal bedienen (Profi)
 
+!!! tip "KI-Feedback"
+
+    Dieser Arbeitsauftrag wird durch ein KI-Feedback versehen. Bearbeiten Sie die Aufgaben s.u. Die Lehrkraft führt in regelmäßigen Abständen ein Script aus, welches die Abgaben durch ein KI-Feedback ergänzt. Schreiben Sie daher **keine** personenbezogenen Daten in die Abgabe. Setzen Sie sich kritisch mit dem Feedback auseinander.
+
 **Aufgabe 1**
 
-Kopieren Sie die Aufgabenstellungen s.u. in ein Dokument.
+Kopieren Sie diese Aufgabenstellungen in ein eigenes Dokument (z.B. Word oder LibreOffice).
 
 **Aufgabe 2**
 
-Lösen Sie die Aufgaben auf dem zur Verfügung gestellten Raspberry Pi OS unter Nutzung Ihrer individuellen Login-Details. Schreiben Sie die korrekten Befehle als Lösung direkt unter die einzelnen Aufgabenschritte.
+Arbeiten Sie auf dem bereitgestellten Raspberry Pi OS im Terminal. Verwenden Sie Ihr persönliches Login. Ihre Aufgabe ist es typische Administrationsaufgaben hinsichtlich Dateien und Ordnern, Benutzern sowie der Systemanalyse durchzuführen.
 
-**1. Verzeichnisse und Dateien verwalten**
+Notieren Sie die von Ihnen verwendeten Befehle unter die jeweiligen Aufgabenpunkte. Nutzen Sie Ihr Cheat Sheet zur Unterstützung.
 
-- Navigieren Sie in Ihr Home-Verzeichnis.
-- Erstellen Sie den Projektordner `projekt01` mit den Unterordnern `code`, `daten`, `dokumentation`.
-- Legen Sie im Ordner `dokumentation` eine leere Datei `readme.txt` an.
-- Bearbeiten Sie die Datei mit einem Editor und fügen Sie eine Projektbeschreibung hinzu.
-- Kopieren Sie die Datei in den Ordner daten.
-- Verschieben oder benennen Sie die Datei anschließend um.
-- Löschen Sie testweise ein leeres Verzeichnis.
-- Erstellen Sie testweise ein Verzeichnis und löschen Sie es rekursiv.
+!!! example "Beispiel"
+    
+    **Aufgabe:** A.0: Lassen Sie sich das aktuelle Verzeichnis anzeigen.
+    
+    **Lösung**: `pwd`
 
-**2. Dateiberechtigungen & Benutzerverwaltung**
+**A. Verzeichnisse und Dateien verwalten**
 
-- Prüfen Sie die Rechte der Datei `readme.txt`.
-- Setzen Sie die Datei-Berechtigungen so, dass:
-    - Der Eigentümer Lese- und Schreibrechte hat,
-    - die Gruppe nur Leserechte besitzt und
-    - andere gar keine Rechte haben.
-- Legen Sie einen neuen Benutzer `testuser_[IhreNummer+100]` an.
-- Ändern Sie den Eigentümer der Datei auf `testuser_[IhreNummer+100]`.
-- Löschen Sie `testuser_[IhreNummer+100]` nach dem Test wieder.
+1. Legen Sie einen Projektordner `projekt01` an.
+2. Erstellen Sie darin die Unterordner `code`, `daten` und `dokumentation`.
+3. Erzeugen Sie im Ordner `dokumentation` eine leere Textdatei `readme.txt`.
+4. Bearbeiten Sie die Datei im Terminal und fügen Sie den kurzen Text zum Projektthema ein: "Austattung des Arbeitsplatzes 'Hotelemfpang'".
+5. Kopieren Sie die Datei anschließend in den Ordner `daten`.
+6. Benennen Sie die Datei `readme.txt` im Ordner `daten` in `protokoll.txt` um.
+7. Löschen Sie den Ordner `daten` mitsamt seines Inhalts.
 
-**3. Systemzustand analysieren**
+**B. Dateiberechtigungen & Benutzerverwaltung**
 
-- Zeigen Sie alle laufenden Prozesse an.
-- Filtern Sie die Liste nach dem Programm systemd.
-- Starten Sie die Live-Prozessübersicht.
-- Lassen Sie sich den verfügbaren Speicherplatz anzeigen.
-- Überprüfen Sie die RAM-Auslastung.
-- Zeigen Sie System- und Kernelinformationen an.
-- Ermitteln Sie die Systemlaufzeit.
+1. Prüfen Sie, welche Berechtigungen die Datei `readme.txt` im Ordner `dokumentation` aktuell hat.
+2. Passen Sie die Rechte mit der Zahlen-Schreibweise so an, dass:
+    - Sie selbst lesen und schreiben dürfen,
+    - die Gruppe ebenfalls lesen und schreiben darf
+    - andere keine Rechte haben.
+3. Erstellen Sie einen neuen Benutzer mit dem Namen `testuser_[IhreNummer+100]`.
+4. Übertragen Sie die Eigentümerschaft der Datei `readme.txt` im Ordner `dokumentation` auf diesen Benutzer.
+5. Wechseln Sie mittels `su` zum neuen Benutzer und bearbeiten Sie die Datei nochmals, um einen Text zu ändern.
+6. Kopieren Sie die Datei in das `home`-Verzeichnis des Testusers.
+7. Wechseln Sie wieder zurück zum Ausgangsuser.
+8. Löschen Sie den von Ihnen erstellten Testbenutzer wieder.
+9. Prüfen Sie, was nach dem Löschen des Testbenutzers mit den Dateien und ihren Berechtigungen passiert ist.
 
-**4. Skripte & Historie**
+**C. Systemzustand analysieren**
 
-- Erstellen Sie im Ordner `code` ein Skript `hello.sh`, das eine Begrüßung (`echo "Moin moin!"`) ausgibt.
-- Machen Sie das Skript ausführbar.
-- Führen Sie das Skript aus.
-- Prüfen Sie den Verlauf Ihrer bisherigen Befehle.
+1. Verschaffen Sie sich einen Überblick über alle aktuell laufenden Prozesse im System. Nutzen Sie noch keinen Linux-Taskmanager.
+2. Filtern Sie diese Liste nach dem Programm `systemd`.
+3. Rufen Sie eine Live-Übersicht der Systemressourcen und der laufenden Prozesse im Linux-Taskmanager auf. Beschreiben Sie kurz den Aufbau des Programms.
+4. Prüfen Sie, wie viel Festplattenspeicher noch verfügbar ist.
+5. Sehen Sie sich an, wie viel Arbeitsspeicher genutzt wird.
+6. Lassen Sie sich technische Informationen über das System (Kernel-Information etc.) anzeigen.
+7. Finden Sie heraus, wie lange das System bereits läuft.
 
-**5. Sonstiges & GPIO**
+**D. Skripte & Historie**
 
-- Zeigen Sie Ihren Benutzernamen an.
-- Versuchen Sie, pinout aufzurufen (nur auf echtem Raspberry Pi möglich), alternativ: https://pinout.xyz
-- Wie würden Sie einen Shutdown und Reboot durchführen? – ***Führen Sie ihn nicht wirklich aus.***
+1. Erstellen Sie im Ordner `code` die Datei `hello.sh`mit dem Inhalt `echo "Moin moin!"`.
+2. Erteilen Sie der Datei die nötigen Rechte, um sie auszuführen.
+3. Führen Sie das Skript anschließend aus.
+4. Sehen Sie sich Ihre zuletzt verwendeten Befehle an. Welchen Nutzen hat diese Liste?
+
+**E. Weitere Befehle**
+
+1. Lassen Sie sich anzeigen, unter welchem Benutzer Sie aktuell eingeloggt sind.
+2. Mit welchem Befehl kann man ein Linux-System herunterfahren. ***Hinweis: Führen Sie den Befehl nicht wirklich aus!***
+3. Mit welchem Befehl kann man ein Linux-System neu starten. ***Hinweis: Führen Sie den Befehl nicht wirklich aus!***
 
 **Aufgabe 3**
 
-Laden Sie Ihre Lösung als .pdf-Datei (max. 5 MB) in dieser Aufgabe hoch.
+Speichern Sie Ihre Lösung als PDF-Datei (max. 5 MB) und laden Sie sie hier im Kurs hoch.
 
 **Aufgabe 4**
 
-Sie erhalten auf die Lösung ein KI-generiertes Feedback. Analysieren Sie dieses kritisch und notieren Sie sich Auffälligkeiten für die Besprechung in der Klasse.
+Nach der Abgabe erhalten Sie ein KI-generiertes Feedback (wird manuell durch die Lehrkraft angestoßen). Lesen Sie dieses kritisch und notieren Sie sich Rückfragen oder Auffälligkeiten zur Besprechung im Unterricht. 
 
 ### Arbeitsauftrag A|4.8: Reflexion der Bedienung eines Remote-Systems via Kommandozeile
 
