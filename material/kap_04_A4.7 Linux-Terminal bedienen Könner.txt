@@ -1,0 +1,104 @@
+-------------------------------------------
+Beispiel
+-------------------------------------------
+
+A.0: Lassen Sie sich das aktuelle Verzeichnis anzeigen.
+> pwd
+
+-------------------------------------------
+A. Verzeichnisse und Dateien verwalten
+-------------------------------------------
+
+A.1: Legen Sie einen Projektordner projekt01 an. Dieser soll später Ihre Übungsdateien enthalten.
+> 
+
+A.2: Erstellen Sie darin die Unterordner code, daten und dokumentation. Der Befehl zur Anlage von Ordnern kann mehrere Ordner auf einmal anlegen, wenn diese durch Leerzeichen getrennt aufgeführt werden.
+> 
+
+A.3: Erzeugen Sie im Ordner dokumentation eine leere Textdatei readme.txt. Prüfen Sie die Anlage mittels Auflisten des Ordnerinhalts ls.
+>
+
+A.4: Bearbeiten Sie die Datei im Terminal mit dem Editor nano. Fügen Sie einen kurzen Text zum Projektthema ein: "Ausstattung des Arbeitsplatzes 'Hotelempfang'".
+>
+
+A.5: Kopieren Sie die Datei anschließend in den Ordner daten. Denken Sie daran, erst die Quelle und anschließend das Ziel anzugeben.
+>
+
+A.6: Benennen Sie die Datei readme.txt im Ordner daten in protokoll.txt um. Geben Sie im Befehl erst den alten und dann den neuen Dateinamen an.
+>
+
+A.7: Löschen Sie den Ordner daten mitsamt seines Inhalts. Nutzen Sie einen Befehl, der das rekursive Löschen (also Löschen des Ordners mit all seinen Unterordnern und in diesen enthaltenen Dateien) ermöglicht.
+>
+
+-------------------------------------------
+B. Dateiberechtigungen & Benutzerverwaltung
+-------------------------------------------
+
+B.1: Prüfen Sie, welche Berechtigungen die Datei readme.txt im Ordner dokumentation aktuell hat.
+>
+
+B.2: Passen Sie die Rechte so an, dass: Sie selbst lesen und schreiben dürfen, die Gruppe ebenfalls lesen und schreiben darf andere keine Rechte haben.
+>
+
+B.3: Erstellen Sie einen neuen Benutzer mit dem Namen testuser_[IhreNummer+100].
+>
+
+B.4: Übertragen Sie die Eigentümerschaft der Datei readme.txt im Ordner dokumentation auf diesen Benutzer.
+>
+
+B.5: Löschen Sie den von Ihnen erstellten Testbenutzer wieder.
+>
+
+-------------------------------------------
+C. Systemzustand analysieren
+-------------------------------------------
+
+C.1: Verschaffen Sie sich einen Überblick über alle aktuell laufenden Prozesse im System. Nutzen Sie noch keinen Linux-Taskmanager.
+>
+
+C.2: Filtern Sie diese Liste mithilfe von grep nach dem Programm systemd.
+>
+
+C.3: Rufen Sie eine Live-Übersicht der Systemressourcen und der laufenden Prozesse im Linux-Taskmanager auf. Beschreiben Sie kurz den Aufbau des Programms.
+>
+
+C.4: Prüfen Sie, wie viel Festplattenspeicher im Dateisystem udev noch verfügbar ist (Anzeige in GB [human readable]).
+>
+
+C.5: Sehen Sie sich an, wie viel Arbeitsspeicher genutzt wird (Anzeige in GiB [human readable]).
+>
+
+C.6: Lassen Sie sich technische Informationen über das System (Kernel-Information etc.) anzeigen.
+>
+
+C.7: Finden Sie heraus, wie lange das System bereits läuft.
+>
+
+-------------------------------------------
+D. Skripte & Historie
+-------------------------------------------
+
+D.1: Erstellen Sie im Ordner code die Datei hello.sh mit dem Inhalt echo "Moin moin!".
+>
+
+D.2: Erteilen Sie der Datei mit chmod die nötigen Rechte, um sie auszuführen.
+>
+
+D.3: Führen Sie das Skript anschließend aus.
+>
+
+D.4: Sehen Sie sich Ihre zuletzt verwendeten Befehle an. Welchen Nutzen hat diese Liste?
+>
+
+-------------------------------------------
+E. Weitere Befehle
+-------------------------------------------
+
+E.1: Lassen Sie sich anzeigen, unter welchem Benutzer Sie aktuell eingeloggt sind.
+>
+
+E.2: Mit welchem Befehl kann man ein Linux-System herunterfahren? Hinweis: Führen Sie den Befehl nicht wirklich aus!
+>
+
+E.3: Mit welchem Befehl kann man ein Linux-System neu starten? Hinweis: Führen Sie den Befehl nicht wirklich aus!
+>

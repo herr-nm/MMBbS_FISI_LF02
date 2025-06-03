@@ -1,0 +1,1621 @@
+
+<!doctype html>
+<html lang="de" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://herr-nm.github.io/MMBbS_FISI_LF02/kapitel_05.html">
+      
+      
+        <link rel="prev" href="kapitel_04.html">
+      
+      
+        <link rel="next" href="kapitel_06.html">
+      
+      
+      <link rel="icon" href="bilder/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>Kapitel 05 - Sensoren und Aktoren am RPi nutzen - FISI Lernfeld 2 (technisch)</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.342714a4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="extra.css">
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#kapitel-5-sensoren-und-aktoren-am-raspberry-pi-nutzen" class="md-skip">
+          Zum Inhalt
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Kopfzeile">
+    <a href="index.html" title="FISI Lernfeld 2 (technisch)" class="md-header__button md-logo" aria-label="FISI Lernfeld 2 (technisch)" data-md-component="logo">
+      
+  <img src="bilder/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            FISI Lernfeld 2 (technisch)
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Kapitel 05 - Sensoren und Aktoren am RPi nutzen
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Suche" placeholder="Suche" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Suche">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Zurücksetzen" aria-label="Zurücksetzen" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Suche wird initialisiert
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/herr-nm/MMBbS_FISI_LF02" title="Zum Repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="FISI Lernfeld 2 (technisch)" class="md-nav__button md-logo" aria-label="FISI Lernfeld 2 (technisch)" data-md-component="logo">
+      
+  <img src="bilder/logo.png" alt="logo">
+
+    </a>
+    FISI Lernfeld 2 (technisch)
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/herr-nm/MMBbS_FISI_LF02" title="Zum Repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Einleitung zum LF2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="kapitel_00.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 00 - Organisatorisches
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="kapitel_01.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 01 - Vorstellung des Modellunternehmens
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="kapitel_02.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 02 - IT-Systeme auswählen
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="kapitel_03.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 03 - Netzwerkspeicher dimensionieren
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="kapitel_04.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 04 - IT-Systeme in Betrieb nehmen
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 05 - Sensoren und Aktoren am RPi nutzen
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="kapitel_05.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 05 - Sensoren und Aktoren am RPi nutzen
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#handlungssituation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Handlungssituation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kompetenz-50-temperatursensor-ds18b20-in-betrieb-nehmen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kompetenz 5.0: Temperatursensor DS18B20 in Betrieb nehmen
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Kompetenz 5.0: Temperatursensor DS18B20 in Betrieb nehmen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arbeitsauftrag-a50-inbetriebnahme-des-ds18b20" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arbeitsauftrag A|5.0: Inbetriebnahme des DS18B20
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#informationsmaterial-m50-auszug-aus-dem-wiki-zum-ds18b20" class="md-nav__link">
+    <span class="md-ellipsis">
+      Informationsmaterial M|5.0: Auszug aus dem Wiki zum DS18B20
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Informationsmaterial M|5.0: Auszug aus dem Wiki zum DS18B20">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#der-temperatursensor-ds18b20" class="md-nav__link">
+    <span class="md-ellipsis">
+      Der Temperatursensor DS18B20
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ds18b20-an-den-raspberry-pi-anschlieen" class="md-nav__link">
+    <span class="md-ellipsis">
+      DS18B20 an den Raspberry Pi anschließen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anschluss-des-sensors-an-den-pi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Anschluss des Sensors an den Pi
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Anschluss des Sensors an den Pi">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#abbildung-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Abbildung 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abbildung-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Abbildung 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abbildung-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Abbildung 3
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abbildung-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Abbildung 4
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#konfiguration-des-betriebssystems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Konfiguration des Betriebssystems
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-des-temperatursensors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test des Temperatursensors
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python-script-zum-auslesen-des-sensors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Python-Script zum Auslesen des Sensors
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Python-Script zum Auslesen des Sensors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quellcode-fur-das-python-script-ds18b20_auslesenpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quellcode für das Python-Script: ds18b20_auslesen.py
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#informationsmaterial-m51-grundlagen-der-elektrotechnik" class="md-nav__link">
+    <span class="md-ellipsis">
+      Informationsmaterial M|5.1: Grundlagen der Elektrotechnik
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#informationsmaterial-m52-ubersicht-zum-mmbbs-raspberry-pi-set" class="md-nav__link">
+    <span class="md-ellipsis">
+      Informationsmaterial M|5.2: Übersicht zum MMBbS Raspberry Pi Set
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kompetenz-51-rgb-led-in-betrieb-nehmen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kompetenz 5.1: RGB-LED in Betrieb nehmen
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Kompetenz 5.1: RGB-LED in Betrieb nehmen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arbeitsauftrag-a51-inbetriebnahme-der-rgb-led" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arbeitsauftrag A|5.1: Inbetriebnahme der RGB-LED
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#informationsmaterial-m53-auszug-aus-dem-wiki-zur-rgb-led" class="md-nav__link">
+    <span class="md-ellipsis">
+      Informationsmaterial M|5.3: Auszug aus dem Wiki zur RGB-LED
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Informationsmaterial M|5.3: Auszug aus dem Wiki zur RGB-LED">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-vorbereitung" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Vorbereitung
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-rgb-led-auf-dem-breadboard-platzieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. RGB-LED auf dem Breadboard platzieren
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-anodenverbindung" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Anodenverbindung
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-widerstande-einfugen" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Widerstände einfügen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-verbindungen-zu-den-gpio-pins" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Verbindungen zu den GPIO-Pins
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-softwarekonfiguration" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Softwarekonfiguration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-skript-ausfuhren" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Skript ausführen
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arbeitsauftrag-a52-rgb-led-in-abhangigkeit-der-temperatur-ansteuern" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arbeitsauftrag A|5.2: RGB-LED in Abhängigkeit der Temperatur ansteuern
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kompetenz-52-single-color-leds-in-betrieb-nehmen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kompetenz 5.2: Single-Color-LEDs in Betrieb nehmen
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Kompetenz 5.2: Single-Color-LEDs in Betrieb nehmen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arbeitsauftrag-a53-inbetriebnahme-der-single-color-leds" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arbeitsauftrag A|5.3: Inbetriebnahme der Single-Color-LEDs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#informationsmaterial-m54-auszug-aus-dem-wiki-zur-single-color-led" class="md-nav__link">
+    <span class="md-ellipsis">
+      Informationsmaterial M|5.4: Auszug aus dem Wiki zur Single-Color-LED
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Informationsmaterial M|5.4: Auszug aus dem Wiki zur Single-Color-LED">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-vorbereitung_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Vorbereitung
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-led-und-widerstand-auf-dem-breadboard-platzieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. LED und Widerstand auf dem Breadboard platzieren
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-softwarekonfiguration" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Softwarekonfiguration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-python-skript-erstellen" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Python-Skript erstellen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-skript-ausfuhren" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Skript ausführen
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arbeitsauftrag-a54-single-color-leds-in-abhangigkeit-der-temperatur-ansteuern" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arbeitsauftrag A|5.4: Single-Color-LEDs in Abhängigkeit der Temperatur ansteuern
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#github" class="md-nav__link">
+    <span class="md-ellipsis">
+      GitHub
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GitHub">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#githubio-lf2-kurs-als-mkdocs-variante" class="md-nav__link">
+    <span class="md-ellipsis">
+      GitHub.io - LF2-Kurs als MkDocs-Variante
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="kapitel_06.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 06 - Exkurse und weitere Themen
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#handlungssituation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Handlungssituation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kompetenz-50-temperatursensor-ds18b20-in-betrieb-nehmen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kompetenz 5.0: Temperatursensor DS18B20 in Betrieb nehmen
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Kompetenz 5.0: Temperatursensor DS18B20 in Betrieb nehmen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arbeitsauftrag-a50-inbetriebnahme-des-ds18b20" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arbeitsauftrag A|5.0: Inbetriebnahme des DS18B20
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#informationsmaterial-m50-auszug-aus-dem-wiki-zum-ds18b20" class="md-nav__link">
+    <span class="md-ellipsis">
+      Informationsmaterial M|5.0: Auszug aus dem Wiki zum DS18B20
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Informationsmaterial M|5.0: Auszug aus dem Wiki zum DS18B20">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#der-temperatursensor-ds18b20" class="md-nav__link">
+    <span class="md-ellipsis">
+      Der Temperatursensor DS18B20
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ds18b20-an-den-raspberry-pi-anschlieen" class="md-nav__link">
+    <span class="md-ellipsis">
+      DS18B20 an den Raspberry Pi anschließen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anschluss-des-sensors-an-den-pi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Anschluss des Sensors an den Pi
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Anschluss des Sensors an den Pi">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#abbildung-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Abbildung 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abbildung-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Abbildung 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abbildung-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Abbildung 3
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abbildung-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Abbildung 4
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#konfiguration-des-betriebssystems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Konfiguration des Betriebssystems
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-des-temperatursensors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test des Temperatursensors
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python-script-zum-auslesen-des-sensors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Python-Script zum Auslesen des Sensors
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Python-Script zum Auslesen des Sensors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quellcode-fur-das-python-script-ds18b20_auslesenpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quellcode für das Python-Script: ds18b20_auslesen.py
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#informationsmaterial-m51-grundlagen-der-elektrotechnik" class="md-nav__link">
+    <span class="md-ellipsis">
+      Informationsmaterial M|5.1: Grundlagen der Elektrotechnik
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#informationsmaterial-m52-ubersicht-zum-mmbbs-raspberry-pi-set" class="md-nav__link">
+    <span class="md-ellipsis">
+      Informationsmaterial M|5.2: Übersicht zum MMBbS Raspberry Pi Set
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kompetenz-51-rgb-led-in-betrieb-nehmen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kompetenz 5.1: RGB-LED in Betrieb nehmen
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Kompetenz 5.1: RGB-LED in Betrieb nehmen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arbeitsauftrag-a51-inbetriebnahme-der-rgb-led" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arbeitsauftrag A|5.1: Inbetriebnahme der RGB-LED
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#informationsmaterial-m53-auszug-aus-dem-wiki-zur-rgb-led" class="md-nav__link">
+    <span class="md-ellipsis">
+      Informationsmaterial M|5.3: Auszug aus dem Wiki zur RGB-LED
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Informationsmaterial M|5.3: Auszug aus dem Wiki zur RGB-LED">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-vorbereitung" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Vorbereitung
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-rgb-led-auf-dem-breadboard-platzieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. RGB-LED auf dem Breadboard platzieren
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-anodenverbindung" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Anodenverbindung
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-widerstande-einfugen" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Widerstände einfügen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-verbindungen-zu-den-gpio-pins" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Verbindungen zu den GPIO-Pins
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-softwarekonfiguration" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Softwarekonfiguration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-skript-ausfuhren" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Skript ausführen
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arbeitsauftrag-a52-rgb-led-in-abhangigkeit-der-temperatur-ansteuern" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arbeitsauftrag A|5.2: RGB-LED in Abhängigkeit der Temperatur ansteuern
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kompetenz-52-single-color-leds-in-betrieb-nehmen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kompetenz 5.2: Single-Color-LEDs in Betrieb nehmen
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Kompetenz 5.2: Single-Color-LEDs in Betrieb nehmen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arbeitsauftrag-a53-inbetriebnahme-der-single-color-leds" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arbeitsauftrag A|5.3: Inbetriebnahme der Single-Color-LEDs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#informationsmaterial-m54-auszug-aus-dem-wiki-zur-single-color-led" class="md-nav__link">
+    <span class="md-ellipsis">
+      Informationsmaterial M|5.4: Auszug aus dem Wiki zur Single-Color-LED
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Informationsmaterial M|5.4: Auszug aus dem Wiki zur Single-Color-LED">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-vorbereitung_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Vorbereitung
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-led-und-widerstand-auf-dem-breadboard-platzieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. LED und Widerstand auf dem Breadboard platzieren
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-softwarekonfiguration" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Softwarekonfiguration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-python-skript-erstellen" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Python-Skript erstellen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-skript-ausfuhren" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Skript ausführen
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arbeitsauftrag-a54-single-color-leds-in-abhangigkeit-der-temperatur-ansteuern" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arbeitsauftrag A|5.4: Single-Color-LEDs in Abhängigkeit der Temperatur ansteuern
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#github" class="md-nav__link">
+    <span class="md-ellipsis">
+      GitHub
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GitHub">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#githubio-lf2-kurs-als-mkdocs-variante" class="md-nav__link">
+    <span class="md-ellipsis">
+      GitHub.io - LF2-Kurs als MkDocs-Variante
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="kapitel-5-sensoren-und-aktoren-am-raspberry-pi-nutzen">Kapitel 5: Sensoren und Aktoren am Raspberry Pi nutzen</h1>
+<p><img alt="Kapitelbild" src="bilder/05_kapitelbild.png" /></p>
+<p>In diesem Kapitel werden Sie ...</p>
+<ul>
+<li>... den Temperatursensor DS18B20 am Raspberry Pi in Betrieb nehmen.</li>
+<li>... die RGB-LED am Raspberry Pi in Betrieb nehmen.</li>
+<li>... die Single-Color-LEDs am Raspberry Pi in Betrieb nehmen.</li>
+</ul>
+<hr />
+<div class="admonition danger">
+<p class="admonition-title">Achtung</p>
+<p>Im folgenden Kapitel werden Sie sich mit elektrotechnischen Größen beschäftigen, um schließlich den Temperatursensor zu betreiben. Schließen Sie keine elektrischen Bauteile an den Raspberry Pi an, ohne sich sicher zu sein, dass Sie einen korrekten Aufbau geplant haben. Sollten Fehler im beim Anschließen der Bauteile geschehen, kann es dazu kommen, dass die internen Anschlüsse der GPIO-Pins des Raspberry Pi irreparabel zerstört werden.</p>
+</div>
+<h2 id="handlungssituation">Handlungssituation</h2>
+<p>Die Temperaturmesseinrichtung soll nun als Prototyp realisiert werden. Dafür sind einerseits der Temperatursensor sowie andererseits die visuelle Wiedergabe der Temperatur mittels LED einzurichten. Da es sich um einen Prototyp handelt, sollen zwei Varianten miteinander verglichen werden: einerseits die Darstellung der Temperatur mittels RGB-LED und andererseits die Darstellung mit mehreren Single-Color-LED.</p>
+<p><img alt="Stilisierter Raspberry Pi" src="bilder/kap_05_rpi.png" /></p>
+<h2 id="kompetenz-50-temperatursensor-ds18b20-in-betrieb-nehmen">Kompetenz 5.0: Temperatursensor DS18B20 in Betrieb nehmen</h2>
+<p>Im ersten Schritt soll der Temperatursensor am Raspberry Pi angeschlossen und mittels Python-Programm ausgelesen werden. Hierfür steht Ihnen das betriebsinterne Wiki als Auszug der Wissensdatenbank bereit.</p>
+<h3 id="arbeitsauftrag-a50-inbetriebnahme-des-ds18b20">Arbeitsauftrag A|5.0: Inbetriebnahme des DS18B20</h3>
+<p>Sie beginnen mit der Inbetriebnahme des Temperatursensors.</p>
+<ul>
+<li>Führen Sie gemäß des Informationsmaterials im Kurs die Inbetriebnahme des Temperatursensors durch (M|5.0: Auszug aus dem Wiki zum DS18B20).</li>
+<li>Weitere Informationen über Elektrotechnik-Basics finden Sie ebenfalls im Kurs (M|5.1: Grundlagen der Elektrotechnik).</li>
+<li>Alle Informationen zu Ihren Elektrobauteilen aus dem Raspberry Pi Set finden Sie im Kurs (M|5.2: Übersicht zum MMBbS Raspberry Pi Set).</li>
+<li>Testen Sie die Funktionstüchtigkeit, indem Sie das Script ausführen und den Temperatursensor durch Berührung erwärmen.</li>
+</ul>
+<h3 id="informationsmaterial-m50-auszug-aus-dem-wiki-zum-ds18b20">Informationsmaterial M|5.0: Auszug aus dem Wiki zum DS18B20</h3>
+<h4 id="der-temperatursensor-ds18b20">Der Temperatursensor DS18B20</h4>
+<p>Der Temperatursensor DS18B20 ist unter anderem im To-92 Gehäuse (Transistorgehäuse) verfügbar. In diesem kleinen Gehäuse befindet sich eine Temperaturmesschaltung und eine Logik mit Speichern, die es ermöglicht den gemessenen Temperaturwert über eine digitale Schnittstelle auszulesen.</p>
+<p>Laut Datenblatt liegt die Messgenauigkeit zwischen -10°C und +85°C, bei ± 0,5°C.</p>
+<p>Der Temperatursensor hat drei Anschlüsse (siehe Abbildung unten).</p>
+<ul>
+<li>VDD: Spannungsversorgung</li>
+<li>DQ: Datenleitung 1-Wire Bus</li>
+<li>GND: Masse</li>
+</ul>
+<p><img alt="Zeichnung DS18B20" src="bilder/05_DS18B20.png" /></p>
+<h4 id="ds18b20-an-den-raspberry-pi-anschlieen">DS18B20 an den Raspberry Pi anschließen</h4>
+<p>Damit die aktuelle Raumtemperatur gemessen werden kann, muss der Temperatursensor mit dem Raspberry Pi verbunden werden.</p>
+<div class="admonition danger">
+<p class="admonition-title">Achtung</p>
+<p>Um eine Beschädigungen des Raspberry Pi, des Temperatursensors oder weiterer Hardware zu vermeiden, ziehen Sie die Versorgungsspannung vom Raspberry Pi (direkt am Pi) ab! Schließen Sie die Versorgungsspannung erst wieder an, wenn Sie sich 100% sicher sind, dass Sie alles richtig verdrahtet haben!</p>
+</div>
+<h4 id="anschluss-des-sensors-an-den-pi">Anschluss des Sensors an den Pi</h4>
+<ol>
+<li><strong>VDD (3)</strong> Anschluss des Temperatursensors mit der 3,3VSpannungsversorgung des Raspberry Pis verbinden.</li>
+<li><strong>GND (1)</strong> Anschluss des Temperatursensors mit einem GroundAnschluss des Raspberry Pis verbinden.</li>
+<li><strong>DQ (2)</strong> Anschluss des Temperatursensors mit dem GPIO 4 Anschluss des Raspberry Pis verbinden.</li>
+<li>Außerdem muss <strong>zwischen Pin 3 und Pin 2 ein 4,7 kOhm Widerstand</strong> angeschlossen werden, wie in der folgenden Abbildung zu sehen ist. (Nähere Infos zum 4,7kOhm Widerstand: siehe Datenblatt Seite 4 Figure 3)</li>
+</ol>
+<p>Die folgenden drei Abbildungen visualisieren dies noch einmal:</p>
+<h5 id="abbildung-1">Abbildung 1</h5>
+<p><img alt="Schema Anschluss DS18B20 RPi" src="bilder/05_DS18B20_Breadboard.png" /></p>
+<h5 id="abbildung-2">Abbildung 2</h5>
+<p>In der Konsole des Raspberry Pi kann das zur Version passende PINOUT angezeigt werden. Dieses ist auch unter https://pinout.xyz/ einsehbar.</p>
+<p>Der Befehl <code>pinout</code> öffnet auf dem Raspberry Pi folgende Ansicht:</p>
+<p><img alt="Pinout des RPi" src="bilder/05_pinout.png" /></p>
+<h5 id="abbildung-3">Abbildung 3</h5>
+<p><img alt="Foto Aufbau 1" src="bilder/05_foto_1_ds18b20.jpg" /></p>
+<h5 id="abbildung-4">Abbildung 4</h5>
+<p><img alt="Foto Aufbau 1" src="bilder/05_foto_2_ds18b20.jpg" /></p>
+<h4 id="konfiguration-des-betriebssystems">Konfiguration des Betriebssystems</h4>
+<p>Im Raspbian ist bereits ein Treiber für den 1-Wire Bus enthalten. Dieser muss nur noch eingesschaltet werden und das funktioniert so:</p>
+<p>Öffnen Sie bitte die Datei <code>/boot/config.txt</code> (z.B. mit Befehl: <code>sudo nano /boot/config.txt</code>) und fügen Sie vor <code>[pi4]</code> Zeilen(n) hinzu:</p>
+<div class="highlight"><pre><span></span><code>#1-Wire Bus Treiber laden
+dtoverlay=w1-gpio,gpiopin=4,pullup=on
+</code></pre></div>
+<p>Achtung, bei w1 ist es ein kleines w und eine Eins!</p>
+<p>Die Datei sollte dann so aussehen:</p>
+<p><img alt="Config" src="bilder/05_config_ds18b20.png" /></p>
+<p>Speichern Sie die Änderungen mit <code>STRG + O</code> (mit <code>Enter</code> bestätigen) und schließen Sie den Texteditor mit <code>STRG + X</code>.</p>
+<p>Nach einem Neustart des Raspberry Pi (Befehl: <code>sudo reboot now</code>) sollte der Temperatursensor funktionieren.</p>
+<h4 id="test-des-temperatursensors">Test des Temperatursensors</h4>
+<p>Die Temperatur des Sensors ist nun über das Linux Dateisystem abrufbar.</p>
+<p>Wechseln Sie in das Verzeichnis <code>/sys/bus/w1/devices</code> (Befehl: <code>cd /sys/bus/w1/devices</code>) und lassen sich den Inhalt des Ordners (Befehl: <code>ls</code>) anzeigen.</p>
+<p><img alt="Ausgabe CLI" src="bilder/05_sysbusw1devices.png" /></p>
+<p>Jeder Ordner der in dem Format <code>xx-xxxxxxxxxxxx</code> angezeigt wird, ist ein Sensor. Der Ordnername (hier: <code>28-00000ca6e2dd</code>) ist gleichzeitig die ID des Sensors. Ihr Sensor hat natürlich eine eigene ID.</p>
+<p>Wechseln Sie nun in den Ordner <code>xx-xxxxxxxxxxxx</code> und lassen sich den Inhalt des Ordners anzeigen (Befehl: <code>ls</code>).</p>
+<p><img alt="Inhalt Sys" src="bilder/05_inhalt_sysbusw1devices.png" /></p>
+<p>Die Datei <code>w1_slave</code> ist für uns interessant, da Sie den aktuellen Temperaturwert enthält.</p>
+<p>Geben Sie den Inhalt der Datei <code>w1_slave</code> aus (Befehl: <code>cat /sys/bus/w1/devices/xx-xxxxxxxxxxxx/w1_slave</code>).</p>
+<p><img alt="Inhalt Sys Ausgabe" src="bilder/05_sysbusw1devices_temp.png" /></p>
+<p>In der Datei ist der Temperaturwert (hier 23,0°C) abgespeichert.</p>
+<h4 id="python-script-zum-auslesen-des-sensors">Python-Script zum Auslesen des Sensors</h4>
+<ol>
+<li>Legen Sie im ersten Schritt einen Ordner im Home-Verzeichnis von pi mit dem Namen "Projekte" und darin einen Unterordner mit dem Namen "Temperaturmessung" an.</li>
+<li>Im Ordner Temperaturmessung erstellen Sie anschließend eine Datei mit dem Namen "ds18b20_auslesen.py" an.</li>
+<li>Fügen Sie den Quellcode s.u. in die eben erstellte Datei ein.</li>
+<li>Vergeben Sie die Ausführrechte für den Besitzer der Datei (pi).</li>
+<li>Führen Sie das Script aus.</li>
+</ol>
+<h5 id="quellcode-fur-das-python-script-ds18b20_auslesenpy">Quellcode für das Python-Script: ds18b20_auslesen.py</h5>
+<div class="highlight"><pre><span></span><code><span class="ch">#!/usr/bin/python</span>
+<span class="c1">#coding=utf-8</span>
+<span class="c1">#ds18b20_auslesen.py</span>
+<span class="c1">#---------------</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">os</span><span class="o">,</span><span class="w"> </span><span class="nn">sys</span><span class="o">,</span><span class="w"> </span><span class="nn">time</span>
+
+<span class="c1"># Erstellen der Funktion zum Ermitteln der aktuellen Temperatur</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">aktuelleTemperatur</span><span class="p">():</span>
+
+    <span class="c1"># 1-wire Slave Datei lesen</span>
+    <span class="n">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;/sys/bus/w1/devices/28-000007e8bf89/w1_slave&#39;</span><span class="p">)</span>
+    <span class="n">filecontent</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+    <span class="n">file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+    <span class="c1"># Temperaturwerte auslesen und konvertieren</span>
+    <span class="n">stringvalue</span> <span class="o">=</span> <span class="n">filecontent</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">)[</span><span class="mi">9</span><span class="p">]</span>
+    <span class="n">temperature</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">stringvalue</span><span class="p">[</span><span class="mi">2</span><span class="p">:])</span> <span class="o">/</span> <span class="mi">1000</span>
+
+    <span class="c1"># Temperatur ausgeben</span>
+    <span class="n">rueckgabewert</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">%6.2f</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">temperature</span>
+    <span class="k">return</span><span class="p">(</span><span class="n">rueckgabewert</span><span class="p">)</span>
+
+<span class="c1"># Deklaration der Variablen</span>
+<span class="n">schleifenZaehler</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">schleifenAnzahl</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="n">schleifenPause</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="c1"># Ausgabe der aktuellen Temperatur und der Nummer des Schleifen-Durchlaufes</span>
+<span class="nb">print</span> <span class="s2">&quot;Temperaturabfrage für &quot;</span><span class="p">,</span> <span class="n">schleifenAnzahl</span><span class="p">,</span><span class="s2">&quot; Messungen alle &quot;</span><span class="p">,</span> <span class="n">schleifenPause</span> <span class="p">,</span><span class="s2">&quot; Sekunden gestartet&quot;</span>
+
+<span class="k">while</span> <span class="n">schleifenZaehler</span> <span class="o">&lt;=</span> <span class="n">schleifenAnzahl</span><span class="p">:</span>
+    <span class="n">messdaten</span> <span class="o">=</span> <span class="n">aktuelleTemperatur</span><span class="p">()</span>
+    <span class="nb">print</span> <span class="s2">&quot;Aktuelle Temperatur : &quot;</span><span class="p">,</span> <span class="n">messdaten</span><span class="p">,</span> <span class="s2">&quot;°C&quot;</span><span class="p">,</span><span class="s2">&quot;in der &quot;</span><span class="p">,</span> <span class="n">schleifenZaehler</span><span class="p">,</span> <span class="s2">&quot;. Messabfrage&quot;</span>
+    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">schleifenPause</span><span class="p">)</span>
+    <span class="n">schleifenZaehler</span> <span class="o">=</span> <span class="n">schleifenZaehler</span> <span class="o">+</span> <span class="mi">1</span>
+
+<span class="c1"># Ausgabe zum Ende des Programmes</span>
+<span class="nb">print</span> <span class="s2">&quot;Temperaturabfrage beendet&quot;</span>
+</code></pre></div>
+<h3 id="informationsmaterial-m51-grundlagen-der-elektrotechnik">Informationsmaterial M|5.1: Grundlagen der Elektrotechnik</h3>
+<p><a href="material/05_Grundlagen_E-Technik.pdf">Download Informationsmaterial PDF</a></p>
+<h3 id="informationsmaterial-m52-ubersicht-zum-mmbbs-raspberry-pi-set">Informationsmaterial M|5.2: Übersicht zum MMBbS Raspberry Pi Set</h3>
+<p><a href="material/05_RaspberryPiSet.pdf">Download Informationsmaterial PDF</a></p>
+<h2 id="kompetenz-51-rgb-led-in-betrieb-nehmen">Kompetenz 5.1: RGB-LED in Betrieb nehmen</h2>
+<p>Nachdem der Temperatursensor funktionell eingebunden wurde, soll im nächsten Schritt die erste Variante der Darstellung der Temperatur geprüft werden. Hierzu ist die RGB-LED in Betrieb zu nehmen und in Abhängigkeit der Temperatur zum Leuchten zu bringen. Auch hierfür steht Ihnen die Wissensdatenbank der ChangeIT zur Verfügung.</p>
+<h3 id="arbeitsauftrag-a51-inbetriebnahme-der-rgb-led">Arbeitsauftrag A|5.1: Inbetriebnahme der RGB-LED</h3>
+<p>Führen Sie gemäß des Informationsmaterials im Kurs die Inbetriebnahme der RGB-LED durch. Testen Sie die Funktionstüchtigkeit, indem Sie das Script ausführen.</p>
+<h3 id="informationsmaterial-m53-auszug-aus-dem-wiki-zur-rgb-led">Informationsmaterial M|5.3: Auszug aus dem Wiki zur RGB-LED</h3>
+<h4 id="1-vorbereitung">1. Vorbereitung</h4>
+<p>Schalten Sie den Raspberry Pi aus, um Beschädigungen zu vermeiden, während Sie die Verbindungen herstellen.</p>
+<h4 id="2-rgb-led-auf-dem-breadboard-platzieren">2. RGB-LED auf dem Breadboard platzieren</h4>
+<p>Setzen Sie die RGB-LED auf das Breadboard, so dass jede der vier Pins in einer separaten Reihe sitzt. Ein Schaubild finden Sie im Informationsmaterial M|5.2: Übersicht zum MMBbS Raspberry Pi Set.</p>
+<h4 id="3-anodenverbindung">3. Anodenverbindung</h4>
+<p>Der längste Pin der RGB-LED ist die gemeinsame Anode. Verbinden Sie diesen Pin mit der 3.3V-Stromversorgung des Raspberry Pi.</p>
+<p>Nutzen Sie hierfür den Raspberry Pi, schließen Sie das 40-Pin-Flachbandkabel an und am anderen Ende den T-Adapter. Der T-Adapter muss dann auf das Breadboard gesteckt werden.</p>
+<h4 id="4-widerstande-einfugen">4. Widerstände einfügen</h4>
+<p>Verbinden Sie die Kathoden (die anderen drei Pins) der RGB-LED über separate Widerstände mit verschiedenen Reihen des Breadboards. Dies hilft, den Strom zu begrenzen und die LED vor Schäden zu schützen.</p>
+<h4 id="5-verbindungen-zu-den-gpio-pins">5. Verbindungen zu den GPIO-Pins</h4>
+<p>Verwenden Sie die Jumper-Kabel, um die anderen Enden der Widerstände mit den GPIO-Pins des Raspberry Pi zu verbinden. Zum Beispiel:
+- Rote LED-Kathode -&gt; Widerstand -&gt; GPIO 17
+- Grüne LED-Kathode -&gt; Widerstand -&gt; GPIO 27
+- Blaue LED-Kathode -&gt; Widerstand -&gt; GPIO 22</p>
+<h4 id="6-softwarekonfiguration">6. Softwarekonfiguration</h4>
+<p>Starten Sie den Raspberry Pi und öffnen Sie ein Terminal.</p>
+<p>Erstellen Sie ein Python-Skript zum Steuern der RGB-LED.
+Beispielskript:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">RPi.GPIO</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">GPIO</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
+
+<span class="c1"># GPIO-Modus (BOARD / BCM)</span>
+<span class="n">GPIO</span><span class="o">.</span><span class="n">setmode</span><span class="p">(</span><span class="n">GPIO</span><span class="o">.</span><span class="n">BCM</span><span class="p">)</span>
+
+<span class="c1"># GPIO-Pins zuweisen</span>
+<span class="n">RED_PIN</span> <span class="o">=</span> <span class="mi">17</span>
+<span class="n">GREEN_PIN</span> <span class="o">=</span> <span class="mi">27</span>
+<span class="n">BLUE_PIN</span> <span class="o">=</span> <span class="mi">22</span>
+
+<span class="c1"># Setze die GPIO-Pins auf OUTPUT</span>
+<span class="n">GPIO</span><span class="o">.</span><span class="n">setup</span><span class="p">(</span><span class="n">RED_PIN</span><span class="p">,</span> <span class="n">GPIO</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>
+<span class="n">GPIO</span><span class="o">.</span><span class="n">setup</span><span class="p">(</span><span class="n">GREEN_PIN</span><span class="p">,</span> <span class="n">GPIO</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>
+<span class="n">GPIO</span><span class="o">.</span><span class="n">setup</span><span class="p">(</span><span class="n">BLUE_PIN</span><span class="p">,</span> <span class="n">GPIO</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>
+
+<span class="c1"># PWM-Instanzen erstellen</span>
+<span class="n">red</span> <span class="o">=</span> <span class="n">GPIO</span><span class="o">.</span><span class="n">PWM</span><span class="p">(</span><span class="n">RED_PIN</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<span class="n">green</span> <span class="o">=</span> <span class="n">GPIO</span><span class="o">.</span><span class="n">PWM</span><span class="p">(</span><span class="n">GREEN_PIN</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<span class="n">blue</span> <span class="o">=</span> <span class="n">GPIO</span><span class="o">.</span><span class="n">PWM</span><span class="p">(</span><span class="n">BLUE_PIN</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+
+<span class="c1"># PWM starten mit 0% (LED aus)</span>
+<span class="n">red</span><span class="o">.</span><span class="n">start</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">green</span><span class="o">.</span><span class="n">start</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">blue</span><span class="o">.</span><span class="n">start</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">setColor</span><span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="n">red</span><span class="o">.</span><span class="n">ChangeDutyCycle</span><span class="p">(</span><span class="mi">100</span> <span class="o">-</span> <span class="n">r</span><span class="p">)</span>
+    <span class="n">green</span><span class="o">.</span><span class="n">ChangeDutyCycle</span><span class="p">(</span><span class="mi">100</span> <span class="o">-</span> <span class="n">g</span><span class="p">)</span>
+    <span class="n">blue</span><span class="o">.</span><span class="n">ChangeDutyCycle</span><span class="p">(</span><span class="mi">100</span> <span class="o">-</span> <span class="n">b</span><span class="p">)</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="c1"># Grundfarben und deren Kombinationen</span>
+        <span class="n">colors</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span>   <span class="c1"># Rot</span>
+            <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span>   <span class="c1"># Grün</span>
+            <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">),</span>   <span class="c1"># Blau</span>
+            <span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="c1"># Gelb (Rot + Grün)</span>
+            <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">),</span> <span class="c1"># Cyan (Grün + Blau)</span>
+            <span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">),</span> <span class="c1"># Magenta (Rot + Blau)</span>
+            <span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span> <span class="c1"># Weiß (Rot + Grün + Blau)</span>
+        <span class="p">]</span>
+
+        <span class="k">for</span> <span class="n">color</span> <span class="ow">in</span> <span class="n">colors</span><span class="p">:</span>
+            <span class="n">setColor</span><span class="p">(</span><span class="o">*</span><span class="n">color</span><span class="p">)</span>
+            <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="k">except</span> <span class="ne">KeyboardInterrupt</span><span class="p">:</span>
+    <span class="k">pass</span>
+
+<span class="c1"># PWM stoppen</span>
+<span class="n">red</span><span class="o">.</span><span class="n">stop</span><span class="p">()</span>
+<span class="n">green</span><span class="o">.</span><span class="n">stop</span><span class="p">()</span>
+<span class="n">blue</span><span class="o">.</span><span class="n">stop</span><span class="p">()</span>
+
+<span class="c1"># GPIO-Pins zurücksetzen</span>
+<span class="n">GPIO</span><span class="o">.</span><span class="n">cleanup</span><span class="p">()</span>
+</code></pre></div>
+<h4 id="7-skript-ausfuhren">7. Skript ausführen</h4>
+<p>Speichern Sie das Skript, z.B. als <code>rgb_led.py</code>, und führen Sie es mit folgendem Befehl aus: <code>python3 rgb_led.py</code>.</p>
+<h3 id="arbeitsauftrag-a52-rgb-led-in-abhangigkeit-der-temperatur-ansteuern">Arbeitsauftrag A|5.2: RGB-LED in Abhängigkeit der Temperatur ansteuern</h3>
+<p>Steuern Sie die RGB-LED in Abhängigkeit der Temperatur des Sensors an. Nutzen Sie dafür die beiden Beispielscripte aus der Inbetriebnahme des Temperatursensors sowie der LED als Basis und erstellen Sie ein eigenes neues, welches wie folgt funktioniert:</p>
+<p>Definieren Sie zwei Grenzwerte für kalte bzw. warme Temperaturen. Wenn der untere Grenzwert unterschritten wird, leuchtet die RGB-LED blau. Wenn der obere Grenzwert überschritten wird, rot und ansonsten grün.</p>
+<h2 id="kompetenz-52-single-color-leds-in-betrieb-nehmen">Kompetenz 5.2: Single-Color-LEDs in Betrieb nehmen</h2>
+<p>Eine zweite Variante zur Darstellung der Farben soll auf Basis der bisherigen Erkenntnisse und Beispiele aus dem Wiki mittels Single-Color-LED aufgebaut werden. Da diese Option bisher noch nicht innerbetrieblich dokumentiert ist, erstellen Sie selbst das Script sowie eine kurze Anleitung zur Umsetzung.</p>
+<h3 id="arbeitsauftrag-a53-inbetriebnahme-der-single-color-leds">Arbeitsauftrag A|5.3: Inbetriebnahme der Single-Color-LEDs</h3>
+<p>Führen Sie gemäß des Informationsmaterials im Kurs die Inbetriebnahme der Single-Color-LEDs durch (M|5.4: Auszug aus dem Wiki zur Single-Color-LED). Testen Sie die Funktionstüchtigkeit, indem Sie das Script ausführen.</p>
+<h3 id="informationsmaterial-m54-auszug-aus-dem-wiki-zur-single-color-led">Informationsmaterial M|5.4: Auszug aus dem Wiki zur Single-Color-LED</h3>
+<h4 id="1-vorbereitung_1">1. Vorbereitung</h4>
+<p>Schalten Sie den Raspberry Pi aus, um Beschädigungen zu vermeiden, während Sie die Verbindungen herstellen.</p>
+<h4 id="2-led-und-widerstand-auf-dem-breadboard-platzieren">2. LED und Widerstand auf dem Breadboard platzieren</h4>
+<p>Setzen Sie die LED auf das Breadboard. Der längere Pin der LED ist die Anode (+) und der kürzere Pin ist die Kathode (-).
+Verbinden Sie die Kathode der LED (kürzere Pin) mit GND des Raspberry Pi.</p>
+<p>Verbinden Sie die Anode der LED (längere Pin) über den Widerstand (Widerstände s. M|5.2: Übersicht zum MMBbS Raspberry Pi Set) mit einem GPIO-Pin des Raspberry Pi</p>
+<h4 id="3-softwarekonfiguration">3. Softwarekonfiguration</h4>
+<p>Starten Sie den Raspberry Pi und öffnen Sie ein Terminal.</p>
+<h4 id="4-python-skript-erstellen">4. Python-Skript erstellen</h4>
+<p>Erstellen Sie ein Python-Skript, um die LED blinken zu lassen.
+Beispielskript:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">RPi.GPIO</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">GPIO</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
+
+<span class="c1"># GPIO-Modus (BOARD / BCM)</span>
+<span class="n">GPIO</span><span class="o">.</span><span class="n">setmode</span><span class="p">(</span><span class="n">GPIO</span><span class="o">.</span><span class="n">BCM</span><span class="p">)</span>
+
+<span class="c1"># GPIO-Pin zuweisen</span>
+<span class="n">LED_PIN</span> <span class="o">=</span> <span class="mi">18</span>
+
+<span class="c1"># Setze den GPIO-Pin auf OUTPUT</span>
+<span class="n">GPIO</span><span class="o">.</span><span class="n">setup</span><span class="p">(</span><span class="n">LED_PIN</span><span class="p">,</span> <span class="n">GPIO</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="n">GPIO</span><span class="o">.</span><span class="n">output</span><span class="p">(</span><span class="n">LED_PIN</span><span class="p">,</span> <span class="n">GPIO</span><span class="o">.</span><span class="n">HIGH</span><span class="p">)</span>  <span class="c1"># LED einschalten</span>
+        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>                    <span class="c1"># 1 Sekunde warten</span>
+        <span class="n">GPIO</span><span class="o">.</span><span class="n">output</span><span class="p">(</span><span class="n">LED_PIN</span><span class="p">,</span> <span class="n">GPIO</span><span class="o">.</span><span class="n">LOW</span><span class="p">)</span>   <span class="c1"># LED ausschalten</span>
+        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>                    <span class="c1"># 1 Sekunde warten</span>
+
+<span class="k">except</span> <span class="ne">KeyboardInterrupt</span><span class="p">:</span>
+    <span class="k">pass</span>
+
+<span class="c1"># GPIO-Pin zurücksetzen</span>
+<span class="n">GPIO</span><span class="o">.</span><span class="n">cleanup</span><span class="p">()</span>
+</code></pre></div>
+<h4 id="5-skript-ausfuhren">5. Skript ausführen</h4>
+<p>Speichern Sie das Skript, z.B. als <code>blink_led.py</code>, und führe es mit folgendem Befehl aus: <code>python3 blink_led.py</code></p>
+<h3 id="arbeitsauftrag-a54-single-color-leds-in-abhangigkeit-der-temperatur-ansteuern">Arbeitsauftrag A|5.4: Single-Color-LEDs in Abhängigkeit der Temperatur ansteuern</h3>
+<p>Steuern Sie die mehrere Single-Color-LEDs in Abhängigkeit der Temperatur des Sensors an. Nutzen Sie dafür die beiden Beispielscripte aus der Inbetriebnahme des Temperatursensors sowie der LEDs als Basis und erstellen Sie ein eigenes neues, welches wie folgt funktioniert:</p>
+<p>Definieren Sie entsprechend der Anzahl der Single-Color-LEDs Grenzwerte für sehr kalte, kalte, normale, warme bzw. sehr warme Temperaturen. Wenn die Temperatur einen entsprechenden Wert erreicht, soll die dazugehörige LED leuchten.</p>
+<h2 id="github">GitHub</h2>
+<h3 id="githubio-lf2-kurs-als-mkdocs-variante">GitHub.io - LF2-Kurs als MkDocs-Variante</h3>
+<p><a href="https://herr-nm.github.io/MMBbS_FISI_LF02/">https://herr-nm.github.io/MMBbS_FISI_LF02/</a></p>
+<div class="admonition info">
+<p class="admonition-title">Lizenz</p>
+<p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Der FISI LF02 Kurs</span> von <a xmlns:cc="http://creativecommons.org/ns#" href="https://herr-nm.github.io/MMBbS_FISI_LF02/" property="cc:attributionName" rel="cc:attributionURL">André Neumann</a> ist lizenziert unter einer <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Namensnennung - Nicht-kommerziell - Weitergabe unter gleichen Bedingungen 4.0 International Lizenz</a>. Fragen, Hinweise etc. an neumann@mmbbs.de.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "In Zwischenablage kopiert", "clipboard.copy": "In Zwischenablage kopieren", "search.result.more.one": "1 weiteres Suchergebnis auf dieser Seite", "search.result.more.other": "# weitere Suchergebnisse auf dieser Seite", "search.result.none": "Keine Suchergebnisse", "search.result.one": "1 Suchergebnis", "search.result.other": "# Suchergebnisse", "search.result.placeholder": "Suchbegriff eingeben", "search.result.term.missing": "Es fehlt", "select.version": "Version ausw\u00e4hlen"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+        <script src="javascripts/katex.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>

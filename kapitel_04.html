@@ -1,0 +1,2432 @@
+
+<!doctype html>
+<html lang="de" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://herr-nm.github.io/MMBbS_FISI_LF02/kapitel_04.html">
+      
+      
+        <link rel="prev" href="kapitel_03.html">
+      
+      
+        <link rel="next" href="kapitel_05.html">
+      
+      
+      <link rel="icon" href="bilder/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>Kapitel 04 - IT-Systeme in Betrieb nehmen - FISI Lernfeld 2 (technisch)</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.342714a4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="extra.css">
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#kapitel-4-it-systeme-in-betrieb-nehmen" class="md-skip">
+          Zum Inhalt
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Kopfzeile">
+    <a href="index.html" title="FISI Lernfeld 2 (technisch)" class="md-header__button md-logo" aria-label="FISI Lernfeld 2 (technisch)" data-md-component="logo">
+      
+  <img src="bilder/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            FISI Lernfeld 2 (technisch)
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Kapitel 04 - IT-Systeme in Betrieb nehmen
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Suche" placeholder="Suche" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Suche">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Zurücksetzen" aria-label="Zurücksetzen" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Suche wird initialisiert
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/herr-nm/MMBbS_FISI_LF02" title="Zum Repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="FISI Lernfeld 2 (technisch)" class="md-nav__button md-logo" aria-label="FISI Lernfeld 2 (technisch)" data-md-component="logo">
+      
+  <img src="bilder/logo.png" alt="logo">
+
+    </a>
+    FISI Lernfeld 2 (technisch)
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/herr-nm/MMBbS_FISI_LF02" title="Zum Repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Einleitung zum LF2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="kapitel_00.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 00 - Organisatorisches
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="kapitel_01.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 01 - Vorstellung des Modellunternehmens
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="kapitel_02.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 02 - IT-Systeme auswählen
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="kapitel_03.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 03 - Netzwerkspeicher dimensionieren
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 04 - IT-Systeme in Betrieb nehmen
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="kapitel_04.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 04 - IT-Systeme in Betrieb nehmen
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#handlungssituation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Handlungssituation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kompetenz-40-vorbereitungen-der-inbetriebnahme-eines-it-systems-treffen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kompetenz 4.0: Vorbereitungen der Inbetriebnahme eines IT-Systems treffen
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Kompetenz 4.0: Vorbereitungen der Inbetriebnahme eines IT-Systems treffen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arbeitsauftrag-a40-kontrolle-der-vollstandigkeit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arbeitsauftrag A|4.0: Kontrolle der Vollständigkeit
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Arbeitsauftrag A|4.0: Kontrolle der Vollständigkeit">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 1
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arbeitsauftrag-a41-komponenten-des-raspberry-pi-erkunden" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arbeitsauftrag A|4.1: Komponenten des Raspberry Pi erkunden
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Arbeitsauftrag A|4.1: Komponenten des Raspberry Pi erkunden">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 1
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#informationsmaterial-m40-bilder-des-raspberry-pi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Informationsmaterial M|4.0: Bilder des Raspberry Pi
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Informationsmaterial M|4.0: Bilder des Raspberry Pi">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#raspberry-pi-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Raspberry Pi 5
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#raspberry-pi-400" class="md-nav__link">
+    <span class="md-ellipsis">
+      Raspberry Pi 400
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#raspberry-pi-4b" class="md-nav__link">
+    <span class="md-ellipsis">
+      Raspberry Pi 4B
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#raspberry-pi-3b" class="md-nav__link">
+    <span class="md-ellipsis">
+      Raspberry Pi 3B+
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m41a-produktdatenblatt-zum-raspberry-pi-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      M|4.1a: Produktdatenblatt zum Raspberry Pi 5
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m41b-produktdatenblatt-zum-raspberry-pi-400" class="md-nav__link">
+    <span class="md-ellipsis">
+      M|4.1b: Produktdatenblatt zum Raspberry Pi 400
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m41c-produktdatenblatt-zum-raspberry-pi-4b" class="md-nav__link">
+    <span class="md-ellipsis">
+      M|4.1c: Produktdatenblatt zum Raspberry Pi 4B
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m41d-produktdatenblatt-zum-raspberry-pi-3b" class="md-nav__link">
+    <span class="md-ellipsis">
+      M|4.1d: Produktdatenblatt zum Raspberry Pi 3B+
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arbeitsauftrag-a42-fragen-zum-raspberry-pi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arbeitsauftrag A|4.2: Fragen zum Raspberry Pi
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Arbeitsauftrag A|4.2: Fragen zum Raspberry Pi">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-1_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 3
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 4
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 5
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 6
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 7
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m42-raspberry-pi-grundlagen-der-energieversorgung-stromversorgung" class="md-nav__link">
+    <span class="md-ellipsis">
+      M|4.2: Raspberry Pi - Grundlagen der Energieversorgung / Stromversorgung
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="M|4.2: Raspberry Pi - Grundlagen der Energieversorgung / Stromversorgung">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#grundlagen-der-energieversorgung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grundlagen der Energieversorgung
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maximale-stromstarke-der-gpio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Maximale Stromstärke der GPIO
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kompetenz-41-betriebssystem-auswahlen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kompetenz 4.1: Betriebssystem auswählen
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Kompetenz 4.1: Betriebssystem auswählen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a44-linux-distributionen-unterscheiden" class="md-nav__link">
+    <span class="md-ellipsis">
+      A|4.4: Linux-Distributionen unterscheiden
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="A|4.4: Linux-Distributionen unterscheiden">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-1_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 1
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m44-linux-distributionen-im-uberblick" class="md-nav__link">
+    <span class="md-ellipsis">
+      M|4.4: Linux-Distributionen im Überblick
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a45-linux-systeme-remote-bedienen" class="md-nav__link">
+    <span class="md-ellipsis">
+      A|4.5: Linux-Systeme remote bedienen
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="A|4.5: Linux-Systeme remote bedienen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-1_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 3
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-4_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 4
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-5_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 5
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m45-secure-shell-ssh-und-virtual-network-computing-vnc" class="md-nav__link">
+    <span class="md-ellipsis">
+      M|4.5: Secure Shell (SSH) und Virtual Network Computing (VNC)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="M|4.5: Secure Shell (SSH) und Virtual Network Computing (VNC)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#secure-shell-ssh" class="md-nav__link">
+    <span class="md-ellipsis">
+      Secure Shell (SSH)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#virtual-network-computing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Virtual Network Computing
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#telnet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Telnet
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kompetenz-42-linux-kommandozeile-bedienen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kompetenz 4.2: Linux-Kommandozeile bedienen
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Kompetenz 4.2: Linux-Kommandozeile bedienen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arbeitsauftrag-a46-linux-befehlsreferenz-anlegen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arbeitsauftrag A|4.6: Linux-Befehlsreferenz anlegen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vorlage-cheat-sheet-linux" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vorlage - Cheat-Sheet Linux
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#informationsmaterial-m46-linux-kommandozeilenbefehle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Informationsmaterial M|4.6: Linux-Kommandozeilenbefehle
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Informationsmaterial M|4.6: Linux-Kommandozeilenbefehle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#datei-und-verzeichnismanagement" class="md-nav__link">
+    <span class="md-ellipsis">
+      📁 Datei- und Verzeichnismanagement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rechte-und-benutzer" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔒 Rechte und Benutzer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#systemanalyse-und-zustand" class="md-nav__link">
+    <span class="md-ellipsis">
+      🖥️ Systemanalyse und -zustand
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skripte-ausgabe-gpio" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ Skripte, Ausgabe, GPIO
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auswahl-der-niveaustufe-fur-die-aufgaben-zur-arbeit-in-der-linux-kommandozeile-a47" class="md-nav__link">
+    <span class="md-ellipsis">
+      Auswahl der Niveaustufe für die Aufgaben zur Arbeit in der Linux-Kommandozeile (A|4.7):
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ssh-login-zum-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      SSH-Login zum Server
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arbeitsauftrag-a47-linux-terminal-bedienen-konner" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arbeitsauftrag A|4.7: Linux-Terminal bedienen (Könner)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arbeitsauftrag-a47-linux-terminal-bedienen-profi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arbeitsauftrag A|4.7: Linux-Terminal bedienen (Profi)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arbeitsauftrag-a48-reflexion-der-bedienung-eines-remote-systems-via-kommandozeile" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arbeitsauftrag A|4.8: Reflexion der Bedienung eines Remote-Systems via Kommandozeile
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kompetenz-43-installation-und-aktualisierung-des-betriebssystems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kompetenz 4.3: Installation und Aktualisierung des Betriebssystems
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Kompetenz 4.3: Installation und Aktualisierung des Betriebssystems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a49-inbetriebnahme-des-raspberry-pi" class="md-nav__link">
+    <span class="md-ellipsis">
+      A|4.9: Inbetriebnahme des Raspberry Pi
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m47-inbetriebnahme-des-raspberry-pi" class="md-nav__link">
+    <span class="md-ellipsis">
+      M|4.7: Inbetriebnahme des Raspberry Pi
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kompetenz-44-funktionstuchtigkeit-eines-it-systems-prufen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kompetenz 4.4: Funktionstüchtigkeit eines IT-Systems prüfen
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Kompetenz 4.4: Funktionstüchtigkeit eines IT-Systems prüfen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a410-basisinformationen-zum-raspberry-pi-anzeigen" class="md-nav__link">
+    <span class="md-ellipsis">
+      A|4.10: Basisinformationen zum Raspberry Pi anzeigen
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="A|4.10: Basisinformationen zum Raspberry Pi anzeigen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-1_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-2_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-3_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 3
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#handlungsergebnis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Handlungsergebnis
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Handlungsergebnis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a411-inbetriebnahme-installation-und-funktionstest-auswerten" class="md-nav__link">
+    <span class="md-ellipsis">
+      A|4.11: Inbetriebnahme, Installation und Funktionstest auswerten
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="A|4.11: Inbetriebnahme, Installation und Funktionstest auswerten">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-1_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 1
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="kapitel_05.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 05 - Sensoren und Aktoren am RPi nutzen
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="kapitel_06.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kapitel 06 - Exkurse und weitere Themen
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#handlungssituation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Handlungssituation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kompetenz-40-vorbereitungen-der-inbetriebnahme-eines-it-systems-treffen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kompetenz 4.0: Vorbereitungen der Inbetriebnahme eines IT-Systems treffen
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Kompetenz 4.0: Vorbereitungen der Inbetriebnahme eines IT-Systems treffen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arbeitsauftrag-a40-kontrolle-der-vollstandigkeit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arbeitsauftrag A|4.0: Kontrolle der Vollständigkeit
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Arbeitsauftrag A|4.0: Kontrolle der Vollständigkeit">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 1
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arbeitsauftrag-a41-komponenten-des-raspberry-pi-erkunden" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arbeitsauftrag A|4.1: Komponenten des Raspberry Pi erkunden
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Arbeitsauftrag A|4.1: Komponenten des Raspberry Pi erkunden">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 1
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#informationsmaterial-m40-bilder-des-raspberry-pi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Informationsmaterial M|4.0: Bilder des Raspberry Pi
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Informationsmaterial M|4.0: Bilder des Raspberry Pi">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#raspberry-pi-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Raspberry Pi 5
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#raspberry-pi-400" class="md-nav__link">
+    <span class="md-ellipsis">
+      Raspberry Pi 400
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#raspberry-pi-4b" class="md-nav__link">
+    <span class="md-ellipsis">
+      Raspberry Pi 4B
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#raspberry-pi-3b" class="md-nav__link">
+    <span class="md-ellipsis">
+      Raspberry Pi 3B+
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m41a-produktdatenblatt-zum-raspberry-pi-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      M|4.1a: Produktdatenblatt zum Raspberry Pi 5
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m41b-produktdatenblatt-zum-raspberry-pi-400" class="md-nav__link">
+    <span class="md-ellipsis">
+      M|4.1b: Produktdatenblatt zum Raspberry Pi 400
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m41c-produktdatenblatt-zum-raspberry-pi-4b" class="md-nav__link">
+    <span class="md-ellipsis">
+      M|4.1c: Produktdatenblatt zum Raspberry Pi 4B
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m41d-produktdatenblatt-zum-raspberry-pi-3b" class="md-nav__link">
+    <span class="md-ellipsis">
+      M|4.1d: Produktdatenblatt zum Raspberry Pi 3B+
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arbeitsauftrag-a42-fragen-zum-raspberry-pi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arbeitsauftrag A|4.2: Fragen zum Raspberry Pi
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Arbeitsauftrag A|4.2: Fragen zum Raspberry Pi">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-1_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 3
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 4
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 5
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 6
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 7
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m42-raspberry-pi-grundlagen-der-energieversorgung-stromversorgung" class="md-nav__link">
+    <span class="md-ellipsis">
+      M|4.2: Raspberry Pi - Grundlagen der Energieversorgung / Stromversorgung
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="M|4.2: Raspberry Pi - Grundlagen der Energieversorgung / Stromversorgung">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#grundlagen-der-energieversorgung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grundlagen der Energieversorgung
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maximale-stromstarke-der-gpio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Maximale Stromstärke der GPIO
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kompetenz-41-betriebssystem-auswahlen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kompetenz 4.1: Betriebssystem auswählen
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Kompetenz 4.1: Betriebssystem auswählen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a44-linux-distributionen-unterscheiden" class="md-nav__link">
+    <span class="md-ellipsis">
+      A|4.4: Linux-Distributionen unterscheiden
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="A|4.4: Linux-Distributionen unterscheiden">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-1_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 1
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m44-linux-distributionen-im-uberblick" class="md-nav__link">
+    <span class="md-ellipsis">
+      M|4.4: Linux-Distributionen im Überblick
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a45-linux-systeme-remote-bedienen" class="md-nav__link">
+    <span class="md-ellipsis">
+      A|4.5: Linux-Systeme remote bedienen
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="A|4.5: Linux-Systeme remote bedienen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-1_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 3
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-4_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 4
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-5_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 5
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m45-secure-shell-ssh-und-virtual-network-computing-vnc" class="md-nav__link">
+    <span class="md-ellipsis">
+      M|4.5: Secure Shell (SSH) und Virtual Network Computing (VNC)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="M|4.5: Secure Shell (SSH) und Virtual Network Computing (VNC)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#secure-shell-ssh" class="md-nav__link">
+    <span class="md-ellipsis">
+      Secure Shell (SSH)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#virtual-network-computing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Virtual Network Computing
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#telnet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Telnet
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kompetenz-42-linux-kommandozeile-bedienen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kompetenz 4.2: Linux-Kommandozeile bedienen
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Kompetenz 4.2: Linux-Kommandozeile bedienen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arbeitsauftrag-a46-linux-befehlsreferenz-anlegen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arbeitsauftrag A|4.6: Linux-Befehlsreferenz anlegen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vorlage-cheat-sheet-linux" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vorlage - Cheat-Sheet Linux
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#informationsmaterial-m46-linux-kommandozeilenbefehle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Informationsmaterial M|4.6: Linux-Kommandozeilenbefehle
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Informationsmaterial M|4.6: Linux-Kommandozeilenbefehle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#datei-und-verzeichnismanagement" class="md-nav__link">
+    <span class="md-ellipsis">
+      📁 Datei- und Verzeichnismanagement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rechte-und-benutzer" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔒 Rechte und Benutzer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#systemanalyse-und-zustand" class="md-nav__link">
+    <span class="md-ellipsis">
+      🖥️ Systemanalyse und -zustand
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skripte-ausgabe-gpio" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ Skripte, Ausgabe, GPIO
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auswahl-der-niveaustufe-fur-die-aufgaben-zur-arbeit-in-der-linux-kommandozeile-a47" class="md-nav__link">
+    <span class="md-ellipsis">
+      Auswahl der Niveaustufe für die Aufgaben zur Arbeit in der Linux-Kommandozeile (A|4.7):
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ssh-login-zum-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      SSH-Login zum Server
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arbeitsauftrag-a47-linux-terminal-bedienen-konner" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arbeitsauftrag A|4.7: Linux-Terminal bedienen (Könner)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arbeitsauftrag-a47-linux-terminal-bedienen-profi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arbeitsauftrag A|4.7: Linux-Terminal bedienen (Profi)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arbeitsauftrag-a48-reflexion-der-bedienung-eines-remote-systems-via-kommandozeile" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arbeitsauftrag A|4.8: Reflexion der Bedienung eines Remote-Systems via Kommandozeile
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kompetenz-43-installation-und-aktualisierung-des-betriebssystems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kompetenz 4.3: Installation und Aktualisierung des Betriebssystems
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Kompetenz 4.3: Installation und Aktualisierung des Betriebssystems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a49-inbetriebnahme-des-raspberry-pi" class="md-nav__link">
+    <span class="md-ellipsis">
+      A|4.9: Inbetriebnahme des Raspberry Pi
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m47-inbetriebnahme-des-raspberry-pi" class="md-nav__link">
+    <span class="md-ellipsis">
+      M|4.7: Inbetriebnahme des Raspberry Pi
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kompetenz-44-funktionstuchtigkeit-eines-it-systems-prufen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kompetenz 4.4: Funktionstüchtigkeit eines IT-Systems prüfen
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Kompetenz 4.4: Funktionstüchtigkeit eines IT-Systems prüfen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a410-basisinformationen-zum-raspberry-pi-anzeigen" class="md-nav__link">
+    <span class="md-ellipsis">
+      A|4.10: Basisinformationen zum Raspberry Pi anzeigen
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="A|4.10: Basisinformationen zum Raspberry Pi anzeigen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-1_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-2_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-3_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 3
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#handlungsergebnis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Handlungsergebnis
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Handlungsergebnis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a411-inbetriebnahme-installation-und-funktionstest-auswerten" class="md-nav__link">
+    <span class="md-ellipsis">
+      A|4.11: Inbetriebnahme, Installation und Funktionstest auswerten
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="A|4.11: Inbetriebnahme, Installation und Funktionstest auswerten">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-1_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 1
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="kapitel-4-it-systeme-in-betrieb-nehmen">Kapitel 4: IT-Systeme in Betrieb nehmen</h1>
+<p><img alt="Kapitelbild" src="bilder/04_kapitelbild.png" /></p>
+<p>In diesem Kapitel werden Sie ...</p>
+<ul>
+<li>Vorbereitungen für die Inbetriebnahme eines IT-Systems treffen.</li>
+<li>ein passendes Betriebssystem auswählen.</li>
+<li>die Linux-Kommandozeile nutzen, um ein IT-System zu bedienen</li>
+<li>ein Betriebssystem installieren und aktualisieren.</li>
+<li>die Funktionstüchtigkeit eines IT-Systems prüfen.</li>
+<li>den Inbetriebnahmeprozess dokumentieren und auswerten.</li>
+</ul>
+<hr />
+<h2 id="handlungssituation">Handlungssituation</h2>
+<p>Für den unternehmensinternen Auftrag der Change IT GmbH, eine Temperaturmesseinrichtung für die Arbeitsplätze einzurichten, wurde vor einigen Wochen eine Bestellung für die benötigte Hardware getätigt. Der Wareneingang hat diese angenommen und äußerlich auf Schäden kontrolliert. Ihre Aufgaben sind die Vorbereitungen für den Einsatz sowie wie Inbetriebnahme des IT-Systems durchzuführen. Hieran anschließend soll die Funktionstüchtigkeit des IT-Systems getestet werden.</p>
+<p><img alt="Raspberry Pi Nahaufnahme" src="bilder/kap_04_rpi.jpg" /></p>
+<hr />
+<h2 id="kompetenz-40-vorbereitungen-der-inbetriebnahme-eines-it-systems-treffen">Kompetenz 4.0: Vorbereitungen der Inbetriebnahme eines IT-Systems treffen</h2>
+<p>Die Hardware ist durch die Warenannahme der Change IT angenommen und innerbetrieblich weitergeleitet worden. Bei Anlieferung wurde lediglich die Überprüfung des korrekten Warenempfängers vorgenommen sowie die Unversehrtheit der Verpackung geprüft.</p>
+<p>Der Raspberry Pi und das Zubehör sollen nun in Betrieb genommen werden. Dafür sind die Komponenten richtig zusammenzubauen. Im ersten Schritt sollen die Komponenten des Raspberry Pi und die weiteren Inhalte des Sets genauer betrachtet werden.</p>
+<p><img alt="Paket" src="bilder/kap_04_paket.jpg" /></p>
+<hr />
+<h3 id="arbeitsauftrag-a40-kontrolle-der-vollstandigkeit">Arbeitsauftrag A|4.0: Kontrolle der Vollständigkeit</h3>
+<h4 id="aufgabe-1">Aufgabe 1</h4>
+<p>Breiten Sie das Raspberry Pi-Material vor Ihnen auf dem Tisch aus und fertigen Sie ein Foto an, welches alle Bauteile auf einen Blick enthält.</p>
+<h3 id="arbeitsauftrag-a41-komponenten-des-raspberry-pi-erkunden">Arbeitsauftrag A|4.1: Komponenten des Raspberry Pi erkunden</h3>
+<h4 id="aufgabe-1_1">Aufgabe 1</h4>
+<p>Laden Sie sich aus dem Kursmaterial (M|4.0: Bilder des Raspberry Pi) das zu Ihrem Raspberry Pi passende Bild herunter. Beschriften Sie anschließend die Anschlüsse des Raspberry Pi auf dem Bild.</p>
+<h3 id="informationsmaterial-m40-bilder-des-raspberry-pi">Informationsmaterial M|4.0: Bilder des Raspberry Pi</h3>
+<h4 id="raspberry-pi-5">Raspberry Pi 5</h4>
+<p><img alt="RPi 5" src="bilder/kap_04_rpi5.jpg" /></p>
+<p><em>Quelle des Bildes: https://www.berrybase.de/thumbnail/a1/82/d1/1722543509/RaspberryPi54GBRAM-230062_1920x1920.jpg?ts=1724768071</em></p>
+<h4 id="raspberry-pi-400">Raspberry Pi 400</h4>
+<p><img alt="RPi 400" src="bilder/kap_04_rpi400.png" /></p>
+<p><em>Quelle des Bildes: https://www.zdnet.com/article/raspberry-pi-400-its-designer-reveals-more-about-the-faster-pi-4-in-the-70-pcs-keyboard/</em></p>
+<h4 id="raspberry-pi-4b">Raspberry Pi 4B</h4>
+<p><img alt="RPi 4B" src="bilder/kap_04_rpi4B.jpg" /></p>
+<p><em>Quelle des Bildes: https://cdn.idealo.com/folder/Product/6628/1/6628198/s1_produktbild_max/raspberry-pi-4-model-b.jpg</em></p>
+<h4 id="raspberry-pi-3b">Raspberry Pi 3B+</h4>
+<p><img alt="RPi 3B+" src="bilder/kap_04_rpi3Bplus.jpg" /></p>
+<p><em>Quelle des Bildes: https://m.media-amazon.com/images/I/81hyqDgm8vL.AC_SL1500.jpg</em></p>
+<h3 id="m41a-produktdatenblatt-zum-raspberry-pi-5">M|4.1a: Produktdatenblatt zum Raspberry Pi 5</h3>
+<p><a href="material/kap_04_Datenblatt_RPi_5.pdf">Download Produktdatenblatt RPi 5</a></p>
+<h3 id="m41b-produktdatenblatt-zum-raspberry-pi-400">M|4.1b: Produktdatenblatt zum Raspberry Pi 400</h3>
+<p><a href="material/kap_04_Datenblatt_RPi_400.pdf">Download Produktdatenblatt RPi 400</a></p>
+<h3 id="m41c-produktdatenblatt-zum-raspberry-pi-4b">M|4.1c: Produktdatenblatt zum Raspberry Pi 4B</h3>
+<p><a href="material/kap_04_Datenblatt_RPi_4B.pdf">Download Produktdatenblatt RPi 4B</a></p>
+<h3 id="m41d-produktdatenblatt-zum-raspberry-pi-3b">M|4.1d: Produktdatenblatt zum Raspberry Pi 3B+</h3>
+<p><a href="material/kap_04_Datenblatt_RPi_3Bplus.pdf">Download Produktdatenblatt RPi 3B+</a></p>
+<h3 id="arbeitsauftrag-a42-fragen-zum-raspberry-pi">Arbeitsauftrag A|4.2: Fragen zum Raspberry Pi</h3>
+<p>Ein Praktikant der ChangeIT GmbH soll Sie bei dem Raspberry Pi-Projekt unterstützen. Dabei sind im Gespräch folgende Fragen aufgekommen. Beantworten Sie diese jeweils mithilfe des Materials im Kurs (M|4.2: Raspberry Pi - Grundlagen der Energieversorgung / Stromversorgung) begründet in einem kurzen Satz:</p>
+<h4 id="aufgabe-1_2">Aufgabe 1</h4>
+<p>Mit welcher Ausgangsspannung arbeitet das Netzteil für den Raspberry Pi?</p>
+<h4 id="aufgabe-2">Aufgabe 2</h4>
+<p>Welche Spannung(en) kann der Raspberry Pi über die GPIO-Pins an Bauteile ausgeben?</p>
+<h4 id="aufgabe-3">Aufgabe 3</h4>
+<p>Welche Stromstärke sollte ein Netzteil für den Raspberry Pi 4 (bzw. 3) mindestens liefern?</p>
+<h4 id="aufgabe-4">Aufgabe 4</h4>
+<p>Darf der Raspberry Pi mit einem Netzteil betrieben werden, welches 4 A liefert?</p>
+<h4 id="aufgabe-5">Aufgabe 5</h4>
+<p>Darf der Raspberry Pi mit einem Netzteil betrieben werden, welches 12 V liefert?</p>
+<h4 id="aufgabe-6">Aufgabe 6</h4>
+<p>Wie hoch ist die sichere Stromstärke für den Gesamtstrom aller GPIO?</p>
+<h4 id="aufgabe-7">Aufgabe 7</h4>
+<p>Wie hoch ist die sichere Stromstärke für einen einzelnen GPIO im Optimum?</p>
+<h3 id="m42-raspberry-pi-grundlagen-der-energieversorgung-stromversorgung">M|4.2: Raspberry Pi - Grundlagen der Energieversorgung / Stromversorgung</h3>
+<h4 id="grundlagen-der-energieversorgung">Grundlagen der Energieversorgung</h4>
+<p>Mini-Computer, wie der Raspberry Pi, bedürfen einer stabilen Spannungs- UND Stromversorgung. Bei einem schlechten Netzteil und ungünstigen Betriebsbedingungen treten merkwürdige Effekte in Kombination mit einem instabilen Systemverhalten auf. Oftmals sind dies abbrechende LAN- und WLAN-Verbindungen und anderweitiges Fehlverhalten von Geräten, die per USB angeschlossen sind.</p>
+<p>Raspberry Pi sind auf eine stabilisierte Betriebsspannung von in der Regel ca. 5 Volt angewiesen. Wenn der Raspberry Pi mit einem beliebigen Steckernetzteil betrieben wird, dann kann und wird das in der Regel funktionieren. Wenn jetzt aber der Raspberry Pi und angeschlossene USB-Geräte für eine impulsive Stromentnahme sorgen, dann kann es vorkommen, dass das Steckernetzteil überfordert ist, aussetzt und die Spannung daraufhin einbricht. Also deutlich unter 5 Volt fällt.</p>
+<p>Was passiert dann? Ein Gerät, das für 5 Volt konzipiert ist, kommt dann in einen instabilen Betriebszustand. Hinzu kommt, dass USB-Geräte 5 Volt am USB-Port erwarten. Laut USB-Spezifikation sollte ein USB-Gerät zwischen 4,45 und 5,5 Volt funktionieren.</p>
+<p>Bei Unterspannung nimmt der Raspberry Pi seine USB-Ports außer Betrieb, um die Stabilität der Stromversorgung durch Reduzierung der Stromentnahme wieder herzustellen. Dabei gehen zumindest kurzzeitig alle USB-Geräte außer Betrieb. Und das führt dann eben zu besagten Fehlfunktionen einzelner USB-Geräte oder des gesamten Systems und erklärt die Aussetzer bei den USB-Geräten. Das betrifft Maus, Tastatur, WLAN- und LAN-Verbindungen, sowie USB-Speichergeräte.</p>
+<p>Grundsätzlich wird der Raspberry Pi mit einer Spannung von 5 Volt am Micro-USB-Eingang mit Energie versorgt. Genau genommen sind es 5,1 V, was die meisten USB-Steckernetzteile auch liefern. Es sind deshalb 5,1 V, weil durch Steckverbindungen und Leitungen Verluste entstehen.</p>
+<p>Der zweite wichtige Wert bei der Energieversorgung ist der Stromverbrauch, der in Ampere angegeben wird. Wie viel Strom der Raspberry Pi genau braucht hängt davon ab, was daran angeschlossen ist. In der Regel reicht ein Netzteil mit 2,5-3 A (je nach Raspberry Pi) aus. Aber nur dann, wenn man keine stromhungrigen USB-Geräte anschließt. Dann braucht man einen extern gespeisten USB-Hub oder sollte ein Netzteil mit mindestens 2,5 A verwenden. Wichtig ist zu wissen, mehr als 2,5 A kann ein Raspberry Pi nicht ziehen. Wenn das Gesamtsystem mehr Strom braucht, dann wird das durch eine Sicherung begrenzt und zu Instabilitäten führen kann.</p>
+<p>Netzteile werden für den Betrieb in der Regel ca. 20 bis 30 % überdimensioniert. Unter Dauerlast bei voller Auslastung kann es zu Problemen für das Netzteil kommen.</p>
+<p>Stromversorgung: Raspberry Pi 3B
+Speziell beim Raspberry Pi 3 sollte man wissen, dass dieser über einen Konstruktionsfehler verfügt. Wegen eines neuen Leiterplattendesigns und Einsparungen beim Einsatz minderwertiger Bauteile fallen auf dem Weg zwischen Micro-USB-Buchse und dem Chip bis zu 0,6 Volt ab. Das führt dazu, dass der Raspberry Pi 3 mit einem herkömmlichen USB-Netzteil mit 5,1 V an der Grenze der Unterspannung betrieben wird. Das Problem wird dadurch behoben, dass das offizielle Netzteil für den Raspberry Pi 3 eine Spannung von 5,2 Volt hat.</p>
+<p>Stromversorgung: Raspberry Pi 4B
+Im Gegensatz zu den Modellen davor braucht der Raspberry Pi 4B ein USB-Netzteil mit 5 Volt und 3 Ampere mit USB-Typ-C (Steckverbindung). Hierbei muss beachtet werden, dass beim Raspberry Pi 4B der USB-C-Port fehlerhaft implementiert ist und aktive USB-C-Kabel (mit E-Mark-Chip) den Raspberry Pi 4B als Audio-Adapter erkennen und deshalb keinen Strom ausgeben.</p>
+<p>Abhilfe schafft ein einfaches USB-C-Kabel ohne den E-Mark-Chip. Solche Kabel liegen meist als Ladekabel für Smartphones bei. Die üblichen Kabel für Notebooks, Thunderbold usw. sind für den Betrieb des Raspberry Pi 4B nicht geeignet. Die Raspberry Pi Foundation hat eine Revision angekündigt, weshalb es neuere Raspberry Pi 4B gibt, bei der dieses Problem nicht besteht.</p>
+<p><em>Quelle: https://www.elektronik-kompendium.de/sites/raspberry-pi/1912111.htm</em></p>
+<h4 id="maximale-stromstarke-der-gpio">Maximale Stromstärke der GPIO</h4>
+<p>Eines vorneweg, der Gesamtstrom aller GPIOs sollte 50 mA nicht übersteigen. Denn das ist die größte Stromstärke (mit Reserve natürlich) die ein Bond (das dünne Drähtchen vom "Beinchen" des Schaltkreises zur eigentlichen internen Schaltung) aushalten kann.</p>
+<p>Die gesamte Elektronik eines (einzelnen) Anschlusses ist für maximal 16 mA ausgelegt. Das heißt, es treten bis 16 mA keine Schäden auf. Alles darüber ist unsicher. Auch wenn der eine oder andere Bastler deutlich mehr aus einem GPIO bekommt.
+Der Bereich, in dem die Ausgangsendstufen eines GPIO sicher arbeiten reicht von 2 bis 16 mA. Als Optimum liegt zwischen 3 und 8 mA. Mit mehr als 8 mA sollte man nicht rechnen. Aber auch nicht weniger als 2 mA.</p>
+<p><em>Quelle: https://www.elektronik-kompendium.de/sites/raspberry-pi/2006031.htm</em></p>
+<h2 id="kompetenz-41-betriebssystem-auswahlen">Kompetenz 4.1: Betriebssystem auswählen</h2>
+<p>Für die Temperatur-Messeinheit der Change IT GmbH soll ein Raspberry Pi eingesetzt werden. Nicht jedes Linux-Betriebssystem kann auf dem Raspberry Pi installiert werden. Für diesen stehen allerdings verschiedene spezialisierte Betriebssysteme zur Verfügung. Sie wollen sich einen Überblick zu den Linux-Varianten verschaffen, um ein passendes System auszuwählen. Nach der Einrichtung der Temperatur-Messeinheiten werden die Raspberry Pi ferner nicht mehr per Bildschirm, Maus und Tastatur bedient. Vielmehr ist eine Remote-Bedienung vorgesehen. Auch hierzu fehlen noch Informationen, bevor das IT-System in Betrieb genommen werden kann.</p>
+<p><img alt="Linux Pinguin" src="bilder/kap_04_penguin.png" /></p>
+<h3 id="a44-linux-distributionen-unterscheiden">A|4.4: Linux-Distributionen unterscheiden</h3>
+<h4 id="aufgabe-1_3">Aufgabe 1</h4>
+<p>Was sind Linux-Distributionen (s. M|4.4: Linux-Distributionen im Überblick)? Beschreiben Sie in eigenen Worten.</p>
+<h3 id="m44-linux-distributionen-im-uberblick">M|4.4: Linux-Distributionen im Überblick</h3>
+<p>Bei Windows ist die Sache einfach: Hersteller Microsoft bringt eine neue Version raus und zeitweise gibt es noch den Vorgänger - das war es auch schon an Auswahl. Bei Linux sieht die Sache etwas anders aus. Es gibt nämlich nicht "das Linux". Genau genommen müsste man das Ganze sowieso GNU/Linux nennen: Was man gemeinhin Linux nennt, besteht aus einem Kernel, eben Linux, und einer Reihe von Standard-Werkzeugen, den GNU Tools. Aber lassen wir das mal beiseite und sprechen wie üblich einfach von Linux. Diese Kernelemente finden Sie in allen Linuxen, genauer gesagt Linux-Distributionen, kurz Distris genannt. Da die Linux-Basis Open Source Software ist, kann sich jeder ein eigenes System basteln und distribuieren - daher der Name Distri.</p>
+<p>Und genau dort liegen die großen Unterschiede: Wer entwickelt das System? Was kommt in das System? Wie wird veröffentlicht? Welche zusätzlichen Tools gehören dazu? Und wie genau sieht der Desktop aus? Manche Distris werden hauptsächlich von dahinter stehenden Firmen herausgegeben, etwa Ubuntu von Canonical oder Red Hat Enterprise Linux von Red Hat. Andere Distributionen sind komplett Community-betreut, allen voran Debian. Die meisten großen Distris spendieren Ihren Linuxen auch eigene Tools rund um das System - insbesondere das, was man unter Windows als "Systemsteuerung" kennt, löst jede Distri auf eigene Art. Die "großen" Anwendungsprogramme wie Office (LibreOffice) oder Bildbearbeitung (Gimp) finden sich natürlich überall. Wichtig ist dabei auch, wie ernst die Projekte den Freiheitsgedanken nehmen: Wo Debian standardmäßig nur auf freie, quelloffene Software setzt, baut Ubuntu auch unfreie Software ein, beispielsweise Grafikkartentreiber oder Multimedia-Codecs. Auch die Update-Politiken unterscheiden sich: Teils wird zu fixen Terminen veröffentlicht, teils landen aktualisierte Pakete kontinuierlich in den so genannten Repositories. Apropos: Jede Distri hat ein solches dazugehörige "Repo", aus dem sich über das Paketmanagement ganz einfach Programme installieren lassen - Debian kommt auf über 50.000 Pakete.</p>
+<p>Für die meisten Heimanwender stellt sich vor allem eine Frage: Wie sieht der Desktop aus? Bei Windows sind OS und Desktop untrennbar verbunden, bei Linux ist die gesamte Desktop-Umgebung im Grunde nur ein Anwendungsprogramm, das nach Belieben installiert und ausgetauscht werden kann. Alle Systeme haben einen Standard-Desktop, aber man kann ihn auswechseln. Bestes Beispiel: Ubuntu gibt es auch als Lubuntu, Kubuntu und Xubuntu, was für die Standard-Desktops LXDE, KDE und XFCE steht. Zwar verändern die Projektteams hier und da auch noch andere Details, aber im Grunde könnten Sie einfach Ubuntu aufsetzen und dann LXDE, KDE (heute Plasma) und XFCE installieren - und beim Start wählen Sie dann das gewünschte System.</p>
+<p>Nicht alle Aspekte sind für jeden wichtig, aber damit haben Sie schon mal eine Grundlage für die Auswahl. Lässt man die Technik mal außen vor, unterscheiden sich die Distris aus Nutzersicht in Fragen wie: Wie schlank ist das System? Wie komfortabel? Wie frei? Wie gut dokumentiert?</p>
+<p><img alt="Linux Stammbaum" src="bilder/kap_04_LinuxStammbaum.png" /></p>
+<p><em>Quellen:</em>
+- <em>https://www.heise.de/tipps-tricks/Linux-Betriebssysteme-eine-Uebersicht-4119937.html</em>
+- <em>https://codezentrale.de/linux-stammbaum-linux-distributionen/</em></p>
+<hr />
+<h3 id="a45-linux-systeme-remote-bedienen">A|4.5: Linux-Systeme remote bedienen</h3>
+<p>Informieren Sie sich mithilfe des Materials im Kurs (M|4.5: SSH, VNC und Telnet) und beantworten Sie die folgenden Fragen:</p>
+<h4 id="aufgabe-1_4">Aufgabe 1</h4>
+<p>Was ist eine SSH-Verbindung?</p>
+<h4 id="aufgabe-2_1">Aufgabe 2</h4>
+<p>Welche Software wird für den Aufbau einer SSH-Verbindung auf der Client- sowie auf der Server-Seite benötigt?</p>
+<h4 id="aufgabe-3_1">Aufgabe 3</h4>
+<p>Was ist der Unterschied zwischen SSH und VNC?</p>
+<h4 id="aufgabe-4_1">Aufgabe 4</h4>
+<p>Was ist der Unterschied zwischen SSH und Telnet?</p>
+<h4 id="aufgabe-5_1">Aufgabe 5</h4>
+<p>Welche Vor- und Nachteile hat eine Remote-Wartung gegenüber einer Vor-Ort-Wartung von IT-Systemen?</p>
+<h3 id="m45-secure-shell-ssh-und-virtual-network-computing-vnc">M|4.5: Secure Shell (SSH) und Virtual Network Computing (VNC)</h3>
+<h4 id="secure-shell-ssh">Secure Shell (SSH)</h4>
+<p>Secure Shell (SSH) ist ein Netzwerkprotokoll, das entwickelt wurde, um eine sichere Kommunikation über ein unsicheres Netzwerk zu ermöglichen. Typischerweise wird SSH verwendet, um eine verschlüsselte Verbindung zu einem entfernten Server herzustellen und so eine sichere Datenübertragung, Authentifizierung und Interaktion mit dem entfernten System zu gewährleisten.</p>
+<p><img alt="SSH Protokoll Wikipedia" src="bilder/kap_04_ssh.png" /></p>
+<p><em>Bildquelle: https://de.wikipedia.org/wiki/Secure_Shell</em></p>
+<ul>
+<li><strong>Verschlüsselte Verbindungen:</strong> SSH verschlüsselt die Kommunikation zwischen dem Client und dem Server, was bedeutet, dass sensible Daten wie Passwörter, Befehle und Dateiübertragungen vor unbefugtem Zugriff geschützt sind.</li>
+<li><strong>Authentifizierung:</strong> SSH ermöglicht die sichere Authentifizierung von Benutzern, um sicherzustellen, dass nur autorisierte Personen auf das System zugreifen können. Dies kann durch Passwörter, Schlüsselpaare oder andere Authentifizierungsmethoden erfolgen.</li>
+<li><strong>Sichere Datenübertragung:</strong> Dateien können sicher über SSH übertragen werden. Dies wird oft durch den Einsatz von SCP (Secure Copy) oder SFTP (Secure File Transfer Protocol) erreicht.</li>
+<li><strong>Portabilität:</strong> SSH ist plattformunabhängig und kann auf verschiedenen Betriebssystemen wie Linux, macOS und Windows verwendet werden.</li>
+<li><strong>Remote-Shell-Zugriff:</strong> Eines der Hauptanwendungsgebiete von SSH ist der Zugriff auf eine Remote-Shell auf einem entfernten Server. Dies ermöglicht es Benutzern, Befehle auf einem entfernten System auszuführen, als ob sie direkt vor dessen Bildschirm sitzen würden.</li>
+</ul>
+<p><strong>Aufbau einer SSH-Verbindung</strong></p>
+<p>Sie benötigen in der Regel keine zusätzliche Software. Ein Terminal-Fenster Ihres Betriebssystems reicht hierfür aus.</p>
+<p>Mit dem Befehl <code>ssh pi@172.20.20.20</code> verbinden Sie sich als Benutzer <code>pi</code> via SSH mit dem Remote-System, welches im Beispiel die IP <code>172.20.20.20</code> hat.</p>
+<h4 id="virtual-network-computing">Virtual Network Computing</h4>
+<p><img alt="VNC" src="bilder/kap_04_vnc.png" /></p>
+<p>Virtual Network Computing (VNC) ist eine Technologie, die es ermöglicht, den Bildschirminhalt eines Computers über ein Netzwerk zu übertragen und die Tastatureingaben und Mausbewegungen von einem entfernten Standort aus zu steuern. Mit VNC kann ein Benutzer von einem Computer aus auf einen anderen Computer zugreifen, als ob er direkt vor diesem sitzen würde. Die Technologie ermöglicht Remote-Desktop-Zugriff und -kontrolle.</p>
+<ul>
+<li><strong>Server:</strong> Auf dem Computer, dessen Bildschirminhalt freigegeben werden soll, muss ein VNC-Server installiert und gestartet werden. Der VNC-Server erfasst den Bildschirminhalt und wartet auf eingehende Verbindungen.</li>
+<li><strong>Client:</strong> Der Computer, der auf den entfernten Bildschirminhalt zugreifen möchte, benötigt einen VNC-Client. Dieser Client stellt eine Verbindung zum VNC-Server her und empfängt die übertragenen Bildschirminhalte.</li>
+<li><strong>Übertragungsprotokoll:</strong> VNC verwendet ein spezifisches Protokoll (z. B. RFB - Remote Framebuffer Protocol), um den Bildschirminhalt zu übertragen und Benutzereingaben zu steuern. Dieses Protokoll ermöglicht die Übertragung von Grafiken, Mausbewegungen und Tastatureingaben über das Netzwerk.</li>
+<li><strong>Verschlüsselung (optional):</strong> In einigen VNC-Implementierungen kann eine Verschlüsselung aktiviert werden, um die übertragenen Daten zu schützen. Dies ist besonders wichtig, wenn VNC über unsichere Netzwerke wie das Internet verwendet wird, um die Privatsphäre und Sicherheit zu gewährleisten.</li>
+</ul>
+<h3 id="telnet">Telnet</h3>
+<p>Telnet steht für "Telecommunication Network" und ist ein Netzwerkprotokoll, das für die remote textbasierte Kommunikation zwischen Computern über ein TCP/IP-Netzwerk verwendet wird. Es wurde ursprünglich für den Zugriff auf entfernte Systeme und die Fernadministration entwickelt. Telnet ermöglicht es einem Benutzer, von einem Computer aus eine Verbindung zu einem anderen Computer herzustellen und eine Eingabeaufforderung oder ein Terminalfenster auf dem entfernten System zu öffnen.</p>
+<p>Es ist wichtig zu beachten, dass Telnet in seiner grundlegenden Form keine Verschlüsselung für die übertragenen Daten bietet. Alle Informationen, einschließlich Benutzernamen und Passwörtern, werden im Klartext über das Netzwerk übertragen. Aus diesem Grund ist die Verwendung von Telnet über unsichere Netzwerke, wie das Internet, nicht ratsam, da es ein erhebliches Sicherheitsrisiko darstellt. Unautorisierte Personen könnten den Netzwerkverkehr mithören und sensible Informationen abfangen.</p>
+<p>Aufgrund der Sicherheitsbedenken wird Telnet heute oft durch sicherere Alternativen wie SSH (Secure Shell) ersetzt, das eine verschlüsselte Verbindung für die Remote-Administration bietet und somit die Integrität und Vertraulichkeit der übertragenen Daten gewährleistet.</p>
+<h2 id="kompetenz-42-linux-kommandozeile-bedienen">Kompetenz 4.2: Linux-Kommandozeile bedienen</h2>
+<p>Die IT-Abteilung der Change IT GmbH hat sich bei den eingesetzten IT-Systemen für die Wartung und Konfiguration via SSH entschieden. Hierbei fallen Standardaufgaben an, die eine Bedienung des Linux-Systems mit sich bringt. Kurz danach erhalten Sie den Auftrag ein Remote-System mit dem Betriebssystem Raspberry Pi OS (x86) für ein Projekt vorzubereiten und zu testen.</p>
+<p><img alt="Linux-Terminal Symbolbild" src="bilder/kap_04_linux.png" /></p>
+<h3 id="arbeitsauftrag-a46-linux-befehlsreferenz-anlegen">Arbeitsauftrag A|4.6: Linux-Befehlsreferenz anlegen</h3>
+<p><strong>Aufgabe 1</strong></p>
+<p>Ihnen liegt ein vorbereitetes <a href="material/kap_04_Cheat%20Sheet%20Linux%20-%20AB.pdf">Cheat-Sheet</a> zu Linux-Kommandozeilenbefehlen vor (Vorlage - Cheat-Sheet Linux). Dieses ist noch nicht vollständig ausgefüllt, Sie wollen die Übersicht nun fertigstellen, um zukünftig eine Schnellreferenz vorliegen zu haben. Verschaffen Sie sich mithilfe des Informationsmaterials M|4.6: Linux-Kommandozeilenbefehle im Kurs einen Überblick zu den wichtigsten Befehlen für die Linux-Kommandozeile und vervollständigen Sie das Cheat-Sheet.</p>
+<div class="admonition note">
+<p class="admonition-title">Hinweis</p>
+<p>Das Blatt ist in den drei Niveaustufen in Anlehnung an den ISA-Unterricht aufgebaut:</p>
+<ul>
+<li>Könner: Befehle kennen und situationsgerecht anwenden</li>
+<li>Profi: Befehlserweiterungen beschreiben</li>
+</ul>
+<p>Sollten Sie genauere Informationen zu einem Linux-Kommando benötigen finden Sie neben dem Informationsmaterials M|4.6: Linux-Kommandozeilenbefehle das Informationsmaterial M|4.7: Linux man-pages (Profi).</p>
+</div>
+<p><strong>Aufgabe 2</strong></p>
+<p>Wenn Sie die Befehlsreferenz fertiggestellt haben, geben Sie diese in dieser Aufgabe als .pdf-Datei (max. 5 MB) ab. Anschließend wird eine Beispiellösung Lösungshinweis zu A|4.6: Linux-Befehlsreferenz anlegen freigeschaltet. Gleichen Sie Ihre Lösung mit der Beispiellösung ab. Notieren Sie sich Auffälligkeiten oder Lösungsabweichungen für die spätere Besprechung in der Klasse.</p>
+<h3 id="vorlage-cheat-sheet-linux">Vorlage - Cheat-Sheet Linux</h3>
+<p><a href="material/kap_04_Cheat%20Sheet%20Linux%20-%20AB.pdf">Download der Vorlage</a></p>
+<h3 id="informationsmaterial-m46-linux-kommandozeilenbefehle">Informationsmaterial M|4.6: Linux-Kommandozeilenbefehle</h3>
+<h4 id="datei-und-verzeichnismanagement">📁 Datei- und Verzeichnismanagement</h4>
+<p><strong>cd</strong></p>
+<p>Der Befehl <code>cd</code> (change directory) dient zum Wechseln in ein anderes Verzeichnis. Er kann mit relativen oder absoluten Pfaden verwendet werden. Mit <code>cd ..</code> springt man eine Verzeichnisebene zurück. <code>cd</code> ohne Parameter bringt Sie ins Home-Verzeichnis.</p>
+<p><em>Beispiel:</em> <code>cd /home/user/projekt01</code></p>
+<hr />
+<p><strong>ls</strong></p>
+<p><code>ls</code> listet den Inhalt eines Verzeichnisses auf. Mit <code>-l</code> (kleines L) wird eine detaillierte Liste mit Größen, Rechten und Zeitstempeln angezeigt. Die Option -a zeigt auch versteckte Dateien. In Kombination (<code>ls -la</code>) ist der Befehl besonders nützlich zur vollständigen Übersicht.</p>
+<p><em>Beispiel:</em> <code>ls -la</code></p>
+<hr />
+<p><strong>pwd</strong></p>
+<p><code>pwd</code> (print working directory) gibt den vollständigen Pfad zum aktuellen Verzeichnis aus. Das ist besonders hilfreich, um die Orientierung im Dateisystem zu behalten. Der Pfad beginnt immer mit <code>/</code>, dem Wurzelverzeichnis. So wissen Sie genau, wo Sie sich befinden.</p>
+<p><em>Beispiel:</em> <code>pwd</code> → Ausgabe: <code>/home/user/dokumentation</code></p>
+<hr />
+<p><strong>mkdir</strong></p>
+<p>Mit <code>mkdir</code> (make directory) wird ein neues Verzeichnis erstellt. Die Option <code>-p</code> ermöglicht es, auch verschachtelte Ordner in einem Schritt anzulegen. Der Name kann relativ oder absolut sein. Bereits bestehende Ordner führen zu einer Fehlermeldung.</p>
+<p><em>Beispiel:</em> <code>mkdir -p projekt01/code</code></p>
+<hr />
+<p><strong>rmdir</strong></p>
+<p><code>rmdir</code> löscht leere Verzeichnisse. Wenn sich noch Dateien oder Unterordner darin befinden, bricht der Befehl mit einer Fehlermeldung ab. Für nicht leere Verzeichnisse wäre <code>rm -r</code> erforderlich. <code>rmdir</code> ist sicher, da es keine Daten versehentlich löscht.</p>
+<p><em>Beispiel:</em> <code>rmdir testordner</code></p>
+<hr />
+<p><strong>rm</strong></p>
+<p><code>rm</code> entfernt Dateien oder mit der Option <code>-r</code> auch ganze Verzeichnisse samt Inhalt. Der Befehl löscht unwiderruflich – es gibt keinen Papierkorb. Bei sensiblen Dateien ist Vorsicht geboten. Mit <code>-i</code> kann eine Sicherheitsabfrage aktiviert werden.</p>
+<p><em>Beispiel:</em> <code>rm -r alte_daten</code></p>
+<hr />
+<p><strong>touch</strong></p>
+<p>Mit <code>touch</code> erstellt man leere Dateien. Existiert die Datei bereits, wird lediglich der Zeitstempel aktualisiert. Der Befehl ist nützlich für das schnelle Anlegen von Textdateien oder Platzhaltern.</p>
+<p><em>Beispiel:</em> <code>touch info.txt</code></p>
+<hr />
+<p><strong>cp</strong></p>
+<p><code>cp</code> (copy) kopiert Dateien oder mit der Option <code>-r</code> auch Verzeichnisse. Ziel und Quelle müssen angegeben werden. Der Befehl kann auch verwendet werden, um Sicherungskopien anzulegen.</p>
+<p><em>Beispiel:</em> <code>cp readme.txt backup.txt</code></p>
+<hr />
+<p><strong>mv</strong></p>
+<p><code>mv</code> verschiebt Dateien oder Ordner – oder benennt sie um. Gibt man einen neuen Dateinamen als Ziel an, wird umbenannt. Gibt man einen Ordner an, wird die Datei dorthin verschoben.</p>
+<p><em>Beispiel:</em> <code>mv alt.txt neu.txt</code></p>
+<hr />
+<p><strong>nano</strong></p>
+<p>Mit <code>nano</code> öffnet man einen einfachen Texteditor direkt im Terminal. Er eignet sich gut zum schnellen Erstellen oder Bearbeiten von Textdateien, z.B. Konfigurationsdateien oder Shell-Skripten. Während der Bearbeitung können die wichtigsten Aktionen über Tastenkombinationen ausgeführt werden: Mit <code>Strg + O</code> speichert man die Datei, mit <code>Strg + X</code> verlässt man den Editor. Alle Befehle lassen sich jederzeit über <code>Strg + G</code> anzeigen.</p>
+<p><em>Beispiel:</em> <code>nano readme.txt</code></p>
+<hr />
+<h4 id="rechte-und-benutzer">🔒 Rechte und Benutzer</h4>
+<p><strong>chmod</strong></p>
+<p><code>chmod</code> ändert die Zugriffsrechte von Dateien und Verzeichnissen. Mit Zahlen wie <code>755</code> oder symbolisch (<code>u+x</code>) kann genau gesteuert werden, wer was darf. Rechte werden in drei Gruppen vergeben: Eigentümer, Gruppe, andere.</p>
+<p><em>Beispiel 1:</em> <code>chmod 644 dokumentation/readme.txt</code> (Rechte symbolisch verändern: Eigentümer und Gruppe erhalten Lese-/Schreib- und Ausführrechte, Andere Benutzer dürfen nur ausführen - zuvor gesetzte Berechtigungen werden überschrieben.)</p>
+<p><em>Beispiel 2:</em> <code>chmod u-x,g+w,o= dokumentation/meinscript.sh</code> (Rechte symbolisch verändern: Eigentümer werden die Ausführrechte entzogen (r und w bleiben wie zuvor), die Gruppe erhält Schreibrechte (r und x bleiben wie zuvor) und andere Benutzer haben keine Berechtigungen (es wird überschrieben, was zuvor eingestellt war).</p>
+<p><em>Beispiel 3:</em> <code>chmod 741 dokumentation/meinscript.sh</code> (Rechte numerisch verändern: Eigentümer hat Lese- Schreib- und Ausführrechte (r=4, w=2, x=1 Summe: 7), die Gruppe darf Lesen (r=4) und die anderen Benutzer nur ausführen (x=1). </p>
+<hr />
+<p><strong>chown</strong></p>
+<p><code>chown</code> ändert den Eigentümer und optional die Gruppe einer Datei. Nur Administratoren (<code>root</code>) dürfen den Eigentümer ändern. Es kann auch rekursiv auf ganze Verzeichnisse angewendet werden.</p>
+<p><em>Beispiel:</em> <code>sudo chown pi:users readme.txt</code></p>
+<hr />
+<p><strong>adduser</strong></p>
+<p><code>adduser</code> legt einen neuen Benutzer an. Der Befehl fragt nach einem Passwort und zusätzlichen Informationen. Diese Aktion ist nur mit Adminrechten möglich.</p>
+<p><em>Beispiel:</em> <code>sudo adduser max</code></p>
+<hr />
+<p><strong>deluser</strong></p>
+<p><code>deluser</code> entfernt einen Benutzer vom System. Optional kann mit <code>--remove-home</code> auch das Benutzerverzeichnis gelöscht werden. Auch dieser Befehl benötigt Adminrechte.</p>
+<p><em>Beispiel:</em> <code>sudo deluser max</code></p>
+<hr />
+<p><strong>passwd</strong></p>
+<p><code>passwd</code> ändert das Passwort des aktuellen Benutzers oder (als <code>root</code>) eines anderen. Der Befehl fragt das neue Passwort zweimal ab. Auch Benutzer ohne Adminrechte können ihr eigenes Passwort ändern.</p>
+<p><em>Beispiel:</em> <code>passwd</code></p>
+<hr />
+<p><strong>whoami</strong></p>
+<p><code>whoami</code> zeigt den aktuell angemeldeten Benutzernamen an. Das ist nützlich, um sich zu vergewissern, unter welchem Benutzer man gerade arbeitet.</p>
+<p><em>Beispiel:</em> <code>whoami</code></p>
+<hr />
+<h4 id="systemanalyse-und-zustand">🖥️ Systemanalyse und -zustand</h4>
+<p><strong>htop</strong></p>
+<p><code>htop</code> zeigt eine Live-Ansicht der aktuell laufenden Prozesse. CPU- und RAM-Auslastung werden ebenfalls dargestellt. Die Übersicht wird laufend aktualisiert.</p>
+<p><em>Beispiel:</em> <code>htop</code></p>
+<p><strong>ps aux</strong></p>
+<p><code>ps aux</code> listet alle Prozesse auf, die aktuell auf dem System laufen. Es zeigt Benutzer, PID, CPU-/RAM-Auslastung und die gestarteten Programme. In Kombination mit <code>grep</code> kann gezielt gesucht werden. Dabei wird mit dem Pipe-Zeichen <code>|</code> die Ausgabe von <code>ps aux</code> mittels <code>grep</code> gefiltert und erst anschließend angezeigt. Dies wird auch Pipelining genannt.</p>
+<p><em>Beispiel:</em> <code>ps aux | grep nano</code></p>
+<p><strong>df -h</strong></p>
+<p><code>df -h</code> zeigt die Belegung der Festplatten an. Die Option <code>-h</code> steht für „human readable“ und zeigt Größen in MB/GB. Der Befehl hilft, Speicherengpässe zu erkennen.</p>
+<p><em>Beispiel:</em> <code>df -h</code></p>
+<hr />
+<p><strong>free -h</strong></p>
+<p><code>free -h</code> zeigt die Belegung des Arbeitsspeichers an. Auch hier bedeutet <code>-h</code>, dass die Größen in verständlichen Einheiten angezeigt werden.</p>
+<p><em>Beispiel:</em> <code>free -h</code></p>
+<hr />
+<p><strong>uname -a</strong></p>
+<p><code>uname -a</code> liefert Systeminformationen, z.B. Kernel-Version, Hostname und Architektur. Es ist besonders nützlich für die Fehlersuche oder bei Updates.</p>
+<p><em>Beispiel:</em> <code>uname -a</code></p>
+<hr />
+<p><strong>uptime</strong></p>
+<p><code>uptime</code> zeigt an, wie lange das System bereits läuft, wie viele Benutzer angemeldet sind und die durchschnittliche Systemlast.</p>
+<p><em>Beispiel:</em> <code>uptime</code></p>
+<hr />
+<p><strong>history</strong></p>
+<p><code>history</code> listet alle zuvor eingegebenen Befehle chronologisch auf. Praktisch zur Nachverfolgung und Fehleranalyse. Einzelne Befehle lassen sich per <code>!Nummer</code> erneut ausführen.</p>
+<p><em>Beispiel:</em> <code>history</code></p>
+<hr />
+<h4 id="skripte-ausgabe-gpio">⚙️ Skripte, Ausgabe, GPIO</h4>
+<p><strong>./script.sh</strong></p>
+<p>Ein Shell-Skript wird im Terminal durch Voranstellen von <code>./</code> ausgeführt – vorausgesetzt, es ist als ausführbar markiert. Vor dem ersten Start muss bspw. mit <code>chmod +x</code> die Ausführungsberechtigung gesetzt werden. Das Skript kann beliebige Befehle enthalten, etwa zur Automatisierung von Aufgaben. Wird <code>./</code> nicht verwendet, sucht das System das Skript nicht im aktuellen Verzeichnis.</p>
+<p><em>Beispiel:</em> <code>./script.sh</code> führt das Skript <code>script.sh</code> im aktuellen Ordner aus.</p>
+<hr />
+<p><strong>cat</strong></p>
+<p><code>cat</code> zeigt den Inhalt einer Datei im Terminal an. Damit kann man Textdateien schnell durchsehen. Auch nützlich für das Zusammenfügen mehrerer Dateien.</p>
+<p><em>Beispiel:</em> <code>cat readme.txt</code></p>
+<hr />
+<p><strong>tail</strong></p>
+<p><code>tail</code> zeigt standardmäßig die letzten 10 Zeilen einer Datei. Mit <code>-n</code> kann man die Anzahl der Zeilen anpassen. Mit <code>-f</code> kann man eine Log-Datei live mitverfolgen.</p>
+<p><em>Beispiel:</em> <code>tail -n 5 readme.txt</code></p>
+<hr />
+<p><strong>grep</strong></p>
+<p><code>grep</code> durchsucht Texte oder Dateien nach bestimmten Zeichenfolgen. Ideal zum Filtern von Log-Dateien oder Prozessen. Mit <code>-i</code> wird die Groß-/Kleinschreibung ignoriert.</p>
+<p><em>Beispiel:</em> <code>grep "Fehler" log.txt</code></p>
+<hr />
+<p><strong>pinout</strong></p>
+<p><code>pinout</code> zeigt eine grafische Übersicht der GPIO-Pins eines Raspberry Pi (funktioniert nur auf echtem Pi). Alternativ kann https://pinout.xyz genutzt werden.</p>
+<p><em>Beispiel:</em> <code>pinout</code></p>
+<hr />
+<p><strong>shutdown</strong></p>
+<p>shutdown beendet das System sicher. Optionen wie <code>-h now</code> oder <code>-r +10</code> ermöglichen das sofortige oder geplante Herunterfahren oder Neustarten. Erfordert meist Adminrechte.</p>
+<p><em>Beispiel:</em> <code>sudo shutdown -h now</code></p>
+<hr />
+<p><strong>reboot</strong></p>
+<p><code>reboot</code> startet das System neu. Wird häufig für Wartungsarbeiten oder nach Updates verwendet.</p>
+<p><em>Beispiel:</em> <code>sudo reboot</code></p>
+<h3 id="auswahl-der-niveaustufe-fur-die-aufgaben-zur-arbeit-in-der-linux-kommandozeile-a47">Auswahl der Niveaustufe für die Aufgaben zur Arbeit in der Linux-Kommandozeile (A|4.7):</h3>
+<ul>
+<li>Standardmäßig ist die Stufe Profi gewählt.</li>
+<li>Benötigen Sie mehr Hilfestellungen, kennzeichnen Sie diese Textbox als "Erledigt", um sich den <em>Arbeitsauftrag A|4.7</em> als Könner anzeigen zu lassen.  </li>
+</ul>
+<h3 id="ssh-login-zum-server">SSH-Login zum Server</h3>
+<p>Zur Bearbeitung der folgenden Aufgaben steht Ihnen ein Linux-Server zur Verfügung, der aus dem Schulnetz erreichbar ist:</p>
+<ul>
+<li>IP: wird Ihnen im Unterricht mitgeteilt.</li>
+<li>Port: 22</li>
+<li>Username: wird Ihnen im Unterricht mitgeteilt</li>
+<li>Passwort: wird Ihnen im Unterricht mitgeteilt</li>
+</ul>
+<h3 id="arbeitsauftrag-a47-linux-terminal-bedienen-konner">Arbeitsauftrag A|4.7: Linux-Terminal bedienen (Könner)</h3>
+<div class="admonition tip">
+<p class="admonition-title">KI-Feedback</p>
+<p>Dieser Arbeitsauftrag wird durch ein KI-Feedback versehen. Bearbeiten Sie die Aufgaben s.u. Die Lehrkraft führt in regelmäßigen Abständen ein Script aus, welches die Abgaben durch ein KI-Feedback ergänzt. Schreiben Sie daher <strong>keine</strong> personenbezogenen Daten in die Abgabe. Setzen Sie sich kritisch mit dem Feedback auseinander.</p>
+</div>
+<p><strong>Aufgabe 1</strong></p>
+<p>Laden Sie sich die unten genannten Aufgabenstellungen als .txt-Datei herunter und öffnen Sie diese bspw. im Windows Editor, Visual Studio Code oder notepad++. In der .txt-Datei sichern Sie Ihre Ergebnisse schrittweise nach erfolgreicher Ausführung in der Kommandozeile. Sie benötigen die Datei am Ende, um das Feedback zu erhalten.</p>
+<p><a href="material/kap_04_A4.7%20Linux-Terminal%20bedienen%20K%C3%B6nner.txt">Download der .txt</a></p>
+<p><strong>Aufgabe 2</strong></p>
+<p>Arbeiten Sie auf dem bereitgestellten Raspberry Pi OS im Terminal. Verwenden Sie Ihr persönliches Login. Ihre Aufgabe ist es typische Administrationsaufgaben hinsichtlich Dateien und Ordnern, Benutzern sowie der Systemanalyse durchzuführen.</p>
+<p>Notieren Sie die von Ihnen verwendeten Befehle unter die jeweiligen Aufgabenpunkte. Nutzen Sie Ihr Cheat-Sheet zur Unterstützung.</p>
+<div class="admonition example">
+<p class="admonition-title">Beispiel</p>
+<p><strong>Aufgabe:</strong> A.0: Lassen Sie sich das aktuelle Verzeichnis anzeigen.</p>
+<p><strong>Lösung</strong>: <code>pwd</code></p>
+</div>
+<p><strong>A. Verzeichnisse und Dateien verwalten</strong></p>
+<div class="admonition abstract">
+<p class="admonition-title">Kurzinformation Dateipfade</p>
+<p>Der Dateipfad kann in der Kommandozeile absolut (ab dem Wurzelverzeichnis <code>/</code>) oder relativ (ab dem aktuellen Ordner) angegeben werden. Bei absoluter Adressierung ist der aktuelle Pfad bei Aufruf des Befehls irrelevant, er kann "von überall aus dem System" ausgeführt werden. Bei relativer Adressierung ist der aktuelle Pfad bei Aufruf der Startpunkt des Befehls.</p>
+<p>Wenn <code>pwd</code> die Ausgabe <code>/home/max</code> ausgibt, kann der im Ordner <code>max</code> enthaltene Ordner <code>hausaufgaben</code> wie folgt angesprochen werden:</p>
+<ul>
+<li>Absolut adressiert: <code>ls /home/max/hausaufgaben</code> </li>
+<li>Relativ adressiert: <code>ls hausaufgaben</code></li>
+</ul>
+<p>Beide Befehle geben die Liste der im Ordner <code>hausaufgaben</code> gespeicherten Ordner und Dateien aus.</p>
+</div>
+<ol>
+<li>Legen Sie einen Projektordner <code>projekt01</code> an. Dieser soll später Ihre Übungsdateien enthalten.</li>
+<li>Erstellen Sie darin die Unterordner <code>code</code>, <code>daten</code> und <code>dokumentation</code>. Der Befehl zur Anlage von Ordnern kann mehrere Ordner auf einmal anlegen, wenn diese durch Leerzeichen getrennt aufgeführt werden.</li>
+<li>Erzeugen Sie im Ordner <code>dokumentation</code> eine leere Textdatei <code>readme.txt</code>. Prüfen Sie die Anlage mittels Auflisten des Ordnerinhalts <code>ls</code>.</li>
+<li>Bearbeiten Sie die Datei im Terminal mit dem Editor <code>nano</code>. Fügen Sie einen kurzen Text zum Projektthema ein: <code>"Ausstattung des Arbeitsplatzes 'Hotelempfang'"</code>.</li>
+<li>Kopieren Sie die Datei anschließend in den Ordner <code>daten</code>. Denken Sie daran, erst die Quelle und anschließend das Ziel anzugeben.</li>
+<li>Benennen Sie die Datei <code>readme.txt</code> im Ordner <code>daten</code> in <code>protokoll.txt</code> um. Geben Sie im Befehl erst den alten und dann den neuen Dateinamen an.</li>
+<li>Löschen Sie den Ordner <code>daten</code> mitsamt seines Inhalts. Nutzen Sie einen Befehl, der das rekursive Löschen (also Löschen des Ordners mit all seinen Unterordnern und in diesen enthaltenen Dateien) ermöglicht.</li>
+</ol>
+<p><strong>B. Dateiberechtigungen &amp; Benutzerverwaltung</strong></p>
+<div class="admonition abstract">
+<p class="admonition-title">Kurzinformation Berechtigungen</p>
+<p>Der Befehl <code>ls -l</code> erzeugt eine Ausgabe der im aktuellen Ordner enthaltenen Ordner und Dateien in Listenform und unter Angabe von Details zu den Elementen.</p>
+<p>Beispielsweise erzeugt der Befehl <code>ls -l /home/max/hausaufgaben</code> die folgende Ausgabe:</p>
+<p><div class="highlight"><pre><span></span><code>max@raspberry:~/hausaufgaben $ ls -l
+insgesamt 0
+-rw-r--r-- 1 max max 0     30. Januar  16:06  hausaufgabe_lf2.txt
+-rw-r--r-x 1 max max 0     30. Januar  16:26  hausaufgabe_lf5_script.py
+drwxr-xr-x 2 max max 4096  31. Januar  08:35  prüfungsvorbereitung
+</code></pre></div>
+Die Berechtigungen sind im ersten Teil einer Zeile angegeben:</p>
+<ul>
+<li><code>d</code> oder <code>-</code> zeigen an der ersten Stelle einen Ordner (<code>d</code>) oder eine Datei (<code>-</code>) an</li>
+<li>die erste Gruppe aus <code>rwx</code> bezieht sich auf die Leserechte (<code>r</code>), Schreibrechte (<code>w</code>) und Ausführrechte (<code>x</code>) des Eigentümers (User = u) der Datei</li>
+<li>die zweite Gruppe aus <code>rwx</code> bezieht sich auf die Rechte der Eigentümer-Gruppe (Group = g)</li>
+<li>die dritte Gruppe aus <code>rwx</code> zeigt die Rechte der anderen Benutzer (Others = o) des Systems an</li>
+</ul>
+<p>Ist ein Recht nicht gegeben, steht an der Stelle des Buchstabens ein <code>-</code>. Das Ändern der Berechtigungen erfolgt über den <code>chmod</code>-Befehl und kann symbolisch oder mit Zahlen erfolgen. So kann z.B. dem Script <code>hausaufgabe_lf5_script.py</code> mit dem Befehl <code>chmod u+x hausaufgabe_lf5_script.py</code> das Ausführrecht durch den Eigentümer der Datei erteilt werden. Den anderen Benutzern wird das Recht mit dem Befehl <code>chmod o-x hausaufgabe_lf5_script.py</code> wieder entzogen.</p>
+</div>
+<ol>
+<li>Prüfen Sie, welche Berechtigungen die Datei <code>readme.txt</code> im Ordner <code>dokumentation</code> aktuell hat.</li>
+<li>Passen Sie die Rechte so an, dass:<ul>
+<li>Sie selbst lesen und schreiben dürfen,</li>
+<li>die Gruppe ebenfalls lesen und schreiben darf</li>
+<li>andere keine Rechte haben.</li>
+</ul>
+</li>
+<li>Erstellen Sie einen neuen Benutzer mit dem Namen <code>testuser_[IhreNummer+100]</code>.</li>
+<li>Übertragen Sie die Eigentümerschaft der Datei <code>readme.txt</code> im Ordner <code>dokumentation</code> auf diesen Benutzer.</li>
+<li>Löschen Sie den von Ihnen erstellten Testbenutzer wieder.</li>
+</ol>
+<p><strong>C. Systemzustand analysieren</strong></p>
+<ol>
+<li>Verschaffen Sie sich einen Überblick über alle aktuell laufenden Prozesse im System. Nutzen Sie noch keinen Linux-Taskmanager.</li>
+<li>Filtern Sie diese Liste mithilfe von <code>grep</code> nach dem Programm <code>systemd</code>.</li>
+<li>Rufen Sie eine Live-Übersicht der Systemressourcen und der laufenden Prozesse im Linux-Taskmanager auf. Beschreiben Sie kurz den Aufbau des Programms.</li>
+<li>Prüfen Sie, wie viel Festplattenspeicher im Dateisystem <code>udev</code> noch verfügbar ist (Anzeige in GB [human readable]).</li>
+<li>Sehen Sie sich an, wie viel Arbeitsspeicher genutzt wird (Anzeige in GiB [human readable]).</li>
+<li>Lassen Sie sich technische Informationen über das System (Kernel-Information etc.) anzeigen.</li>
+<li>Finden Sie heraus, wie lange das System bereits läuft.</li>
+</ol>
+<p><strong>D. Skripte &amp; Historie</strong></p>
+<ol>
+<li>Erstellen Sie im Ordner <code>code</code> die Datei <code>hello.sh</code>mit dem Inhalt <code>echo "Moin moin!"</code>.</li>
+<li>Erteilen Sie der Datei mit <code>chmod</code> die nötigen Rechte, um sie auszuführen.</li>
+<li>Führen Sie das Skript anschließend aus.</li>
+<li>Sehen Sie sich Ihre zuletzt verwendeten Befehle an. Welchen Nutzen hat diese Liste?</li>
+</ol>
+<p><strong>E. Weitere Befehle</strong></p>
+<ol>
+<li>Lassen Sie sich anzeigen, unter welchem Benutzer Sie aktuell eingeloggt sind.</li>
+<li>Mit welchem Befehl kann man ein Linux-System herunterfahren. <strong><em>Hinweis: Führen Sie den Befehl nicht wirklich aus!</em></strong></li>
+<li>Mit welchem Befehl kann man ein Linux-System neu starten. <strong><em>Hinweis: Führen Sie den Befehl nicht wirklich aus!</em></strong></li>
+</ol>
+<p><strong>Aufgabe 3</strong></p>
+<p>Speichern Sie Ihre Lösung als .txt-Datei und laden Sie sie hier im Kurs hoch.</p>
+<p><strong>Aufgabe 4</strong></p>
+<p>Nach der Abgabe erhalten Sie ein KI-generiertes Feedback (wird manuell durch die Lehrkraft angestoßen). Lesen Sie dieses kritisch und notieren Sie sich Rückfragen oder Auffälligkeiten zur Besprechung im Unterricht. </p>
+<h3 id="arbeitsauftrag-a47-linux-terminal-bedienen-profi">Arbeitsauftrag A|4.7: Linux-Terminal bedienen (Profi)</h3>
+<div class="admonition tip">
+<p class="admonition-title">KI-Feedback</p>
+<p>Dieser Arbeitsauftrag wird durch ein KI-Feedback versehen. Bearbeiten Sie die Aufgaben s.u. Die Lehrkraft führt in regelmäßigen Abständen ein Script aus, welches die Abgaben durch ein KI-Feedback ergänzt. Schreiben Sie daher <strong>keine</strong> personenbezogenen Daten in die Abgabe. Setzen Sie sich kritisch mit dem Feedback auseinander.</p>
+</div>
+<p><strong>Aufgabe 1</strong></p>
+<p>Laden Sie sich die unten genannten Aufgabenstellungen als .txt-Datei herunter und öffnen Sie diese bspw. im Windows Editor, Visual Studio Code oder notepad++. In der .txt-Datei sichern Sie Ihre Ergebnisse schrittweise nach erfolgreicher Ausführung in der Kommandozeile. Sie benötigen die Datei am Ende, um das Feedback zu erhalten.</p>
+<p><a href="material/kap_04_A4.7%20Linux-Terminal%20bedienen%20Profi.txt">Download der .txt</a></p>
+<p><strong>Aufgabe 2</strong></p>
+<p>Arbeiten Sie auf dem bereitgestellten Raspberry Pi OS im Terminal. Verwenden Sie Ihr persönliches Login. Ihre Aufgabe ist es typische Administrationsaufgaben hinsichtlich Dateien und Ordnern, Benutzern sowie der Systemanalyse durchzuführen.</p>
+<p>Notieren Sie die von Ihnen verwendeten Befehle unter die jeweiligen Aufgabenpunkte. Nutzen Sie Ihr Cheat-Sheet zur Unterstützung.</p>
+<div class="admonition example">
+<p class="admonition-title">Beispiel</p>
+<p><strong>Aufgabe:</strong> A.0: Lassen Sie sich das aktuelle Verzeichnis anzeigen.</p>
+<p><strong>Lösung</strong>: <code>pwd</code></p>
+</div>
+<p><strong>A. Verzeichnisse und Dateien verwalten</strong></p>
+<ol>
+<li>Legen Sie einen Projektordner <code>projekt01</code> an.</li>
+<li>Erstellen Sie darin die Unterordner <code>code</code>, <code>daten</code> und <code>dokumentation</code>.</li>
+<li>Erzeugen Sie im Ordner <code>dokumentation</code> eine leere Textdatei <code>readme.txt</code>.</li>
+<li>Bearbeiten Sie die Datei im Terminal und fügen Sie den kurzen Text zum Projektthema ein: "Austattung des Arbeitsplatzes 'Hotelemfpang'".</li>
+<li>Kopieren Sie die Datei anschließend in den Ordner <code>daten</code>.</li>
+<li>Benennen Sie die Datei <code>readme.txt</code> im Ordner <code>daten</code> in <code>protokoll.txt</code> um.</li>
+<li>Löschen Sie den Ordner <code>daten</code> mitsamt seines Inhalts.</li>
+</ol>
+<p><strong>B. Dateiberechtigungen &amp; Benutzerverwaltung</strong></p>
+<ol>
+<li>Prüfen Sie, welche Berechtigungen die Datei <code>readme.txt</code> im Ordner <code>dokumentation</code> aktuell hat.</li>
+<li>Passen Sie die Rechte mit der Zahlen-Schreibweise so an, dass:<ul>
+<li>Sie selbst lesen und schreiben dürfen,</li>
+<li>die Gruppe ebenfalls lesen und schreiben darf</li>
+<li>andere keine Rechte haben.</li>
+</ul>
+</li>
+<li>Erstellen Sie einen neuen Benutzer mit dem Namen <code>testuser_[IhreNummer+100]</code>.</li>
+<li>Übertragen Sie die Eigentümerschaft der Datei <code>readme.txt</code> im Ordner <code>dokumentation</code> auf diesen Benutzer.</li>
+<li>Wechseln Sie mittels <code>su</code> zum neuen Benutzer und bearbeiten Sie die Datei nochmals, um einen Text zu ändern.</li>
+<li>Kopieren Sie die Datei in das <code>home</code>-Verzeichnis des Testusers.</li>
+<li>Wechseln Sie wieder zurück zum Ausgangsuser.</li>
+<li>Löschen Sie den von Ihnen erstellten Testbenutzer wieder.</li>
+<li>Prüfen Sie, was nach dem Löschen des Testbenutzers mit den Dateien und ihren Berechtigungen passiert ist.</li>
+</ol>
+<p><strong>C. Systemzustand analysieren</strong></p>
+<ol>
+<li>Verschaffen Sie sich einen Überblick über alle aktuell laufenden Prozesse im System. Nutzen Sie noch keinen Linux-Taskmanager.</li>
+<li>Filtern Sie diese Liste nach dem Programm <code>systemd</code>.</li>
+<li>Rufen Sie eine Live-Übersicht der Systemressourcen und der laufenden Prozesse im Linux-Taskmanager auf. Beschreiben Sie kurz den Aufbau des Programms.</li>
+<li>Prüfen Sie, wie viel Festplattenspeicher im Dateisystem <code>udev</code> noch verfügbar ist (Anzeige in GB).</li>
+<li>Sehen Sie sich an, wie viel Arbeitsspeicher genutzt wird (Anzeige in GiB).</li>
+<li>Lassen Sie sich technische Informationen über das System (Kernel-Information etc.) anzeigen.</li>
+<li>Finden Sie heraus, wie lange das System bereits läuft.</li>
+</ol>
+<p><strong>D. Skripte &amp; Historie</strong></p>
+<ol>
+<li>Erstellen Sie im Ordner <code>code</code> die Datei <code>hello.sh</code>mit dem Inhalt <code>echo "Moin moin!"</code>.</li>
+<li>Erteilen Sie der Datei die nötigen Rechte, um sie auszuführen.</li>
+<li>Führen Sie das Skript anschließend aus.</li>
+<li>Sehen Sie sich Ihre zuletzt verwendeten Befehle an. Welchen Nutzen hat diese Liste?</li>
+</ol>
+<p><strong>E. Weitere Befehle</strong></p>
+<ol>
+<li>Lassen Sie sich anzeigen, unter welchem Benutzer Sie aktuell eingeloggt sind.</li>
+<li>Mit welchem Befehl kann man ein Linux-System herunterfahren. <strong><em>Hinweis: Führen Sie den Befehl nicht wirklich aus!</em></strong></li>
+<li>Mit welchem Befehl kann man ein Linux-System neu starten. <strong><em>Hinweis: Führen Sie den Befehl nicht wirklich aus!</em></strong></li>
+</ol>
+<p><strong>Aufgabe 3</strong></p>
+<p>Speichern Sie Ihre Lösung als .txt-Datei und laden Sie sie hier im Kurs hoch.</p>
+<p><strong>Aufgabe 4</strong></p>
+<p>Nach der Abgabe erhalten Sie ein KI-generiertes Feedback (wird manuell durch die Lehrkraft angestoßen). Lesen Sie dieses kritisch und notieren Sie sich Rückfragen oder Auffälligkeiten zur Besprechung im Unterricht. </p>
+<h3 id="arbeitsauftrag-a48-reflexion-der-bedienung-eines-remote-systems-via-kommandozeile">Arbeitsauftrag A|4.8: Reflexion der Bedienung eines Remote-Systems via Kommandozeile</h3>
+<p><strong>Aufgabe 1</strong></p>
+<p>Beantworten Sie die Fragen für Ihre Einschätzung der Unterrichtsstunde hinsichtlich der Linux-Aufgaben, dem KI-Feedback sowie Ihrer Teamarbeit:</p>
+<p><a href="https://www.oncoo.de/so68">Abfrage</a></p>
+<p><strong>Aufgabe 2</strong></p>
+<p>Unterstützen Sie in den anderen Gruppen, wenn diese bei der Bearbeitung des Arbeitsauftrags 4.7 Hilfestellung benötigen.</p>
+<h2 id="kompetenz-43-installation-und-aktualisierung-des-betriebssystems">Kompetenz 4.3: Installation und Aktualisierung des Betriebssystems</h2>
+<p>Der Raspberry Pi ist hardwareseitig einsatzbereit, aktuell fehlt allerdings noch die Software. Die Change IT GmbH nutzt nach Ihrem Vorschlag ein Raspberry Pi OS als Betriebssystem. Dieses wurde in der internen IT-Abteilung bereits so vorbereitet, dass die Endgeräte in das WLAN kommen. Das Betriebssystem steht in einem sogenannten Image bereit. Dieses Image ist eine Momentaufnahme des Betriebssystems, welches auf Micro SD-Karten dupliziert und von dort wieder gestartet werden kann. Nehmen Sie die Installation und erste Aktualisierung auf Ihrem Raspberry Pi vor.</p>
+<p><img alt="PC" src="bilder/kap_04_installation.png" /></p>
+<h3 id="a49-inbetriebnahme-des-raspberry-pi">A|4.9: Inbetriebnahme des Raspberry Pi</h3>
+<p>Sie benötigen für die Schritte der Inbetriebnahme folgende Programme:</p>
+<ul>
+<li>Raspberry Pi Imager (<a href="https://www.raspberrypi.org/downloads/">Download</a>)</li>
+<li>MMBbS Raspberry Pi OS Image (<a href="https://mm-bbs.de">Download</a> über die Landingpage)</li>
+</ul>
+<p>Die Anleitung zur Installation des Betriebssystems finden Sie im Kurs.</p>
+<p>Wenn Sie diese Aufgabe fertiggestellt haben bestätigen Sie dies über den oben aufgeführten Button:</p>
+<p><img alt="Moodle Button" src="bilder/kap_04_moodle_button.png" /></p>
+<h3 id="m47-inbetriebnahme-des-raspberry-pi">M|4.7: Inbetriebnahme des Raspberry Pi</h3>
+<!-- <iframe frameborder="0" width="1200" height="675" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/6019653b31720d0d312eb43c" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> -->
+
+<h2 id="kompetenz-44-funktionstuchtigkeit-eines-it-systems-prufen">Kompetenz 4.4: Funktionstüchtigkeit eines IT-Systems prüfen</h2>
+<p>Nach der Installation und Aktualisierung des Betriebssystems ist der Inbetriebnahmeprozess abgeschlossen. Zunächst soll die Funktionstüchtigkeit des Raspberry Pi im Netzwerk überprüft werden. Erst im Anschluss kann das Prototyping mit dem Auslesen von Sensorik starten.</p>
+<p><img alt="Laptop" src="bilder/kap_04_laptop.jpg" /></p>
+<h3 id="a410-basisinformationen-zum-raspberry-pi-anzeigen">A|4.10: Basisinformationen zum Raspberry Pi anzeigen</h3>
+<h4 id="aufgabe-1_5">Aufgabe 1</h4>
+<p>Lassen Sie sich die Eckdaten zu Ihrem Raspberry Pi mit dem Befehl "pinout" in der Kommandozeile anzeigen. Welche Informationen können Sie hieraus ablesen?</p>
+<h4 id="aufgabe-2_2">Aufgabe 2</h4>
+<p>Nutzen Sie in der Kommandozeile den Befehl zur Ausgabe von Netzwerk-Informationen "ifconfig". Geben Sie in eigenen Worten wieder, was Ihnen die Anzeige an Daten ausgibt.</p>
+<h4 id="aufgabe-3_2">Aufgabe 3</h4>
+<p>Starten Sie mit dem Befehl "htop" den Taskmanager. Verschaffen Sie sich einen groben Überblick über das angezeigte Programm und beschreiben Sie den grundlegenden Aufbau der Ansicht.</p>
+<h2 id="handlungsergebnis">Handlungsergebnis</h2>
+<p>Sie haben in den letzten Unterrichtsstunden die Inbetriebnahme des Raspberry Pi durchgeführt, sich mit der Bedienung von Linux via Kommandozeile auseinandergesetzt sowie erste technische Informationen aus dem System ausgelesen. An dieser Stelle sollen Sie den aktuellen Standpunkt im Sinne eines Lessons Learned auswerten.</p>
+<p><img alt="Protokollant" src="bilder/kap_04_protokollant.jpg" /></p>
+<h3 id="a411-inbetriebnahme-installation-und-funktionstest-auswerten">A|4.11: Inbetriebnahme, Installation und Funktionstest auswerten</h3>
+<h4 id="aufgabe-1_6">Aufgabe 1</h4>
+<p>Betrachten Sie den Ablauf der Inbetriebnahme und die ersten Schritte im Betriebssystem mit dem Raspberry Pi. Beantworten Sie die folgenden Fragen:</p>
+<ul>
+<li>Wie zufrieden bin ich mit dem Ergebnis der Inbetriebnahme-Prozesses des Raspberry Pi?</li>
+<li>Was würde ich beim nächsten Installationsprozess anders machen?</li>
+<li>Was hat gut funktioniert und worauf kann ich stolz sein?</li>
+</ul>
+<h1 id="zusatzliches-material-weitere-ubungen-und-tipps">Zusätzliches Material, weitere Übungen und Tipps</h1>
+<h2 id="ubungen">Übungen</h2>
+<h3 id="ubung-ue43-speichermaeinheiten-unter-linux-anzeigen">Übung UE|4.3: Speichermaßeinheiten unter Linux anzeigen</h3>
+<p><strong>Vorbereitungen für diese Aufgaben</strong></p>
+<p>Sie benötigen für die folgenden Aufgaben ein paar Dateien mit verschiedenen Größen. Dazu legen wir drei "Dummy-Dateien" an, die leer sind, aber eine gewisse Menge Speicher belegen. Legen Sie hierfür unter <code>/home/pi</code> einen Ordner mit dem Namen "Uebung_Speichermasseinheit" an.</p>
+<p>Führen Sie dann die folgenden drei Befehle aus:</p>
+<ul>
+<li><code>dd if=/dev/zero of=/home/pi/Uebung_Speichermasseinheit/dateiNrEins.dummy bs=1M count=5</code></li>
+<li><code>dd if=/dev/zero of=/home/pi/Uebung_Speichermasseinheit/dateiNrZwei.dummy bs=1M count=25</code></li>
+<li><code>dd if=/dev/zero of=/home/pi/Uebung_Speichermasseinheit/dateiNrDrei.dummy bs=1M count=84</code></li>
+</ul>
+<p>Mit diesen Befehlen haben Sie drei Dummy-Dateien angelegt. Der dd-Befehl erzeugt eine Kopie aus dem ersten Pfad (hier ein Griff in die Trickkiste) /dev/zero, welcher eine virtuelle Gerätedatei bezeichnet und eine angeforderte Anzahl Null-Bytes zurückliefert. Das bs steht für die Blockgröße, also hier 1 Megabyte und count steht für die Anzahl der Blöcke, die erstellt werden sollen.</p>
+<p>Nach Bearbeitung der Aufgaben können Sie die drei Dateien wieder löschen.</p>
+<p><strong>Aufgabe 1</strong></p>
+<p>Lassen Sie sich in Ihrer Linux-Kommandozeile Ihre Daten mit den folgenden Befehlen anzeigen:</p>
+<ul>
+<li><code>df -h</code></li>
+<li><code>df --si</code></li>
+</ul>
+<p>Welchen Unterschied stellen Sie fest?</p>
+<p><strong>Aufgabe 2</strong></p>
+<p>Wechseln Sie in das zuvor vorbereitete Verzeichnis <code>/home/pi/Uebung_Speichermasseinheit</code>. Lassen Sie sich die Dateien mit den folgenden Befehlen anzeigen:</p>
+<ul>
+<li><code>ls -lh</code></li>
+<li><code>ls -l --si</code></li>
+</ul>
+<p>Welche Unterschiede können Sie nun hinsichtlich der Dateigröße erkennen? Rechnen Sie doch einmal nach.</p>
+<h2 id="podcastempfehlungen">Podcastempfehlungen</h2>
+<h2 id="zusatzmaterial">Zusatzmaterial</h2>
+<h2 id="lernstrategien-werkzeuge">Lernstrategien &amp; Werkzeuge</h2>
+<h2 id="github">GitHub</h2>
+<h3 id="githubio-lf2-kurs-als-mkdocs-variante">GitHub.io - LF2-Kurs als MkDocs-Variante</h3>
+<p><a href="https://herr-nm.github.io/MMBbS_FISI_LF02/">https://herr-nm.github.io/MMBbS_FISI_LF02/</a></p>
+<div class="admonition info">
+<p class="admonition-title">Lizenz</p>
+<p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Der FISI LF02 Kurs</span> von <a xmlns:cc="http://creativecommons.org/ns#" href="https://herr-nm.github.io/MMBbS_FISI_LF02/" property="cc:attributionName" rel="cc:attributionURL">André Neumann</a> ist lizenziert unter einer <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Namensnennung - Nicht-kommerziell - Weitergabe unter gleichen Bedingungen 4.0 International Lizenz</a>. Fragen, Hinweise etc. an neumann@mmbbs.de.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "In Zwischenablage kopiert", "clipboard.copy": "In Zwischenablage kopieren", "search.result.more.one": "1 weiteres Suchergebnis auf dieser Seite", "search.result.more.other": "# weitere Suchergebnisse auf dieser Seite", "search.result.none": "Keine Suchergebnisse", "search.result.one": "1 Suchergebnis", "search.result.other": "# Suchergebnisse", "search.result.placeholder": "Suchbegriff eingeben", "search.result.term.missing": "Es fehlt", "select.version": "Version ausw\u00e4hlen"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+        <script src="javascripts/katex.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>
