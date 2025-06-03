@@ -15,7 +15,7 @@ In diesem Kapitel werden Sie ...
 
 ## Handlungssituation
 
-Für den unternehmensinternen Auftrag der Change IT GmbH, eine Temperaturmesseinrichtung für die Arbeitsplätze einzurichten, wurde vor einigen Wochen eine Bestellung für die benötigte Hardware getätigt. Der Wareneingang hat diese angenommen und äußerlich auf Schäden kontrolliert. Ihre Aufgabe sind die Vorbereitungen für den Einsatz sowie wie Inbetriebnahme des IT-Systems durchzuführen. Hieran anschließend soll die Funktionstüchtigkeit des IT-Systems getestet werden.
+Für den unternehmensinternen Auftrag der Change IT GmbH, eine Temperaturmesseinrichtung für die Arbeitsplätze einzurichten, wurde vor einigen Wochen eine Bestellung für die benötigte Hardware getätigt. Der Wareneingang hat diese angenommen und äußerlich auf Schäden kontrolliert. Ihre Aufgaben sind die Vorbereitungen für den Einsatz sowie wie Inbetriebnahme des IT-Systems durchzuführen. Hieran anschließend soll die Funktionstüchtigkeit des IT-Systems getestet werden.
 
 ![Raspberry Pi Nahaufnahme](bilder/kap_04_rpi.jpg)
 
@@ -259,21 +259,24 @@ Die IT-Abteilung der Change IT GmbH hat sich bei den eingesetzten IT-Systemen f�
 
 **Aufgabe 1**
 
-Ihnen liegt ein vorbereitetes Cheat-Sheet zu Linux-Kommandozeilenbefehlen vor (Vorlage - Cheat Sheet Linux). Dieses ist noch nicht vollständig ausgefüllt, Sie wollen die Übersicht nun fertigstellen, um zukünftig eine Schnellreferenz vorliegen zu haben.Verschaffen Sie sich mithilfe des *Informationsmaterials M|4.6: Linux-Kommandozeilenbefehle* im Kurs einen Überblick zu den wichtigsten Befehlen für die Linux-Kommandozeile und vervollständigen Sie das Cheat-Sheet.
+Ihnen liegt ein vorbereitetes [Cheat-Sheet](material/kap_04_Cheat%20Sheet%20Linux%20-%20AB.pdf) zu Linux-Kommandozeilenbefehlen vor (Vorlage - Cheat-Sheet Linux). Dieses ist noch nicht vollständig ausgefüllt, Sie wollen die Übersicht nun fertigstellen, um zukünftig eine Schnellreferenz vorliegen zu haben. Verschaffen Sie sich mithilfe des Informationsmaterials M|4.6: Linux-Kommandozeilenbefehle im Kurs einen Überblick zu den wichtigsten Befehlen für die Linux-Kommandozeile und vervollständigen Sie das Cheat-Sheet.
 
 !!! note "Hinweis"
     
     Das Blatt ist in den drei Niveaustufen in Anlehnung an den ISA-Unterricht aufgebaut:
     
-    - Einsteiger: Befehle kennen und zuordnen
-    - Könner: Befehle situationsgerecht anwenden
-    - Profi: Befehlserweiterungen oder Fälle beschreiben können
+    - Könner: Befehle kennen und situationsgerecht anwenden
+    - Profi: Befehlserweiterungen beschreiben
 
-    Die Einsteiger- und Könner-Spalten müssen bearbeitet werden. Die Profi-Spalte kann optional ausgewählt werden.
+    Sollten Sie genauere Informationen zu einem Linux-Kommando benötigen finden Sie neben dem Informationsmaterials M|4.6: Linux-Kommandozeilenbefehle das Informationsmaterial M|4.7: Linux man-pages (Profi).
 
 **Aufgabe 2**
 
-Wenn Sie die Befehlsreferenz fertiggestellt haben, geben Sie diese in dieser Aufgabe als .pdf-Datei (max. 5 MB) ab. Anschließend wird eine Beispiellösung *Lösungshinweis zu A|4.6: Linux-Befehlsreferenz anlegen* freigeschaltet. Gleichen Sie Ihre Lösung mit der Beispiellösung ab. Notieren Sie sich Auffälligkeiten oder Lösungsabweichungen für die spätere Besprechung in der Klasse.
+Wenn Sie die Befehlsreferenz fertiggestellt haben, geben Sie diese in dieser Aufgabe als .pdf-Datei (max. 5 MB) ab. Anschließend wird eine Beispiellösung Lösungshinweis zu A|4.6: Linux-Befehlsreferenz anlegen freigeschaltet. Gleichen Sie Ihre Lösung mit der Beispiellösung ab. Notieren Sie sich Auffälligkeiten oder Lösungsabweichungen für die spätere Besprechung in der Klasse.
+
+### Vorlage - Cheat-Sheet Linux
+
+[Download der Vorlage](material/kap_04_Cheat%20Sheet%20Linux%20-%20AB.pdf)
 
 ### Informationsmaterial M|4.6: Linux-Kommandozeilenbefehle
 
@@ -365,7 +368,11 @@ Mit `nano` öffnet man einen einfachen Texteditor direkt im Terminal. Er eignet 
 
 `chmod` ändert die Zugriffsrechte von Dateien und Verzeichnissen. Mit Zahlen wie `755` oder symbolisch (`u+x`) kann genau gesteuert werden, wer was darf. Rechte werden in drei Gruppen vergeben: Eigentümer, Gruppe, andere.
 
-*Beispiel:* `chmod 644 dokumentation/readme.txt`
+*Beispiel 1:* `chmod 644 dokumentation/readme.txt` (Rechte symbolisch verändern: Eigentümer und Gruppe erhalten Lese-/Schreib- und Ausführrechte, Andere Benutzer dürfen nur ausführen - zuvor gesetzte Berechtigungen werden überschrieben.)
+
+*Beispiel 2:* `chmod u-x,g+w,o= dokumentation/meinscript.sh` (Rechte symbolisch verändern: Eigentümer werden die Ausführrechte entzogen (r und w bleiben wie zuvor), die Gruppe erhält Schreibrechte (r und x bleiben wie zuvor) und andere Benutzer haben keine Berechtigungen (es wird überschrieben, was zuvor eingestellt war).
+
+*Beispiel 3:* `chmod 741 dokumentation/meinscript.sh` (Rechte numerisch verändern: Eigentümer hat Lese- Schreib- und Ausführrechte (r=4, w=2, x=1 Summe: 7), die Gruppe darf Lesen (r=4) und die anderen Benutzer nur ausführen (x=1). 
 
 ---
 
@@ -419,7 +426,7 @@ Mit `nano` öffnet man einen einfachen Texteditor direkt im Terminal. Er eignet 
 
 **ps aux**
 
-`ps aux` listet alle Prozesse auf, die aktuell auf dem System laufen. Es zeigt Benutzer, PID, CPU-/RAM-Auslastung und die gestarteten Programme. In Kombination mit `grep` kann gezielt gesucht werden.
+`ps aux` listet alle Prozesse auf, die aktuell auf dem System laufen. Es zeigt Benutzer, PID, CPU-/RAM-Auslastung und die gestarteten Programme. In Kombination mit `grep` kann gezielt gesucht werden. Dabei wird mit dem Pipe-Zeichen `|` die Ausgabe von `ps aux` mittels `grep` gefiltert und erst anschließend angezeigt. Dies wird auch Pipelining genannt.
 
 *Beispiel:* `ps aux | grep nano`
 
@@ -541,13 +548,15 @@ Zur Bearbeitung der folgenden Aufgaben steht Ihnen ein Linux-Server zur Verfügu
 
 **Aufgabe 1**
 
-Kopieren Sie diese Aufgabenstellungen in ein eigenes Dokument (z.B. Word oder LibreOffice).
+Laden Sie sich die unten genannten Aufgabenstellungen als .txt-Datei herunter und öffnen Sie diese bspw. im Windows Editor, Visual Studio Code oder notepad++. In der .txt-Datei sichern Sie Ihre Ergebnisse schrittweise nach erfolgreicher Ausführung in der Kommandozeile. Sie benötigen die Datei am Ende, um das Feedback zu erhalten.
+
+[Download der .txt](material/kap_04_A4.7%20Linux-Terminal%20bedienen%20Könner.txt)
 
 **Aufgabe 2**
 
 Arbeiten Sie auf dem bereitgestellten Raspberry Pi OS im Terminal. Verwenden Sie Ihr persönliches Login. Ihre Aufgabe ist es typische Administrationsaufgaben hinsichtlich Dateien und Ordnern, Benutzern sowie der Systemanalyse durchzuführen.
 
-Notieren Sie die von Ihnen verwendeten Befehle unter die jeweiligen Aufgabenpunkte. Nutzen Sie Ihr Cheat Sheet zur Unterstützung.
+Notieren Sie die von Ihnen verwendeten Befehle unter die jeweiligen Aufgabenpunkte. Nutzen Sie Ihr Cheat-Sheet zur Unterstützung.
 
 !!! example "Beispiel"
     
@@ -571,8 +580,8 @@ Notieren Sie die von Ihnen verwendeten Befehle unter die jeweiligen Aufgabenpunk
 1. Legen Sie einen Projektordner `projekt01` an. Dieser soll später Ihre Übungsdateien enthalten.
 2. Erstellen Sie darin die Unterordner `code`, `daten` und `dokumentation`. Der Befehl zur Anlage von Ordnern kann mehrere Ordner auf einmal anlegen, wenn diese durch Leerzeichen getrennt aufgeführt werden.
 3. Erzeugen Sie im Ordner `dokumentation` eine leere Textdatei `readme.txt`. Prüfen Sie die Anlage mittels Auflisten des Ordnerinhalts `ls`.
-4. Bearbeiten Sie die Datei im Terminal mit dem Editor `nano`. Fügen Sie einen kurzen Text zum Projektthema ein: "Austattung des Arbeitsplatzes 'Hotelemfpang'".
-5. Kopieren Sie die Datei anschließend in den Ordner `daten`. Denken Sie daran, erst die Quelle und anschließend das Ziel anzugeben. 
+4. Bearbeiten Sie die Datei im Terminal mit dem Editor `nano`. Fügen Sie einen kurzen Text zum Projektthema ein: `"Ausstattung des Arbeitsplatzes 'Hotelempfang'"`.
+5. Kopieren Sie die Datei anschließend in den Ordner `daten`. Denken Sie daran, erst die Quelle und anschließend das Ziel anzugeben.
 6. Benennen Sie die Datei `readme.txt` im Ordner `daten` in `protokoll.txt` um. Geben Sie im Befehl erst den alten und dann den neuen Dateinamen an.
 7. Löschen Sie den Ordner `daten` mitsamt seines Inhalts. Nutzen Sie einen Befehl, der das rekursive Löschen (also Löschen des Ordners mit all seinen Unterordnern und in diesen enthaltenen Dateien) ermöglicht.
 
@@ -614,8 +623,8 @@ Notieren Sie die von Ihnen verwendeten Befehle unter die jeweiligen Aufgabenpunk
 1. Verschaffen Sie sich einen Überblick über alle aktuell laufenden Prozesse im System. Nutzen Sie noch keinen Linux-Taskmanager.
 2. Filtern Sie diese Liste mithilfe von `grep` nach dem Programm `systemd`.
 3. Rufen Sie eine Live-Übersicht der Systemressourcen und der laufenden Prozesse im Linux-Taskmanager auf. Beschreiben Sie kurz den Aufbau des Programms.
-4. Prüfen Sie, wie viel Festplattenspeicher noch verfügbar ist.
-5. Sehen Sie sich an, wie viel Arbeitsspeicher genutzt wird.
+4. Prüfen Sie, wie viel Festplattenspeicher im Dateisystem `udev` noch verfügbar ist (Anzeige in GB [human readable]).
+5. Sehen Sie sich an, wie viel Arbeitsspeicher genutzt wird (Anzeige in GiB [human readable]).
 6. Lassen Sie sich technische Informationen über das System (Kernel-Information etc.) anzeigen.
 7. Finden Sie heraus, wie lange das System bereits läuft.
 
@@ -634,7 +643,7 @@ Notieren Sie die von Ihnen verwendeten Befehle unter die jeweiligen Aufgabenpunk
 
 **Aufgabe 3**
 
-Speichern Sie Ihre Lösung als PDF-Datei (max. 5 MB) und laden Sie sie hier im Kurs hoch.
+Speichern Sie Ihre Lösung als .txt-Datei und laden Sie sie hier im Kurs hoch.
 
 **Aufgabe 4**
 
@@ -648,13 +657,15 @@ Nach der Abgabe erhalten Sie ein KI-generiertes Feedback (wird manuell durch die
 
 **Aufgabe 1**
 
-Kopieren Sie diese Aufgabenstellungen in ein eigenes Dokument (z.B. Word oder LibreOffice).
+Laden Sie sich die unten genannten Aufgabenstellungen als .txt-Datei herunter und öffnen Sie diese bspw. im Windows Editor, Visual Studio Code oder notepad++. In der .txt-Datei sichern Sie Ihre Ergebnisse schrittweise nach erfolgreicher Ausführung in der Kommandozeile. Sie benötigen die Datei am Ende, um das Feedback zu erhalten.
+
+[Download der .txt](material/kap_04_A4.7%20Linux-Terminal%20bedienen%20Profi.txt)
 
 **Aufgabe 2**
 
 Arbeiten Sie auf dem bereitgestellten Raspberry Pi OS im Terminal. Verwenden Sie Ihr persönliches Login. Ihre Aufgabe ist es typische Administrationsaufgaben hinsichtlich Dateien und Ordnern, Benutzern sowie der Systemanalyse durchzuführen.
 
-Notieren Sie die von Ihnen verwendeten Befehle unter die jeweiligen Aufgabenpunkte. Nutzen Sie Ihr Cheat Sheet zur Unterstützung.
+Notieren Sie die von Ihnen verwendeten Befehle unter die jeweiligen Aufgabenpunkte. Nutzen Sie Ihr Cheat-Sheet zur Unterstützung.
 
 !!! example "Beispiel"
     
@@ -692,8 +703,8 @@ Notieren Sie die von Ihnen verwendeten Befehle unter die jeweiligen Aufgabenpunk
 1. Verschaffen Sie sich einen Überblick über alle aktuell laufenden Prozesse im System. Nutzen Sie noch keinen Linux-Taskmanager.
 2. Filtern Sie diese Liste nach dem Programm `systemd`.
 3. Rufen Sie eine Live-Übersicht der Systemressourcen und der laufenden Prozesse im Linux-Taskmanager auf. Beschreiben Sie kurz den Aufbau des Programms.
-4. Prüfen Sie, wie viel Festplattenspeicher noch verfügbar ist.
-5. Sehen Sie sich an, wie viel Arbeitsspeicher genutzt wird.
+4. Prüfen Sie, wie viel Festplattenspeicher im Dateisystem `udev` noch verfügbar ist (Anzeige in GB).
+5. Sehen Sie sich an, wie viel Arbeitsspeicher genutzt wird (Anzeige in GiB).
 6. Lassen Sie sich technische Informationen über das System (Kernel-Information etc.) anzeigen.
 7. Finden Sie heraus, wie lange das System bereits läuft.
 
@@ -712,7 +723,7 @@ Notieren Sie die von Ihnen verwendeten Befehle unter die jeweiligen Aufgabenpunk
 
 **Aufgabe 3**
 
-Speichern Sie Ihre Lösung als PDF-Datei (max. 5 MB) und laden Sie sie hier im Kurs hoch.
+Speichern Sie Ihre Lösung als .txt-Datei und laden Sie sie hier im Kurs hoch.
 
 **Aufgabe 4**
 
@@ -722,11 +733,13 @@ Nach der Abgabe erhalten Sie ein KI-generiertes Feedback (wird manuell durch die
 
 **Aufgabe 1**
 
-Beantworten Sie folgende Reflexionsfragen im Textfeld dieser Aufgabe:
+Beantworten Sie die Fragen für Ihre Einschätzung der Unterrichtsstunde hinsichtlich der Linux-Aufgaben, dem KI-Feedback sowie Ihrer Teamarbeit:
 
-- Was haben Sie heute über das Arbeiten mit dem Linux-Terminal gelernt?
-- An welcher Stelle waren Sie sich unsicher und wie sind Sie damit umgegangen?
-- Welche Befehle oder Funktionen haben Ihnen gefehlt oder welche würden Sie sich gerne genauer ansehen?
+[Abfrage](https://www.oncoo.de/so68)
+
+**Aufgabe 2**
+
+Unterstützen Sie in den anderen Gruppen, wenn diese bei der Bearbeitung des Arbeitsauftrags 4.7 Hilfestellung benötigen.
 
 ## Kompetenz 4.3: Installation und Aktualisierung des Betriebssystems
 
@@ -749,7 +762,7 @@ Wenn Sie diese Aufgabe fertiggestellt haben bestätigen Sie dies über den oben 
 
 ### M|4.7: Inbetriebnahme des Raspberry Pi
 
-<iframe frameborder="0" width="1200" height="675" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/6019653b31720d0d312eb43c" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe>
+<!-- <iframe frameborder="0" width="1200" height="675" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/6019653b31720d0d312eb43c" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> -->
 
 ## Kompetenz 4.4: Funktionstüchtigkeit eines IT-Systems prüfen
 
